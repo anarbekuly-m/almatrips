@@ -33,3 +33,4 @@ npm run build    # собрать прод-версию в dist/
 ## SEO
 
 Уже встроено: отдельная страница под каждый тур, schema.org (TravelAgency, TouristTrip, FAQPage, BreadcrumbList), hreflang EN/RU, canonical, sitemap, robots.txt, OpenGraph. Дальше главное — блог-статьи на английском и отзывы в Google/TripAdvisor.
+# almatrips
