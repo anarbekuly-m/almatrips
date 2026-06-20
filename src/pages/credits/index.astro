@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const credits = [
+  ['hero.jpg / big-almaty-lake.jpg', 'File:Big Almaty Lake.jpg', 'CC BY 3.0'],
+  ['almaty-city-tour.jpg', 'File:Zenkov Cathedral, Almaty.jpg', 'CC0'],
+  ['charyn-canyon.jpg', 'File:Вид сверху на долину Чарынского каньона.jpg', 'CC BY-SA 4.0'],
+  ['kolsai-kaindy-lakes.jpg', 'File:First Kolsay lake 2023.jpg', 'CC BY-SA 4.0'],
+  ['charyn-kolsai-kaindy.jpg / kaindy.jpg', 'File:Kaindy lake.jpg', 'CC0'],
+  ['assy-plateau.jpg', 'File:Assy-Turgen Observatory against the backdrop of the center of the Milky Way and the star-forming region around Antares.jpg', 'CC BY-SA 4.0'],
+  ['shymbulak-medeu.jpg', 'File:Fun park, Shymbulak, Almaty (P1180199-Pano).jpg', 'CC BY-SA 4.0'],
+  ['medeu.jpg', 'File:Medeu - high-mountain skating rink.jpg', 'CC BY-SA 4.0'],
+];
+
+function commonsUrl(title: string): string {
+  return 'https://commons.wikimedia.org/wiki/' + encodeURIComponent(title.replace(/ /g, '_'));
+}
+
+function thumbSrc(local: string): string {
+  return '/images/' + local.split(' / ')[0];
+}
+---
+<Base
+  lang="en"
+  title="Photo Credits | Almatrips"
+  description="Attribution for photographs used on almatrips.kz, sourced from Wikimedia Commons under free licenses."
+  path="/credits/"
+>
+  <div class="container page-head">
+    <h1>Photo credits</h1>
+    <p class="lead">
+      Some photographs on this site are by Wikimedia Commons contributors, used under free licenses. We thank the
+      photographers.
+    </p>
+  </div>
+  <section class="section" style="padding-top: 30px;">
+    <div class="container">
+      <div class="credits-grid">
+        {credits.map(([local, title, license]) => (
+          <a href={commonsUrl(title)} target="_blank" rel="noopener" class="credit-item">
+            <img src={thumbSrc(local)} alt={title} loading="lazy" width="320" height="200" />
+            <div class="credit-meta">
+              <strong>{title}</strong>
+              <span>{license} · {local}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .credits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+    .credit-item {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+    }
+    .credit-item img {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      width: 100%;
+    }
+    .credit-meta {
+      padding: 14px 16px 16px;
+      display: grid;
+      gap: 4px;
+    }
+    .credit-meta strong {
+      font-size: 0.88rem;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .credit-meta span {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+  </style>
+</Base>

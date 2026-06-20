@@ -1,0 +1,162 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
+import type { GroupTour } from '../../data/groupTours';
+
+interface Props {
+  lang: Lang;
+  tour: GroupTour;
+}
+
+const { lang, tour } = Astro.props;
+const c = tour[lang];
+const path = `/group-tours/${tour.slug}/`;
+const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
+
+const weekdayLabel = (key: string) => t(lang, `wd.${key}` as any);
+
+const tripSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristTrip',
+  name: c.name,
+  description: c.metaDescription,
+  image: site + tour.image,
+  touristType: 'Small-group tour',
+  provider: { '@type': 'TravelAgency', name: BRAND, url: site },
+  offers: {
+    '@type': 'Offer',
+    price: tour.priceKzt,
+    priceCurrency: 'KZT',
+    availability: 'https://schema.org/InStock',
+    url: site + (lang === 'en' ? path : '/ru' + path),
+  },
+  ...(c.program
+    ? {
+        itinerary: {
+          '@type': 'ItemList',
+          itemListElement: c.program.map((step, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: `${step.time} — ${step.text}`,
+          })),
+        },
+      }
+    : {}),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: BRAND, item: site + localizePath(lang, '/') },
+    { '@type': 'ListItem', position: 2, name: t(lang, 'nav.group'), item: site + localizePath(lang, '/group-tours/') },
+    { '@type': 'ListItem', position: 3, name: c.name },
+  ],
+};
+---
+<Base
+  lang={lang}
+  title={c.metaTitle}
+  description={c.metaDescription}
+  path={path}
+  image={tour.image}
+  schema={[tripSchema, breadcrumbSchema]}
+>
+  <section class="tour-hero" style={`--hero-image: url('${tour.image}')`}>
+    <div class="container tour-hero-inner">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href={localizePath(lang, '/')}>{BRAND}</a><span>/</span>
+        <a href={localizePath(lang, '/group-tours/')}>{t(lang, 'nav.group')}</a>
+      </nav>
+      <h1>{c.name} <span class="gt-emoji">{tour.emoji}</span></h1>
+      <div class="tour-meta-chips">
+        <span class="chip">{c.tagline}</span>
+        <span class="chip">{c.duration}</span>
+        <span class="chip">{t(lang, 'tour.perPerson')} · {tour.priceKzt.toLocaleString('ru-RU')} ₸</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container tour-layout">
+    <div class="tour-content">
+      {c.intro.map((para) => <p>{para}</p>)}
+
+      <h2>{t(lang, 'gt.locations')}</h2>
+      <ul class="highlights-list">
+        {c.locations.map((loc) => <li>{loc}</li>)}
+      </ul>
+
+      <h2>{t(lang, 'gt.departures')}</h2>
+      {tour.weekdays.length > 0 && (
+        <div class="gt-weekdays">
+          {tour.weekdays.map((d) => <span>{weekdayLabel(d)}</span>)}
+        </div>
+      )}
+      {tour.departureNote && <p style="color: var(--muted); margin-top: 12px;">{tour.departureNote[lang]}</p>}
+
+      {c.program && (
+        <>
+          <h2>{t(lang, 'gt.program')}</h2>
+          <ol class="itinerary">
+            {c.program.map((step) => (
+              <li><time>{step.time}</time>{step.text}</li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      <h2>{t(lang, 'tour.included')}</h2>
+      {c.optional ? (
+        <div class="incl-grid">
+          <div class="yes">
+            <ul>{c.included.map((item) => <li>{item}</li>)}</ul>
+          </div>
+          <div class="no">
+            <strong style="font-size: 0.86rem; color: var(--muted);">{t(lang, 'gt.optional')}</strong>
+            <ul>{c.optional.map((item) => <li>{item}</li>)}</ul>
+          </div>
+        </div>
+      ) : (
+        <div class="incl-grid">
+          <div class="yes">
+            <ul>{c.included.map((item) => <li>{item}</li>)}</ul>
+          </div>
+        </div>
+      )}
+
+      <h2>{t(lang, 'gt.bring')}</h2>
+      <ul class="highlights-list">
+        {c.whatToBring.map((item) => <li>{item}</li>)}
+      </ul>
+
+      {c.notes && (
+        <>
+          <h2>{t(lang, 'gt.notes')}</h2>
+          {c.notes.map((note) => <p style="color: var(--muted);">{note}</p>)}
+        </>
+      )}
+    </div>
+
+    <aside class="book-card">
+      <div class="price-big">{tour.priceNote ? `${t(lang, 'gt.from')} ` : ''}{tour.priceKzt.toLocaleString('ru-RU')} ₸</div>
+      <p class="per">{t(lang, 'tour.perPerson')}</p>
+      {tour.priceNote && <p class="book-note" style="margin-top: 0">{tour.priceNote[lang]}</p>}
+      <dl class="book-rows">
+        <div>
+          <dt>{t(lang, 'tour.duration')}</dt>
+          <dd>{c.duration}</dd>
+        </div>
+        <div>
+          <dt>{t(lang, 'tour.season')}</dt>
+          <dd>{c.season}</dd>
+        </div>
+      </dl>
+      <div class="gt-meeting">
+        <strong>{t(lang, 'gt.meeting')}</strong>
+        <span>{tour.meetingPoint[lang]}</span>
+      </div>
+      <a href={waLink(lang, c.name, 'group')} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'gt.book')}</a>
+      <p class="book-note">{t(lang, 'gt.bookNote')}</p>
+    </aside>
+  </div>
+</Base>

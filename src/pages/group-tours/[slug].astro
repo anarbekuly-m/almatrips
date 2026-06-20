@@ -1,0 +1,11 @@
+---
+import GroupTourDetail from '../../components/pages/GroupTourDetail.astro';
+import { groupTours } from '../../data/groupTours';
+
+export function getStaticPaths() {
+  return groupTours.map((tour) => ({ params: { slug: tour.slug }, props: { tour } }));
+}
+
+const { tour } = Astro.props;
+---
+<GroupTourDetail lang="en" tour={tour} />

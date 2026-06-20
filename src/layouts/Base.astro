@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+import { BRAND, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** Path without language prefix, e.g. "/tours/charyn-canyon/" */
+  path: string;
+  image?: string;
+  schema?: object[];
+}
+
+const { lang, title, description, path, image = '/images/hero.jpg', schema = [] } = Astro.props;
+
+const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
+const enUrl = site + path;
+const ruUrl = site + '/ru' + path;
+const canonical = lang === 'en' ? enUrl : ruUrl;
+
+const agencySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  name: BRAND,
+  url: site,
+  telephone: '+77771502025',
+  image: site + image,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Almaty',
+    addressCountry: 'KZ',
+  },
+  areaServed: 'Almaty Region, Kazakhstan',
+  priceRange: '$$',
+};
+
+const allSchema = [agencySchema, ...schema];
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="ru" href={ruUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={BRAND} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={site + image} />
+    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'ru_RU'} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    {allSchema.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
+  </head>
+  <body>
+    <Header lang={lang} path={path} />
+    <main>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <WhatsAppFloat lang={lang} />
+  </body>
+</html>

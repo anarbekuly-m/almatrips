@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import TourCard from '../TourCard.astro';
+import GroupTourCard from '../GroupTourCard.astro';
+import { t, localizePath, type Lang } from '../../i18n/ui';
+import { privateTours, type TourFormat } from '../../data/tours';
+import { groupTours } from '../../data/groupTours';
+
+interface Props {
+  lang: Lang;
+  format: TourFormat;
+}
+
+const { lang, format } = Astro.props;
+const isGroup = format === 'group';
+
+const path = isGroup ? '/group-tours/' : '/private-tours/';
+const otherPath = isGroup ? '/private-tours/' : '/group-tours/';
+
+const h1 = isGroup ? t(lang, 'group.h1') : t(lang, 'private.h1');
+const lead = isGroup ? t(lang, 'group.lead') : t(lang, 'private.lead');
+const metaTitle = isGroup ? t(lang, 'meta.group.title') : t(lang, 'meta.private.title');
+const metaDesc = isGroup ? t(lang, 'meta.group.description') : t(lang, 'meta.private.description');
+const otherLabel = isGroup ? t(lang, 'choose.private.cta') : t(lang, 'choose.group.cta');
+const heroImage = isGroup ? '/images/kolsai-kaindy-lakes.jpg' : '/images/charyn-canyon.jpg';
+---
+<Base lang={lang} title={metaTitle} description={metaDesc} path={path} image={heroImage}>
+  <div class="container page-head">
+    <div class="catalog-tabs">
+      <a href={localizePath(lang, '/group-tours/')} class={isGroup ? 'active' : ''}>{t(lang, 'nav.group')}</a>
+      <a href={localizePath(lang, '/private-tours/')} class={!isGroup ? 'active' : ''}>{t(lang, 'nav.private')}</a>
+    </div>
+    <h1>{h1}</h1>
+    <p class="lead">{lead}</p>
+  </div>
+  <section class="section" style="padding-top: 36px;">
+    <div class="container">
+      <div class="tour-grid">
+        {isGroup
+          ? groupTours.map((tour) => <GroupTourCard tour={tour} lang={lang} />)
+          : privateTours.map((tour) => <TourCard tour={tour} lang={lang} />)}
+      </div>
+      <p style="margin-top: 36px;">
+        <a href={localizePath(lang, otherPath)} class="btn btn-outline">{otherLabel} →</a>
+      </p>
+    </div>
+  </section>
+</Base>

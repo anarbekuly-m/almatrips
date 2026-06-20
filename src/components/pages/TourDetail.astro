@@ -1,0 +1,155 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
+import { usdFrom, type Tour } from '../../data/tours';
+
+interface Props {
+  lang: Lang;
+  tour: Tour;
+}
+
+const { lang, tour } = Astro.props;
+const c = tour[lang];
+const path = `/tours/${tour.slug}/`;
+const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
+
+const tripSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristTrip',
+  name: c.title,
+  description: c.metaDescription,
+  image: site + tour.image,
+  touristType: 'Private tour',
+  provider: { '@type': 'TravelAgency', name: BRAND, url: site },
+  offers: {
+    '@type': 'Offer',
+    price: tour.priceKzt,
+    priceCurrency: 'KZT',
+    availability: 'https://schema.org/InStock',
+    url: site + (lang === 'en' ? path : '/ru' + path),
+  },
+  itinerary: {
+    '@type': 'ItemList',
+    itemListElement: c.itinerary.map((step, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: `${step.time} — ${step.text}`,
+    })),
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: c.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: BRAND, item: site + localizePath(lang, '/') },
+    { '@type': 'ListItem', position: 2, name: t(lang, 'nav.tours'), item: site + localizePath(lang, '/private-tours/') },
+    { '@type': 'ListItem', position: 3, name: c.title },
+  ],
+};
+---
+<Base
+  lang={lang}
+  title={c.metaTitle}
+  description={c.metaDescription}
+  path={path}
+  image={tour.image}
+  schema={[tripSchema, faqSchema, breadcrumbSchema]}
+>
+  <section class="tour-hero" style={`--hero-image: url('${tour.image}')`}>
+    <div class="container tour-hero-inner">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href={localizePath(lang, '/')}>{BRAND}</a><span>/</span>
+        <a href={localizePath(lang, '/private-tours/')}>{t(lang, 'tour.back')}</a>
+      </nav>
+      <h1>{c.title}</h1>
+      <div class="tour-meta-chips">
+        <span class="chip">{c.duration}</span>
+        <span class="chip">{c.season}</span>
+        <span class="chip">{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container tour-layout">
+    <div class="tour-content">
+      {c.description.map((para) => <p>{para}</p>)}
+
+      <h2>{t(lang, 'tour.highlights')}</h2>
+      <ul class="highlights-list">
+        {c.highlights.map((h) => <li>{h}</li>)}
+      </ul>
+
+      <h2>{t(lang, 'tour.itinerary')}</h2>
+      <ol class="itinerary">
+        {c.itinerary.map((step) => (
+          <li><time>{step.time}</time>{step.text}</li>
+        ))}
+      </ol>
+
+      <h2>{t(lang, 'tour.included')}</h2>
+      <div class="incl-grid">
+        <div class="yes">
+          <ul>{c.included.map((item) => <li>{item}</li>)}</ul>
+        </div>
+        <div class="no">
+          <strong style="font-size: 0.86rem; color: var(--muted);">{t(lang, 'tour.notIncluded')}</strong>
+          <ul>{c.notIncluded.map((item) => <li>{item}</li>)}</ul>
+        </div>
+      </div>
+
+      <h2>{t(lang, 'tour.faq')}</h2>
+      <div class="faq-list">
+        {c.faq.map((item) => (
+          <details>
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+
+    <aside class="book-card">
+      <div class="price-big">{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸<span class="kzt">≈ ${usdFrom(tour.priceKzt)}</span></div>
+      <p class="per">{t(lang, 'price.perTransport')}</p>
+      <table class="price-table">
+        <thead>
+          <tr><th>{t(lang, 'price.guests')}</th><th>{t(lang, 'price.price')}</th></tr>
+        </thead>
+        <tbody>
+          {tour.priceBrackets.map((row) => (
+            <tr>
+              <td>{row.label} {t(lang, 'price.people')}</td>
+              <td>{row.kzt.toLocaleString('ru-RU')} ₸ <span class="kzt">· ≈ ${usdFrom(row.kzt)}</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="book-note">{t(lang, 'price.more')}</p>
+      <dl class="book-rows">
+        <div>
+          <dt>{t(lang, 'tour.duration')}</dt>
+          <dd>{c.duration}</dd>
+        </div>
+        <div>
+          <dt>{t(lang, 'tour.season')}</dt>
+          <dd>{c.season}</dd>
+        </div>
+      </dl>
+      <a href={waLink(lang, c.title, 'private')} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'tour.book')}</a>
+      <p class="book-note">{t(lang, 'book.private.note')}</p>
+      <p class="book-note">{t(lang, 'tour.bookNote')}</p>
+      <p class="book-note">{t(lang, 'tour.routeNote')}</p>
+    </aside>
+  </div>
+</Base>

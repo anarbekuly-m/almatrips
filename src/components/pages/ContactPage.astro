@@ -1,0 +1,97 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, waLink, WHATSAPP_NUMBER, WHATSAPP_DISPLAY, INSTAGRAM, type Lang } from '../../i18n/ui';
+import { tours } from '../../data/tours';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+<Base
+  lang={lang}
+  title={t(lang, 'meta.contact.title')}
+  description={t(lang, 'meta.contact.description')}
+  path="/contact/"
+>
+  <div class="container page-head">
+    <h1>{t(lang, 'contact.title')}</h1>
+    <p class="lead">{t(lang, 'contact.sub')}</p>
+  </div>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="container contact-grid">
+      <div>
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <p style="color: var(--muted); font-size: 0.95rem;">{WHATSAPP_DISPLAY}</p>
+          <a href={waLink(lang)} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'hero.cta2')}</a>
+        </div>
+        <div class="contact-card">
+          <h3>Instagram</h3>
+          <p style="color: var(--muted); font-size: 0.95rem;">@almatrips</p>
+          <a href={INSTAGRAM} class="btn btn-outline" target="_blank" rel="noopener">Instagram →</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>{t(lang, 'contact.formTitle')}</h3>
+        <p style="color: var(--muted); font-size: 0.9rem;">{t(lang, 'contact.formNote')}</p>
+        <form id="wa-form" class="form-grid">
+          <div>
+            <label for="f-name">{t(lang, 'form.name')}</label>
+            <input id="f-name" name="name" type="text" required />
+          </div>
+          <div>
+            <label for="f-tour">{t(lang, 'form.tour')}</label>
+            <select id="f-tour" name="tour">
+              <option value="">{t(lang, 'form.anyTour')}</option>
+              {tours.map((tour) => <option value={tour[lang].title}>{tour[lang].title}</option>)}
+            </select>
+          </div>
+          <div class="form-row-2">
+            <div>
+              <label for="f-date">{t(lang, 'form.date')}</label>
+              <input id="f-date" name="date" type="date" />
+            </div>
+            <div>
+              <label for="f-people">{t(lang, 'form.people')}</label>
+              <input id="f-people" name="people" type="number" min="1" max="20" value="2" />
+            </div>
+          </div>
+          <div>
+            <label for="f-message">{t(lang, 'form.message')}</label>
+            <textarea id="f-message" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-wa">{t(lang, 'form.submit')}</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script define:vars={{ WHATSAPP_NUMBER, lang }}>
+    document.getElementById('wa-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const lines =
+        lang === 'ru'
+          ? [
+              `Здравствуйте! Меня зовут ${data.get('name')}.`,
+              data.get('tour') ? `Интересует тур: ${data.get('tour')}.` : 'Хочу подобрать тур.',
+              data.get('date') ? `Дата: ${data.get('date')}.` : '',
+              `Гостей: ${data.get('people')}.`,
+              data.get('message') || '',
+            ]
+          : [
+              `Hello! My name is ${data.get('name')}.`,
+              data.get('tour') ? `I'm interested in: ${data.get('tour')}.` : "I'd like help choosing a tour.",
+              data.get('date') ? `Date: ${data.get('date')}.` : '',
+              `Guests: ${data.get('people')}.`,
+              data.get('message') || '',
+            ];
+      const text = lines.filter(Boolean).join('\n');
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    });
+  </script>
+</Base>

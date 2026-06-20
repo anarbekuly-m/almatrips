@@ -1,0 +1,43 @@
+---
+import Logo from './Logo.astro';
+import { t, localizePath, waLink, languages, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  path: string;
+}
+
+const { lang, path } = Astro.props;
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a href={localizePath(lang, '/')} class="logo" aria-label="Almatrips — home">
+      <Logo />
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav">
+      <a href={localizePath(lang, '/group-tours/')}>{t(lang, 'nav.group')}</a>
+      <a href={localizePath(lang, '/private-tours/')}>{t(lang, 'nav.private')}</a>
+      <a href={localizePath(lang, '/about/')}>{t(lang, 'nav.about')}</a>
+      <a href={localizePath(lang, '/contact/')}>{t(lang, 'nav.contact')}</a>
+    </nav>
+
+    <div class="nav-cta">
+      <div class="lang-switch">
+        {(Object.keys(languages) as Lang[]).map((l) => (
+          <a href={localizePath(l, path)} class={l === lang ? 'active' : ''} aria-label={l === 'en' ? 'English version' : 'Русская версия'}>
+            {languages[l]}
+          </a>
+        ))}
+      </div>
+      <a href={waLink(lang)} class="btn btn-wa btn-header" target="_blank" rel="noopener">
+        {t(lang, 'nav.whatsapp')}
+      </a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+---
+import { t, localizePath, type Lang } from '../i18n/ui';
+import type { GroupTour } from '../data/groupTours';
+
+interface Props {
+  tour: GroupTour;
+  lang: Lang;
+}
+
+const { tour, lang } = Astro.props;
+const c = tour[lang];
+const url = localizePath(lang, `/group-tours/${tour.slug}/`);
+---
+<article class="tour-card">
+  <a href={url} class="tour-card-media">
+    <img src={tour.image} alt={c.name} loading="lazy" width="640" height="420" />
+    <span class="tour-card-chip">{c.tagline}</span>
+  </a>
+  <div class="tour-card-body">
+    <h3><a href={url}>{c.name} <span class="gt-emoji">{tour.emoji}</span></a></h3>
+    <p class="tour-card-teaser">{c.teaser}</p>
+    <ul class="gt-locs">
+      {c.locations.map((loc) => <li>{loc}</li>)}
+    </ul>
+    <div class="tour-card-foot">
+      <div class="price">
+        <small>{t(lang, 'tour.perPerson')}</small>
+        <strong>{tour.priceKzt.toLocaleString('ru-RU')} ₸</strong>
+      </div>
+      <a href={url} class="btn btn-outline">{t(lang, 'card.details')}</a>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,168 @@
+---
+import Base from '../../layouts/Base.astro';
+import TourCard from '../TourCard.astro';
+import { t, localizePath, waLink, type Lang } from '../../i18n/ui';
+import { tours } from '../../data/tours';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const featured = tours.filter((tour) => tour.featured);
+
+const faqKeys = [1, 2, 3, 4] as const;
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqKeys.map((i) => ({
+    '@type': 'Question',
+    name: t(lang, `faq.${i}.q` as any),
+    acceptedAnswer: { '@type': 'Answer', text: t(lang, `faq.${i}.a` as any) },
+  })),
+};
+---
+<Base
+  lang={lang}
+  title={t(lang, 'meta.home.title')}
+  description={t(lang, 'meta.home.description')}
+  path="/"
+  schema={[faqSchema]}
+>
+  <section class="hero" style="--hero-image: url('/images/hero.jpg')">
+    <div class="container hero-inner">
+      <span class="kicker">{t(lang, 'hero.kicker')}</span>
+      <h1>{t(lang, 'hero.title')}</h1>
+      <p class="lead">{t(lang, 'hero.sub')}</p>
+      <div class="hero-actions">
+        <a href={localizePath(lang, '/tours/')} class="btn btn-primary">{t(lang, 'hero.cta')}</a>
+        <a href={waLink(lang)} class="btn btn-ghost" target="_blank" rel="noopener">{t(lang, 'hero.cta2')}</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="container trust-inner">
+      {(['trust.1', 'trust.2', 'trust.3', 'trust.4'] as const).map((key) => (
+        <div class="trust-item">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" /></svg>
+          {t(lang, key)}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">{t(lang, 'choose.kicker')}</span>
+        <h2>{t(lang, 'choose.title')}</h2>
+      </div>
+      <div class="choose-grid">
+        <a href={localizePath(lang, '/group-tours/')} class="choose-card" style="--img: url('/images/kolsai-kaindy-lakes.jpg')">
+          <span class="badge">{t(lang, 'choose.group.badge')}</span>
+          <h3>{t(lang, 'choose.group.title')}</h3>
+          <p>{t(lang, 'choose.group.text')}</p>
+          <span class="choose-price">{t(lang, 'choose.group.price')}</span>
+          <span class="choose-go">{t(lang, 'choose.group.cta')} →</span>
+        </a>
+        <a href={localizePath(lang, '/private-tours/')} class="choose-card" style="--img: url('/images/charyn-kolsai-kaindy.jpg')">
+          <span class="badge">{t(lang, 'choose.private.badge')}</span>
+          <h3>{t(lang, 'choose.private.title')}</h3>
+          <p>{t(lang, 'choose.private.text')}</p>
+          <span class="choose-price">{t(lang, 'choose.private.price')}</span>
+          <span class="choose-go">{t(lang, 'choose.private.cta')} →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <h2>{t(lang, 'tours.featured')}</h2>
+        <p>{t(lang, 'tours.featuredSub')}</p>
+      </div>
+      <div class="tour-grid">
+        {featured.map((tour) => <TourCard tour={tour} lang={lang} format="private" />)}
+      </div>
+      <p style="margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap;">
+        <a href={localizePath(lang, '/group-tours/')} class="btn btn-outline">{t(lang, 'choose.group.cta')} →</a>
+        <a href={localizePath(lang, '/private-tours/')} class="btn btn-outline">{t(lang, 'choose.private.cta')} →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="background: #f2efe8;">
+    <div class="container">
+      <div class="section-head">
+        <h2>{t(lang, 'how.title')}</h2>
+      </div>
+      <div class="steps">
+        {([1, 2, 3] as const).map((i) => (
+          <div class="step">
+            <h3>{t(lang, `how.${i}.title` as any)}</h3>
+            <p>{t(lang, `how.${i}.text` as any)}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>{t(lang, 'why.title')}</h2>
+      </div>
+      <div class="why-grid">
+        {([1, 2, 3, 4] as const).map((i) => (
+          <div class="why-item">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2l2.9 6.3 6.6.8-4.9 4.6 1.3 6.6L12 17l-5.9 3.3 1.3-6.6L2.5 9.1l6.6-.8z" /></svg>
+              {t(lang, `why.${i}.title` as any)}
+            </h3>
+            <p>{t(lang, `why.${i}.text` as any)}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: #f2efe8;">
+    <div class="container about-teaser">
+      <div>
+        <span class="kicker">Almatrips</span>
+        <h2>{t(lang, 'about.teaser.title')}</h2>
+        <p style="color: var(--muted);">{t(lang, 'about.teaser.text')}</p>
+        <a href={localizePath(lang, '/about/')} class="btn btn-outline">{t(lang, 'about.teaser.cta')} →</a>
+      </div>
+      <img src="/images/kolsai-kaindy-lakes.jpg" alt={lang === 'en' ? 'Kolsai Lake near Almaty' : 'Озеро Кольсай рядом с Алматы'} loading="lazy" width="640" height="540" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>{t(lang, 'faq.title')}</h2>
+      </div>
+      <div class="faq-list">
+        {faqKeys.map((i) => (
+          <details>
+            <summary>{t(lang, `faq.${i}.q` as any)}</summary>
+            <p>{t(lang, `faq.${i}.a` as any)}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="cta-band" style="--cta-image: url('/images/charyn-canyon.jpg')">
+        <h2>{t(lang, 'cta.title')}</h2>
+        <p>{t(lang, 'cta.sub')}</p>
+        <a href={waLink(lang)} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'cta.btn')}</a>
+      </div>
+    </div>
+  </section>
+</Base>

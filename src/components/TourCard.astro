@@ -1,0 +1,31 @@
+---
+import { t, localizePath, type Lang } from '../i18n/ui';
+import { usdFrom, type Tour } from '../data/tours';
+
+interface Props {
+  tour: Tour;
+  lang: Lang;
+}
+
+const { tour, lang } = Astro.props;
+const c = tour[lang];
+const url = localizePath(lang, `/tours/${tour.slug}/`);
+---
+<article class="tour-card">
+  <a href={url} class="tour-card-media">
+    <img src={tour.image} alt={c.title} loading="lazy" width="640" height="420" />
+    <span class="tour-card-chip">{c.duration}</span>
+  </a>
+  <div class="tour-card-body">
+    <h3><a href={url}>{c.title}</a></h3>
+    <p class="tour-card-teaser">{c.teaser}</p>
+    <div class="tour-card-foot">
+      <div class="price">
+        <small>{t(lang, 'card.perTransport')}</small>
+        <strong>{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸</strong>
+        <span class="kzt">· ≈ ${usdFrom(tour.priceKzt)}</span>
+      </div>
+      <a href={url} class="btn btn-outline">{t(lang, 'card.details')}</a>
+    </div>
+  </div>
+</article>

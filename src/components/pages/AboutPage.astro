@@ -1,0 +1,91 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, localizePath, waLink, type Lang } from '../../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const copy = {
+  en: {
+    lead: 'A small Kazakhstani company that believes the best trips are personal.',
+    p1: 'Almatrips was founded in Almaty by Aknur Anarbekovna — a certified tour guide who has spent more than five years leading travelers through the canyons, alpine lakes and high pastures of the Tian Shan. After years of guiding for other companies, she started Almatrips to do tours the way she always wanted to: small, unhurried and personal.',
+    p2: 'We deliberately keep every tour private — a maximum of three guests per car. No buses, no megaphones, no waiting for strangers at every stop. Your guide adjusts the route, the pace and the photo stops to you, not to a schedule.',
+    p3: 'We are local. We know which road to Kolsai is open after rain, where the light hits the Valley of Castles first, and which yurt on the Assy Plateau serves the best kumys. That knowledge is what you actually book.',
+    stats: [
+      { n: '5+', l: 'years of guiding experience' },
+      { n: '3', l: 'guests maximum per tour' },
+      { n: '7', l: 'signature day tours' },
+    ],
+    valuesTitle: 'What we promise',
+    values: [
+      ['Honesty', 'The price on the site is the price you pay. Park tickets and pickup included, no surprises.'],
+      ['Safety', 'Well-maintained cars, careful mountain driving and routes matched to your fitness and the weather.'],
+      ['Flexibility', 'Sunrise starts, longer lunches, extra photo stops — tell us, and the day is rebuilt around you.'],
+    ],
+    cta: 'Meet us on WhatsApp',
+  },
+  ru: {
+    lead: 'Небольшая казахстанская компания, которая верит: лучшие путешествия — личные.',
+    p1: 'Almatrips основала в Алматы Акнур Анарбековна — сертифицированный гид, которая больше пяти лет водит путешественников по каньонам, горным озёрам и высокогорным пастбищам Тянь-Шаня. После лет работы гидом в других компаниях она создала Almatrips, чтобы делать туры так, как всегда хотела: камерно, неспешно и лично.',
+    p2: 'Мы сознательно держим каждый тур приватным — максимум три гостя в машине. Без автобусов, мегафонов и ожидания чужих людей на каждой остановке. Гид подстраивает маршрут, темп и фотостопы под вас, а не под расписание.',
+    p3: 'Мы местные. Мы знаем, какая дорога на Кольсай открыта после дождя, куда первым падает свет в Долине замков и в какой юрте на плато Ассы самый вкусный кумыс. Именно это знание вы и бронируете.',
+    stats: [
+      { n: '5+', l: 'лет опыта гида' },
+      { n: '3', l: 'гостя максимум в туре' },
+      { n: '7', l: 'фирменных однодневных туров' },
+    ],
+    valuesTitle: 'Что мы обещаем',
+    values: [
+      ['Честность', 'Цена на сайте — это цена, которую вы платите. Билеты в парки и трансфер включены, без сюрпризов.'],
+      ['Безопасность', 'Ухоженные автомобили, аккуратное вождение в горах и маршруты с учётом вашей формы и погоды.'],
+      ['Гибкость', 'Выезд на рассвете, долгий обед, лишний фотостоп — скажите, и день перестроится под вас.'],
+    ],
+    cta: 'Познакомиться в WhatsApp',
+  },
+}[lang];
+---
+<Base
+  lang={lang}
+  title={t(lang, 'meta.about.title')}
+  description={t(lang, 'meta.about.description')}
+  path="/about/"
+>
+  <div class="container page-head">
+    <h1>{t(lang, 'about.title')}</h1>
+    <p class="lead">{copy.lead}</p>
+  </div>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="container about-body">
+      <div>
+        <p>{copy.p1}</p>
+        <p>{copy.p2}</p>
+        <p>{copy.p3}</p>
+        <div class="stat-row">
+          {copy.stats.map((s) => (
+            <div class="stat"><strong>{s.n}</strong><span>{s.l}</span></div>
+          ))}
+        </div>
+        <h2 style="font-size: 1.4rem;">{copy.valuesTitle}</h2>
+        <div class="why-grid" style="margin-top: 20px;">
+          {copy.values.map(([title, text]) => (
+            <div class="why-item">
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          ))}
+        </div>
+        <p style="margin-top: 34px;">
+          <a href={waLink(lang)} class="btn btn-wa" target="_blank" rel="noopener">{copy.cta}</a>
+        </p>
+      </div>
+      <div>
+        <img src="/images/kaindy.jpg" alt={lang === 'en' ? 'Lake Kaindy sunken forest' : 'Затонувший лес озера Каинды'} loading="lazy" width="640" height="480" />
+        <img src="/images/assy-plateau.jpg" alt={lang === 'en' ? 'Assy-Turgen observatory under the Milky Way' : 'Обсерватория Ассы-Тургень под Млечным Путём'} loading="lazy" width="640" height="480" style="margin-top: 22px;" />
+      </div>
+    </div>
+  </section>
+</Base>
