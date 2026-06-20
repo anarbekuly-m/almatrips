@@ -1224,3 +1224,15 @@ p { margin: 0 0 1em; }
   font-size: 0.88rem;
   font-weight: 600;
 }
+
+/* ---------- logo wordmark ---------- */
+.logo-apple { flex: 0 0 auto; }
+.logo-word { letter-spacing: -0.01em; }
+.logo-alma { color: #d81f26; }
+.logo-trips { color: #1a7d3a; }
+/* On the dark footer the wordmark flips to white */
+.site-footer .logo-alma,
+.site-footer .logo-trips { color: #fff; }
+.site-footer .logo-leaf,
+.site-footer .logo-stem { fill: #fff; stroke: #fff; }
+.site-footer .logo-body { fill: #fff; }
