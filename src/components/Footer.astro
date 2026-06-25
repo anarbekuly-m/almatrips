@@ -1,7 +1,6 @@
 ---
 import Logo from './Logo.astro';
-import { t, localizePath, waLink, WHATSAPP_DISPLAY, INSTAGRAM, BRAND, type Lang } from '../i18n/ui';
-import { tours } from '../data/tours';
+import { t, localizePath, waLink, WHATSAPP_DISPLAY, INSTAGRAM, INSTAGRAM_DISPLAY, type Lang } from '../i18n/ui';
 
 interface Props {
   lang: Lang;
@@ -20,25 +19,24 @@ const year = new Date().getFullYear();
       <div>
         <h4>{t(lang, 'footer.tours')}</h4>
         <ul>
+          <li><a href={localizePath(lang, '/tours/')}>{t(lang, 'nav.tours')}</a></li>
           <li><a href={localizePath(lang, '/group-tours/')}>{t(lang, 'nav.group')}</a></li>
           <li><a href={localizePath(lang, '/private-tours/')}>{t(lang, 'nav.private')}</a></li>
-          {tours.map((tour) => (
-            <li><a href={localizePath(lang, `/tours/${tour.slug}/`)}>{tour[lang].title}</a></li>
-          ))}
+          <li><a href={localizePath(lang, '/about/')}>{t(lang, 'nav.about')}</a></li>
+          <li><a href={localizePath(lang, '/contact/')}>{t(lang, 'nav.contact')}</a></li>
         </ul>
       </div>
       <div>
         <h4>{t(lang, 'footer.contact')}</h4>
         <ul>
           <li><a href={waLink(lang)} target="_blank" rel="noopener">WhatsApp · {WHATSAPP_DISPLAY}</a></li>
-          <li><a href={INSTAGRAM} target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href={INSTAGRAM} target="_blank" rel="noopener">Instagram · {INSTAGRAM_DISPLAY}</a></li>
           <li>{t(lang, 'footer.city')}</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© {year} {BRAND}. {t(lang, 'footer.rights')}</span>
-      <a href="/credits/">{t(lang, 'footer.credits')}</a>
+      <span>© {year} Almatrips.kz, {t(lang, 'footer.city')}. {t(lang, 'footer.rights')}</span>
     </div>
   </div>
 </footer>

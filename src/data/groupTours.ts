@@ -759,7 +759,7 @@ export const groupTours: GroupTour[] = [
       teaser: 'Spruce forests and mountain rivers minutes from the city — an easy daily nature reset.',
       intro: [
         'Green Soul is our easiest, everyday escape: the lush Ayusai and Alma-Arasan gorges right on the edge of Almaty, with spruce forest, a clear mountain river and gentle walking trails. No long drive, no hard hiking — just green mountains and fresh air.',
-        'Perfect for a half-day reset, a relaxed morning before a flight, or anyone who wants the Tian Shan without a full-day expedition.',
+        'Perfect for a half-day reset, a relaxed morning before a flight, or anyone who wants the Alatau Mountains without a full-day expedition.',
       ],
       locations: ['Ayusai gorge', 'Alma-Arasan gorge', 'Ile-Alatau National Park'],
       included: ['Round-trip transfer', 'Professional guide', 'National park entrance fees'],
@@ -785,7 +785,7 @@ export const groupTours: GroupTour[] = [
       teaser: 'Еловые леса и горные реки в минутах от города — лёгкая ежедневная перезагрузка на природе.',
       intro: [
         'Green Soul — наш самый лёгкий ежедневный выезд: зелёные ущелья Аюсай и Алма-Арасан прямо на краю Алматы, с еловым лесом, чистой горной рекой и спокойными тропами. Без долгой дороги и тяжёлых походов — только зелёные горы и свежий воздух.',
-        'Идеально для перезагрузки на полдня, спокойного утра перед рейсом или для тех, кто хочет Тянь-Шань без полноценной экспедиции.',
+        'Идеально для перезагрузки на полдня, спокойного утра перед рейсом или для тех, кто хочет в горы Алатау без полноценной экспедиции.',
       ],
       locations: ['Ущелье Аюсай', 'Ущелье Алма-Арасан', 'Иле-Алатауский нацпарк'],
       included: ['Трансфер в обе стороны', 'Профессиональный гид', 'Входные билеты в нацпарк'],

@@ -1,33 +1,31 @@
 ---
 import Base from '../../layouts/Base.astro';
-import TourCard from '../TourCard.astro';
 import { t, localizePath, waLink, type Lang } from '../../i18n/ui';
-import { tours } from '../../data/tours';
 
 interface Props {
   lang: Lang;
 }
 
 const { lang } = Astro.props;
-const featured = tours.filter((tour) => tour.featured);
 
-const faqKeys = [1, 2, 3, 4] as const;
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqKeys.map((i) => ({
-    '@type': 'Question',
-    name: t(lang, `faq.${i}.q` as any),
-    acceptedAnswer: { '@type': 'Answer', text: t(lang, `faq.${i}.a` as any) },
-  })),
-};
+// Popular destinations — format-agnostic. Each card links to both the group
+// and private catalogs so the visitor picks the format, not a fixed price.
+const destinations: { image: string; en: string; ru: string }[] = [
+  { image: '/images/kolsai-kaindy-lakes.jpg', en: 'Kolsai Lakes', ru: 'Озёра Кольсай' },
+  { image: '/images/charyn-canyon.jpg', en: 'Charyn Canyon', ru: 'Чарынский каньон' },
+  { image: '/images/altyn-emel.jpg', en: 'Altyn-Emel', ru: 'Алтын-Эмель' },
+  { image: '/images/issyk-lake.jpg', en: 'Issyk Lake', ru: 'Озеро Иссык' },
+  { image: '/images/assy-plateau.jpg', en: 'Assy Plateau', ru: 'Плато Ассы' },
+  { image: '/images/singing-dunes.jpg', en: 'Singing Dunes', ru: 'Поющий бархан' },
+  { image: '/images/green-soul.jpg', en: 'Almaty Gorges', ru: 'Ущелья Алматы' },
+  { image: '/images/almaty-city-tour.jpg', en: 'City Tour', ru: 'Обзорная по городу' },
+];
 ---
 <Base
   lang={lang}
   title={t(lang, 'meta.home.title')}
   description={t(lang, 'meta.home.description')}
   path="/"
-  schema={[faqSchema]}
 >
   <section class="hero" style="--hero-image: url('/images/hero.jpg')">
     <div class="container hero-inner">
@@ -43,7 +41,7 @@ const faqSchema = {
 
   <div class="trust">
     <div class="container trust-inner">
-      {(['trust.1', 'trust.2', 'trust.3', 'trust.4'] as const).map((key) => (
+      {(['trust.1', 'trust.2', 'trust.3'] as const).map((key) => (
         <div class="trust-item">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" /></svg>
           {t(lang, key)}
@@ -70,7 +68,6 @@ const faqSchema = {
           <span class="badge">{t(lang, 'choose.private.badge')}</span>
           <h3>{t(lang, 'choose.private.title')}</h3>
           <p>{t(lang, 'choose.private.text')}</p>
-          <span class="choose-price">{t(lang, 'choose.private.price')}</span>
           <span class="choose-go">{t(lang, 'choose.private.cta')} →</span>
         </a>
       </div>
@@ -83,8 +80,16 @@ const faqSchema = {
         <h2>{t(lang, 'tours.featured')}</h2>
         <p>{t(lang, 'tours.featuredSub')}</p>
       </div>
-      <div class="tour-grid">
-        {featured.map((tour) => <TourCard tour={tour} lang={lang} format="private" />)}
+      <div class="dest-grid">
+        {destinations.map((d) => (
+          <article class="dest-card" style={`--img: url('${d.image}')`}>
+            <h3>{lang === 'en' ? d.en : d.ru}</h3>
+            <div class="dest-actions">
+              <a href={localizePath(lang, '/group-tours/')} class="btn btn-sm btn-outline">{t(lang, 'dest.seeGroup')}</a>
+              <a href={localizePath(lang, '/private-tours/')} class="btn btn-sm btn-outline">{t(lang, 'dest.seePrivate')}</a>
+            </div>
+          </article>
+        ))}
       </div>
       <p style="margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap;">
         <a href={localizePath(lang, '/group-tours/')} class="btn btn-outline">{t(lang, 'choose.group.cta')} →</a>
@@ -137,22 +142,6 @@ const faqSchema = {
         <a href={localizePath(lang, '/about/')} class="btn btn-outline">{t(lang, 'about.teaser.cta')} →</a>
       </div>
       <img src="/images/kolsai-kaindy-lakes.jpg" alt={lang === 'en' ? 'Kolsai Lake near Almaty' : 'Озеро Кольсай рядом с Алматы'} loading="lazy" width="640" height="540" />
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>{t(lang, 'faq.title')}</h2>
-      </div>
-      <div class="faq-list">
-        {faqKeys.map((i) => (
-          <details>
-            <summary>{t(lang, `faq.${i}.q` as any)}</summary>
-            <p>{t(lang, `faq.${i}.a` as any)}</p>
-          </details>
-        ))}
-      </div>
     </div>
   </section>
 

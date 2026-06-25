@@ -89,7 +89,7 @@ export const tours: Tour[] = [
         'Go at your own pace with just your group — your guide adapts the timing and stops to you, and we match the vehicle to your party size.',
       ],
       highlights: [
-        'Kolsai-1 — emerald alpine lake in the Tian Shan spruce forest',
+        'Kolsai-1 — emerald alpine lake in the Alatau spruce forest',
         'Lake Kaindy and its iconic sunken forest',
         'Black Canyon viewpoint on the way',
         'Private vehicle, hotel pickup and a flexible schedule',
@@ -1063,7 +1063,7 @@ export const tours: Tour[] = [
       ],
       highlights: [
         'The famous turquoise water of Big Almaty Lake at 2,511 m',
-        'Panoramas of Big Almaty Peak (3,681 m) and the Tian Shan',
+        'Panoramas of Big Almaty Peak (3,681 m) and the Trans-Ili Alatau',
         'Scenic mountain road through Ile-Alatau National Park',
         'Perfect half-day trip — fits any schedule',
         'Private vehicle, hotel pickup and drop-off',
@@ -1103,7 +1103,7 @@ export const tours: Tour[] = [
       ],
       highlights: [
         'Знаменитая бирюзовая вода БАО на высоте 2 511 м',
-        'Панорамы пика Большой Алматинский (3 681 м) и Тянь-Шаня',
+        'Панорамы пика Большой Алматинский (3 681 м) и Заилийского Алатау',
         'Живописная горная дорога через Иле-Алатауский нацпарк',
         'Идеальный формат на полдня',
         'Личный автомобиль, трансфер от отеля и обратно',
