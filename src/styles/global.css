@@ -658,6 +658,17 @@ p { margin: 0 0 1em; }
   margin-right: 10px;
 }
 
+.itinerary li.itinerary-day {
+  padding: 0 0 12px 26px;
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.itinerary li.itinerary-day::before { display: none; }
+.itinerary li.itinerary-day:first-of-type { margin-top: 0; }
+
 .incl-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

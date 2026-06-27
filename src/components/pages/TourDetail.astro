@@ -75,7 +75,6 @@ const breadcrumbSchema = {
       <h1>{c.title}</h1>
       <div class="tour-meta-chips">
         <span class="chip">{c.duration}</span>
-        <span class="chip">{c.season}</span>
         <span class="chip">{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸</span>
       </div>
     </div>
@@ -140,10 +139,6 @@ const breadcrumbSchema = {
         <div>
           <dt>{t(lang, 'tour.duration')}</dt>
           <dd>{c.duration}</dd>
-        </div>
-        <div>
-          <dt>{t(lang, 'tour.season')}</dt>
-          <dd>{c.season}</dd>
         </div>
       </dl>
       <a href={waLink(lang, c.title, 'private')} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'tour.book')}</a>

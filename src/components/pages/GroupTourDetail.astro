@@ -11,6 +11,15 @@ interface Props {
 const { lang, tour } = Astro.props;
 const c = tour[lang];
 const path = `/group-tours/${tour.slug}/`;
+
+// Split "День 1 · 08:00" style times into a day heading + time, so multi-day
+// programs show a clean day header instead of cramming it into the time slot.
+const programRows = (c.program ?? []).map((step) => {
+  const m = step.time.match(/^(Day\s*\d+|День\s*\d+)\s*[·•-]\s*(.+)$/);
+  return m
+    ? { day: m[1].trim(), time: m[2].trim(), text: step.text }
+    : { day: null as string | null, time: step.time, text: step.text };
+});
 const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
 
 const tripSchema = {
@@ -99,8 +108,13 @@ const breadcrumbSchema = {
         <>
           <h2>{t(lang, 'gt.program')}</h2>
           <ol class="itinerary">
-            {c.program.map((step) => (
-              <li><time>{step.time}</time>{step.text}</li>
+            {programRows.map((row, i) => (
+              <>
+                {row.day && (i === 0 || row.day !== programRows[i - 1].day) && (
+                  <li class="itinerary-day">{row.day}</li>
+                )}
+                <li><time>{row.time}</time>{row.text}</li>
+              </>
             ))}
           </ol>
         </>
@@ -146,10 +160,6 @@ const breadcrumbSchema = {
         <div>
           <dt>{t(lang, 'tour.duration')}</dt>
           <dd>{c.duration}</dd>
-        </div>
-        <div>
-          <dt>{t(lang, 'tour.season')}</dt>
-          <dd>{c.season}</dd>
         </div>
       </dl>
       <div class="gt-meeting">
