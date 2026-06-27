@@ -1107,59 +1107,7 @@ p { margin: 0 0 1em; }
   color: #fff;
 }
 
-/* ---------- private price table ---------- */
-.price-table-wrap {
-  overflow-x: auto;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  background: var(--card);
-}
-
-.price-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 620px;
-  font-size: 0.95rem;
-}
-
-.price-table thead th {
-  background: #1a5a32;
-  color: #fff;
-  font-weight: 600;
-  text-align: right;
-  padding: 14px 18px;
-  white-space: nowrap;
-}
-
-.price-table thead th.pt-tour {
-  text-align: left;
-}
-
-.price-table tbody td {
-  padding: 13px 18px;
-  text-align: right;
-  border-top: 1px solid var(--line);
-  white-space: nowrap;
-}
-
-.price-table tbody td.pt-tour {
-  text-align: left;
-  font-weight: 600;
-  white-space: normal;
-}
-
-.price-table tbody td.pt-tour a {
-  color: var(--ink);
-}
-
-.price-table tbody td.pt-tour a:hover {
-  color: var(--accent-dark);
-}
-
-.price-table tbody tr:nth-child(even) {
-  background: #f6f4ee;
-}
-
+/* ---------- private note block ---------- */
 .priv-note {
   margin-top: 26px;
   background: #f2efe8;

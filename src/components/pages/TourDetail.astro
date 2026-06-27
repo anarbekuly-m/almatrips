@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
-import { usdFrom, type Tour } from '../../data/tours';
+import { type Tour } from '../../data/tours';
 
 interface Props {
   lang: Lang;
@@ -120,7 +120,7 @@ const breadcrumbSchema = {
     </div>
 
     <aside class="book-card">
-      <div class="price-big">{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸<span class="kzt">≈ ${usdFrom(tour.priceKzt)}</span></div>
+      <div class="price-big">{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸</div>
       <p class="per">{t(lang, 'price.perTransport')}</p>
       <table class="price-table">
         <thead>
@@ -130,7 +130,7 @@ const breadcrumbSchema = {
           {tour.priceBrackets.map((row) => (
             <tr>
               <td>{row.label} {t(lang, 'price.people')}</td>
-              <td>{row.kzt.toLocaleString('ru-RU')} ₸ <span class="kzt">· ≈ ${usdFrom(row.kzt)}</span></td>
+              <td>{row.kzt.toLocaleString('ru-RU')} ₸</td>
             </tr>
           ))}
         </tbody>
