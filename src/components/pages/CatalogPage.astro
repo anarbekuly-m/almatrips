@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import TourCard from '../TourCard.astro';
 import GroupTourCard from '../GroupTourCard.astro';
-import { t, localizePath, type Lang } from '../../i18n/ui';
+import { t, localizePath, waLink, type Lang } from '../../i18n/ui';
 import { privateTours, type TourFormat } from '../../data/tours';
 import { groupTours } from '../../data/groupTours';
 
@@ -40,6 +40,19 @@ const heroImage = isGroup ? '/images/kolsai-kaindy-lakes.jpg' : '/images/charyn-
           ? groupTours.map((tour) => <GroupTourCard tour={tour} lang={lang} />)
           : privateTours.map((tour) => <TourCard tour={tour} lang={lang} />)}
       </div>
+
+      {!isGroup && (
+        <div class="priv-note">
+          <p><strong>{t(lang, 'priv.format')}:</strong> {t(lang, 'priv.formatText')}</p>
+          <ul>
+            <li>{t(lang, 'priv.note1')}</li>
+            <li>{t(lang, 'priv.note2')}</li>
+          </ul>
+          <p>{t(lang, 'priv.contact')}</p>
+          <a href={waLink(lang)} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'nav.whatsapp')}</a>
+        </div>
+      )}
+
       <p style="margin-top: 36px;">
         <a href={localizePath(lang, otherPath)} class="btn btn-outline">{otherLabel} →</a>
       </p>

@@ -1107,6 +1107,71 @@ p { margin: 0 0 1em; }
   color: #fff;
 }
 
+/* ---------- private price table ---------- */
+.price-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--card);
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+  font-size: 0.95rem;
+}
+
+.price-table thead th {
+  background: #1a5a32;
+  color: #fff;
+  font-weight: 600;
+  text-align: right;
+  padding: 14px 18px;
+  white-space: nowrap;
+}
+
+.price-table thead th.pt-tour {
+  text-align: left;
+}
+
+.price-table tbody td {
+  padding: 13px 18px;
+  text-align: right;
+  border-top: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.price-table tbody td.pt-tour {
+  text-align: left;
+  font-weight: 600;
+  white-space: normal;
+}
+
+.price-table tbody td.pt-tour a {
+  color: var(--ink);
+}
+
+.price-table tbody td.pt-tour a:hover {
+  color: var(--accent-dark);
+}
+
+.price-table tbody tr:nth-child(even) {
+  background: #f6f4ee;
+}
+
+.priv-note {
+  margin-top: 26px;
+  background: #f2efe8;
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+
+.priv-note p { margin: 0 0 10px; }
+.priv-note ul { margin: 0 0 14px; padding-left: 20px; }
+.priv-note li { margin-bottom: 6px; color: var(--muted); }
+.priv-note .btn-wa { margin-top: 6px; }
+
 /* ---------- tour detail: dual booking ---------- */
 .book-option {
   border: 1px solid var(--line);
@@ -1297,14 +1362,37 @@ p { margin: 0 0 1em; }
   font-weight: 600;
 }
 
-/* ---------- logo wordmark ---------- */
-.logo-apple { flex: 0 0 auto; }
-.logo-word { letter-spacing: -0.01em; }
-.logo-alma { color: #d81f26; }
-.logo-trips { color: #1a7d3a; }
-/* On the dark footer the wordmark flips to white */
-.site-footer .logo-alma,
-.site-footer .logo-trips { color: #fff; }
-.site-footer .logo-leaf,
-.site-footer .logo-stem { fill: #fff; stroke: #fff; }
-.site-footer .logo-body { fill: #fff; }
+.gt-datelist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gt-datelist p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.gt-datelist strong {
+  color: var(--pine);
+}
+
+.gt-daily {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 18px;
+  border-radius: 999px;
+  background: #f1faf4;
+  border: 1px solid #cfe9d8;
+  color: var(--pine);
+  font-weight: 700;
+}
+
+/* ---------- logo (raster wordmark) ---------- */
+.logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+.site-header .logo-img { height: 32px; }
+.site-footer .logo-img { height: 30px; }

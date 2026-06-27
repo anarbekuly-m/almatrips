@@ -74,8 +74,8 @@ export const tours: Tour[] = [
   {
     slug: 'kolsai-kaindy-black-canyon',
     image: '/images/kaindy.jpg',
-    priceKzt: 74990,
-    priceBrackets: brackets(74990, 104990, 154990, 194990),
+    priceKzt: 109990,
+    priceBrackets: brackets(109990, 129990, 194990, 249990),
     hours: 16,
     featured: true,
     en: {
@@ -160,8 +160,8 @@ export const tours: Tour[] = [
   {
     slug: 'kolsai-charyn-canyons',
     image: '/images/charyn-canyon.jpg',
-    priceKzt: 64990,
-    priceBrackets: brackets(64990, 89990, 129990, 169990),
+    priceKzt: 94990,
+    priceBrackets: brackets(94990, 114990, 179990, 234990),
     hours: 16,
     featured: true,
     en: {
@@ -246,8 +246,8 @@ export const tours: Tour[] = [
   {
     slug: 'kaindy-charyn-canyons',
     image: '/images/charyn-kolsai-kaindy.jpg',
-    priceKzt: 64990,
-    priceBrackets: brackets(64990, 89990, 129990, 169990),
+    priceKzt: 94990,
+    priceBrackets: brackets(94990, 114990, 179990, 234990),
     hours: 16,
     featured: false,
     en: {
@@ -332,8 +332,8 @@ export const tours: Tour[] = [
   {
     slug: 'kolsai-kaindy-three-canyons-2d',
     image: '/images/charyn-kolsai-kaindy.jpg',
-    priceKzt: 149990,
-    priceBrackets: brackets(149990, 209990, 254990, 299990),
+    priceKzt: 189990,
+    priceBrackets: brackets(189990, 239990, 289990, 339990),
     hours: 0,
     featured: true,
     en: {
@@ -422,8 +422,8 @@ export const tours: Tour[] = [
   {
     slug: 'issyk-waterfall',
     image: '/images/issyk-lake.jpg',
-    priceKzt: 59990,
-    priceBrackets: brackets(59990, 79990, 119990, 149990),
+    priceKzt: 79990,
+    priceBrackets: brackets(79990, 99990, 139990, 179990),
     hours: 7,
     featured: false,
     en: {
@@ -508,8 +508,8 @@ export const tours: Tour[] = [
   {
     slug: 'assy-plateau-1day',
     image: '/images/assy-plateau.jpg',
-    priceKzt: 59990,
-    priceBrackets: brackets(59990, 84990, 124990, 159990),
+    priceKzt: 89990,
+    priceBrackets: brackets(89990, 119990, 229990, 289990),
     hours: 11,
     featured: false,
     en: {
@@ -596,8 +596,8 @@ export const tours: Tour[] = [
   {
     slug: 'assy-plateau-2day',
     image: '/images/assy-plateau.jpg',
-    priceKzt: 119990,
-    priceBrackets: brackets(119990, 169990, 249990, 319990),
+    priceKzt: 129990,
+    priceBrackets: brackets(129990, 209990, 359990, 439990),
     hours: 0,
     featured: false,
     en: {
@@ -686,8 +686,8 @@ export const tours: Tour[] = [
   {
     slug: 'singing-dunes',
     image: '/images/singing-dunes.jpg',
-    priceKzt: 79990,
-    priceBrackets: brackets(79990, 119990, 179990, 229990),
+    priceKzt: 119990,
+    priceBrackets: brackets(119990, 159990, 239990, 339990),
     hours: 15,
     featured: false,
     en: {
@@ -772,8 +772,8 @@ export const tours: Tour[] = [
   {
     slug: 'altyn-emel',
     image: '/images/altyn-emel.jpg',
-    priceKzt: 199990,
-    priceBrackets: brackets(199990, 219990, 239990, 259990),
+    priceKzt: 239990,
+    priceBrackets: brackets(239990, 379990, 599990, 889990),
     hours: 0,
     featured: false,
     en: {
@@ -860,8 +860,8 @@ export const tours: Tour[] = [
   {
     slug: 'green-soul',
     image: '/images/green-soul.jpg',
-    priceKzt: 49990,
-    priceBrackets: brackets(49990, 69990, 99990, 129990),
+    priceKzt: 79990,
+    priceBrackets: brackets(79990, 99990, 139990, 179990),
     hours: 5,
     featured: false,
     en: {
@@ -944,8 +944,8 @@ export const tours: Tour[] = [
   {
     slug: 'almaty-city-tour',
     image: '/images/almaty-city-tour.jpg',
-    priceKzt: 39990,
-    priceBrackets: brackets(39990, 54990, 79990, 109990),
+    priceKzt: 99990,
+    priceBrackets: brackets(99990, 139990, 279990, 359990),
     hours: 4,
     featured: false,
     en: {
@@ -1046,8 +1046,8 @@ export const tours: Tour[] = [
   {
     slug: 'big-almaty-lake',
     image: '/images/big-almaty-lake.jpg',
-    priceKzt: 54990,
-    priceBrackets: brackets(54990, 74990, 109990, 139990),
+    priceKzt: 89990,
+    priceBrackets: brackets(89990, 159990, 299990, 499990),
     hours: 5,
     featured: false,
     en: {
@@ -1231,11 +1231,127 @@ export const tours: Tour[] = [
       season: 'Круглый год',
     },
   },
+  {
+    slug: 'ethno-village-huns',
+    image: '/images/almaty-city-tour.jpg',
+    priceKzt: 149990,
+    priceBrackets: brackets(149990, 249990, 0, 0),
+    hours: 8,
+    featured: false,
+    en: {
+      title: 'Ethno Village “Huns”',
+      metaTitle: 'Ethno Village “Huns” Private Tour from Almaty — Qazaq Village',
+      metaDescription:
+        'Private tour from Almaty to the Qazaq Village ethno complex: the “Huns” show, a horse show, nomadic culture, master classes and a traditional lunch. Price per transport.',
+      teaser: 'A private day at the Qazaq Village ethno complex — the “Huns” show, nomadic culture and a traditional lunch.',
+      description: [
+        'A private trip to the Qazaq Village ethno complex near Almaty: a ceremonial welcome in traditional costumes, the “Huns” show, a horse show with national games, master classes and a traditional Kazakh lunch.',
+        'Your own transport and schedule — a relaxed cultural day, ideal for families and first-time visitors to Kazakhstan.',
+      ],
+      highlights: [
+        'The “Huns” show — ceremonial welcome and nomadic lifestyle',
+        'Horse show with trick riding and national games',
+        'Baursak and archery master classes',
+        'Traditional Kazakh lunch and photo zones',
+      ],
+      itinerary: [
+        { time: '09:00', text: 'Pickup / meeting in Almaty' },
+        { time: '11:00', text: '“Huns” show and nomadic culture exhibition' },
+        { time: '12:00', text: 'Horse show and master classes' },
+        { time: '13:00', text: 'Traditional lunch' },
+        { time: '14:30', text: 'Free time and photos with performers' },
+        { time: '16:00', text: 'Return to Almaty' },
+      ],
+      included: [
+        'Private transport, sized to your group',
+        'Entrance ticket to the ethno complex',
+        '“Huns” show and cultural program',
+        'Traditional lunch and master classes',
+      ],
+      notIncluded: ['Horseback riding', 'Additional activities', 'Personal expenses', 'Voluntary insurance'],
+      faq: [
+        {
+          q: 'Is this good for families?',
+          a: 'Yes — it is an easy, interactive cultural day with shows, master classes and lunch, suitable for all ages.',
+        },
+        {
+          q: 'Is there a guide?',
+          a: 'The ethno complex runs its own cultural program; the day is built around the show and activities on site.',
+        },
+      ],
+      duration: 'Full day · ~7 hours',
+      season: 'All year round',
+    },
+    ru: {
+      title: 'Этно-аул «Гунны»',
+      metaTitle: 'Этно-аул «Гунны» — частный тур из Алматы (Qazaq Village)',
+      metaDescription:
+        'Частный тур из Алматы в этно-комплекс Qazaq Village: шоу «Гунны», конное шоу, кочевая культура, мастер-классы и традиционный обед. Цена за транспорт.',
+      teaser: 'Частный день в этно-комплексе Qazaq Village — шоу «Гунны», кочевая культура и традиционный обед.',
+      description: [
+        'Частная поездка в этно-комплекс Qazaq Village рядом с Алматы: торжественная встреча в национальных костюмах, шоу «Гунны», конное шоу с национальными играми, мастер-классы и традиционный казахский обед.',
+        'Свой транспорт и график — спокойный культурный день, отлично подходит семьям и тем, кто впервые в Казахстане.',
+      ],
+      highlights: [
+        'Шоу «Гунны» — встреча и кочевой уклад',
+        'Конное шоу с трюками и национальными играми',
+        'Мастер-классы по баурсакам и стрельбе из лука',
+        'Традиционный казахский обед и фотозоны',
+      ],
+      itinerary: [
+        { time: '09:00', text: 'Встреча / выезд в Алматы' },
+        { time: '11:00', text: 'Шоу «Гунны» и выставка кочевой культуры' },
+        { time: '12:00', text: 'Конное шоу и мастер-классы' },
+        { time: '13:00', text: 'Традиционный обед' },
+        { time: '14:30', text: 'Свободное время и фото с артистами' },
+        { time: '16:00', text: 'Возвращение в Алматы' },
+      ],
+      included: [
+        'Личный транспорт под размер группы',
+        'Входной билет в этно-комплекс',
+        'Шоу «Гунны» и культурная программа',
+        'Традиционный обед и мастер-классы',
+      ],
+      notIncluded: ['Катание на лошадях', 'Дополнительные активности', 'Личные расходы', 'Добровольная страховка'],
+      faq: [
+        {
+          q: 'Подойдёт ли семьям?',
+          a: 'Да — это лёгкий интерактивный культурный день с шоу, мастер-классами и обедом, подходит любому возрасту.',
+        },
+        {
+          q: 'Есть ли гид?',
+          a: 'Этно-комплекс проводит собственную культурную программу; день строится вокруг шоу и активностей на месте.',
+        },
+      ],
+      duration: 'Полный день · ~7 часов',
+      season: 'Круглый год',
+    },
+  },
 ];
 
 export function getTour(slug: string): Tour | undefined {
   return tours.find((t) => t.slug === slug);
 }
 
-/** All tours are available privately. */
-export const privateTours: Tour[] = tours;
+/**
+ * Private tour catalog, in the order of the WhatsApp price table.
+ * Prices are per private transport, by group-size bracket (a bracket of 0 = not offered, shown as “—”).
+ */
+const privateOrder = [
+  'almaty-city-tour',
+  'ethno-village-huns',
+  'big-almaty-lake',
+  'kolsai-kaindy-black-canyon',
+  'kolsai-charyn-canyons',
+  'kaindy-charyn-canyons',
+  'kolsai-kaindy-three-canyons-2d',
+  'issyk-waterfall',
+  'assy-plateau-1day',
+  'assy-plateau-2day',
+  'singing-dunes',
+  'altyn-emel',
+  'green-soul',
+];
+export const privateTours: Tour[] = privateOrder
+  .map((slug) => tours.find((t) => t.slug === slug))
+  .filter((t): t is Tour => Boolean(t));

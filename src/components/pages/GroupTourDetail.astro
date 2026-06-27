@@ -13,8 +13,6 @@ const c = tour[lang];
 const path = `/group-tours/${tour.slug}/`;
 const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
 
-const weekdayLabel = (key: string) => t(lang, `wd.${key}` as any);
-
 const tripSchema = {
   '@context': 'https://schema.org',
   '@type': 'TouristTrip',
@@ -86,13 +84,16 @@ const breadcrumbSchema = {
         {c.locations.map((loc) => <li>{loc}</li>)}
       </ul>
 
-      <h2>{t(lang, 'gt.departures')}</h2>
-      {tour.weekdays.length > 0 && (
-        <div class="gt-weekdays">
-          {tour.weekdays.map((d) => <span>{weekdayLabel(d)}</span>)}
+      <h2>{t(lang, 'gt.dates')}</h2>
+      {tour.daily ? (
+        <p class="gt-daily">{t(lang, 'gt.daily')}</p>
+      ) : tour.dates && (
+        <div class="gt-datelist">
+          {tour.dates.map((m) => (
+            <p><strong>{t(lang, `month.${m.month}` as any)}:</strong> {m.days.join(', ')}</p>
+          ))}
         </div>
       )}
-      {tour.departureNote && <p style="color: var(--muted); margin-top: 12px;">{tour.departureNote[lang]}</p>}
 
       {c.program && (
         <>
