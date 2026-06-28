@@ -1531,11 +1531,12 @@ p { margin: 0 0 1em; }
   position: fixed;
   top: 0;
   left: 0;
-  height: 3px;
+  height: 6px;
   width: 0;
   z-index: 200;
   background: linear-gradient(90deg, #d81f26 0%, #e8612a 45%, #1a7d3a 100%);
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
   transition: width 0.08s linear;
   pointer-events: none;
 }
