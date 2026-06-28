@@ -331,7 +331,7 @@ export const tours: Tour[] = [
   },
   {
     slug: 'kolsai-kaindy-three-canyons-2d',
-    image: '/images/charyn-kolsai-kaindy.jpg',
+    image: '/images/kolsai-kaindy-lakes.jpg',
     priceKzt: 189990,
     priceBrackets: brackets(189990, 239990, 289990, 339990),
     hours: 0,
@@ -1233,7 +1233,7 @@ export const tours: Tour[] = [
   },
   {
     slug: 'ethno-village-huns',
-    image: '/images/almaty-city-tour.jpg',
+    image: '/images/medeu.jpg',
     priceKzt: 149990,
     priceBrackets: brackets(149990, 249990, 0, 0),
     hours: 8,

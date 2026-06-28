@@ -27,7 +27,7 @@ const agencySchema = {
   '@type': 'TravelAgency',
   name: BRAND,
   url: site,
-  telephone: '+77771502025',
+  telephone: '+77776256625',
   image: site + image,
   address: {
     '@type': 'PostalAddress',
@@ -51,7 +51,7 @@ const allSchema = [agencySchema, ...schema];
     <link rel="alternate" hreflang="en" href={enUrl} />
     <link rel="alternate" hreflang="ru" href={ruUrl} />
     <link rel="alternate" hreflang="x-default" href={enUrl} />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
@@ -76,11 +76,27 @@ const allSchema = [agencySchema, ...schema];
     ))}
   </head>
   <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <Header lang={lang} path={path} />
     <main>
       <slot />
     </main>
     <Footer lang={lang} />
     <WhatsAppFloat lang={lang} />
+    <script is:inline>
+      (() => {
+        const bar = document.getElementById('scroll-progress');
+        if (!bar) return;
+        const update = () => {
+          const h = document.documentElement;
+          const max = h.scrollHeight - h.clientHeight;
+          const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+          bar.style.width = pct + '%';
+        };
+        update();
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update, { passive: true });
+      })();
+    </script>
   </body>
 </html>

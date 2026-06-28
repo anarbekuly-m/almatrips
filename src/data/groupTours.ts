@@ -65,7 +65,7 @@ const pregnantRu = 'Беременным рекомендуется участв
 export const groupTours: GroupTour[] = [
   {
     slug: 'city-tour',
-    image: '/images/medeu.jpg',
+    image: '/images/shymbulak-medeu.jpg',
     emoji: '🏙️',
     priceKzt: 19990,
     dates: [
@@ -263,7 +263,7 @@ export const groupTours: GroupTour[] = [
   },
   {
     slug: 'horseback-riding',
-    image: '/images/assy-plateau.jpg',
+    image: '/images/hero.jpg',
     emoji: '🐎',
     priceKzt: 16990,
     daily: true,
@@ -439,7 +439,7 @@ export const groupTours: GroupTour[] = [
   },
   {
     slug: 'drive-tour',
-    image: '/images/charyn-canyon.jpg',
+    image: '/images/kolsai-kaindy-lakes.jpg',
     emoji: '⚡️',
     priceKzt: 12990,
     dates: [

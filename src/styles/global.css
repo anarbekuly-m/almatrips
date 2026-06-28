@@ -1355,3 +1355,17 @@ p { margin: 0 0 1em; }
 }
 .site-header .logo-img { height: 32px; }
 .site-footer .logo-img { height: 30px; }
+
+/* ---------- scroll progress bar ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  z-index: 200;
+  background: linear-gradient(90deg, #d81f26 0%, #e8612a 45%, #1a7d3a 100%);
+  border-radius: 0 2px 2px 0;
+  transition: width 0.08s linear;
+  pointer-events: none;
+}

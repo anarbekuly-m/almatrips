@@ -21,7 +21,6 @@ const url = localizePath(lang, `/tours/${tour.slug}/`);
     <p class="tour-card-teaser">{c.teaser}</p>
     <div class="tour-card-foot">
       <div class="price">
-        <small>{t(lang, 'card.perTransport')}</small>
         <strong>{t(lang, 'gt.from')} {tour.priceKzt.toLocaleString('ru-RU')} ₸</strong>
       </div>
       <a href={url} class="btn btn-outline">{t(lang, 'card.details')}</a>
