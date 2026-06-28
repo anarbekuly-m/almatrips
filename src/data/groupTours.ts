@@ -32,6 +32,8 @@ export interface GroupTourContent {
 export interface GroupTour {
   slug: string;
   image: string;
+  /** Optional extra photos for the slider. The cover `image` is always shown first. */
+  gallery?: string[];
   emoji: string;
   /** per person, tenge */
   priceKzt: number;

@@ -1,6 +1,7 @@
 ---
 import { t, localizePath, type Lang } from '../i18n/ui';
 import { type Tour } from '../data/tours';
+import Slider from './Slider.astro';
 
 interface Props {
   tour: Tour;
@@ -10,12 +11,10 @@ interface Props {
 const { tour, lang } = Astro.props;
 const c = tour[lang];
 const url = localizePath(lang, `/tours/${tour.slug}/`);
+const images = tour.gallery?.length ? tour.gallery : [tour.image];
 ---
 <article class="tour-card">
-  <a href={url} class="tour-card-media">
-    <img src={tour.image} alt={c.title} loading="lazy" width="640" height="420" />
-    <span class="tour-card-chip">{c.duration}</span>
-  </a>
+  <Slider images={images} alt={c.title} href={url} chip={c.duration} class="tour-card-media" />
   <div class="tour-card-body">
     <h3><a href={url}>{c.title}</a></h3>
     <p class="tour-card-teaser">{c.teaser}</p>

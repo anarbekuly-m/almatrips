@@ -29,6 +29,8 @@ export interface PriceBracket {
 export interface Tour {
   slug: string;
   image: string;
+  /** Optional extra photos for the slider. The cover `image` is always shown first. */
+  gallery?: string[];
   /** "from" price — the cheapest bracket (1–4 guests). */
   priceKzt: number;
   /** Per-transport price brackets by group size. */

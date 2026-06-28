@@ -1,0 +1,74 @@
+---
+// Swipeable photo slider. Degrades to a single static image when only one
+// image is passed (no arrows/dots), so tours without a gallery look unchanged.
+interface Props {
+  images: string[];
+  alt: string;
+  /** When set, each slide links here (used on tour cards). */
+  href?: string;
+  /** Optional chip overlaid on the top-left (duration / tagline on cards). */
+  chip?: string;
+  /** Extra class on the root, e.g. "tour-card-media" or "tour-hero-media". */
+  class?: string;
+}
+const { images, alt, href, chip, class: klass = '' } = Astro.props;
+const multi = images.length > 1;
+---
+<div class:list={['slider', klass]} data-slider={multi ? '' : null}>
+  <div class="slider-track">
+    {images.map((src, i) =>
+      href ? (
+        <a href={href} class="slider-slide" aria-label={alt}>
+          <img src={src} alt={i === 0 ? alt : `${alt} — ${i + 1}`} loading="lazy" width="640" height="420" />
+        </a>
+      ) : (
+        <div class="slider-slide">
+          <img src={src} alt={i === 0 ? alt : `${alt} — ${i + 1}`} loading="lazy" width="1280" height="720" />
+        </div>
+      )
+    )}
+  </div>
+
+  {chip && <span class="tour-card-chip">{chip}</span>}
+
+  {multi && (
+    <>
+      <button type="button" class="slider-btn prev" aria-label="Previous photo">‹</button>
+      <button type="button" class="slider-btn next" aria-label="Next photo">›</button>
+      <div class="slider-dots">
+        {images.map((_, i) => <span class:list={['dot', i === 0 && 'active']} />)}
+      </div>
+    </>
+  )}
+</div>
+
+<script>
+  // Initialises every slider on the page once. Bundled & deduped by Astro.
+  function initSliders() {
+    document.querySelectorAll('[data-slider]').forEach((s) => {
+      if ((s as any)._init) return;
+      (s as any)._init = true;
+      const track = s.querySelector('.slider-track') as HTMLElement | null;
+      const slides = s.querySelectorAll('.slider-slide');
+      if (!track || slides.length < 2) return;
+      const dots = Array.from(s.querySelectorAll('.slider-dots .dot'));
+      const index = () => Math.round(track.scrollLeft / track.clientWidth);
+      const go = (i: number) => {
+        const clamped = Math.max(0, Math.min(slides.length - 1, i));
+        track.scrollTo({ left: clamped * track.clientWidth, behavior: 'smooth' });
+      };
+      const prev = s.querySelector('.slider-btn.prev');
+      const next = s.querySelector('.slider-btn.next');
+      prev?.addEventListener('click', (e) => { e.preventDefault(); track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' }); });
+      next?.addEventListener('click', (e) => { e.preventDefault(); track.scrollBy({ left: track.clientWidth, behavior: 'smooth' }); });
+      dots.forEach((d, j) => d.addEventListener('click', (e) => { e.preventDefault(); go(j); }));
+      const sync = () => {
+        const i = index();
+        dots.forEach((d, j) => d.classList.toggle('active', j === i));
+      };
+      track.addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+    });
+  }
+  initSliders();
+  document.addEventListener('astro:after-swap', initSliders);
+</script>

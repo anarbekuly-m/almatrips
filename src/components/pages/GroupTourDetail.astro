@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Slider from '../Slider.astro';
 import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
 import type { GroupTour } from '../../data/groupTours';
 
@@ -11,6 +12,8 @@ interface Props {
 const { lang, tour } = Astro.props;
 const c = tour[lang];
 const path = `/group-tours/${tour.slug}/`;
+
+const images = tour.gallery?.length ? tour.gallery : [tour.image];
 
 // Split "День 1 · 08:00" style times into a day heading + time, so multi-day
 // programs show a clean day header instead of cramming it into the time slot.
@@ -69,7 +72,9 @@ const breadcrumbSchema = {
   image={tour.image}
   schema={[tripSchema, breadcrumbSchema]}
 >
-  <section class="tour-hero" style={`--hero-image: url('${tour.image}')`}>
+  <section class="tour-hero">
+    <Slider images={images} alt={c.name} class="tour-hero-media" />
+    <div class="tour-hero-scrim" aria-hidden="true"></div>
     <div class="container tour-hero-inner">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href={localizePath(lang, '/')}>{BRAND}</a><span>/</span>

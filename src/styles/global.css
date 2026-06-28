@@ -541,17 +541,95 @@ p { margin: 0 0 1em; }
   isolation: isolate;
 }
 
-.tour-hero::before {
-  content: '';
+/* full-bleed slider behind the hero (no z-index -> controls can sit on top) */
+.tour-hero-media { position: absolute; inset: 0; }
+.tour-hero-scrim {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(15, 28, 33, 0.2) 0%, rgba(15, 28, 33, 0.75) 100%),
-    var(--hero-image) center / cover no-repeat;
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(15, 28, 33, 0.2) 0%, rgba(15, 28, 33, 0.75) 100%);
 }
 
-.tour-hero-inner { padding-top: 90px; padding-bottom: 46px; max-width: 760px; }
+.tour-hero-inner {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  padding-top: 90px;
+  padding-bottom: 46px;
+  max-width: 760px;
+}
+.tour-hero-inner a { pointer-events: auto; }
+
+/* ---------- photo slider ---------- */
+.slider { position: relative; }
+.slider-track {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+.slider-track::-webkit-scrollbar { display: none; }
+.slider-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  display: block;
+}
+.slider-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(15, 28, 33, 0.5);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.15s ease, background 0.15s ease;
+  backdrop-filter: blur(4px);
+}
+.slider:hover .slider-btn { opacity: 1; }
+.slider-btn:hover { background: rgba(15, 28, 33, 0.75); }
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+.slider-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.slider-dots .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.slider-dots .dot.active { background: #fff; }
+
+@media (hover: none) {
+  .slider-btn { display: none; }
+}
 
 .breadcrumbs {
   font-size: 0.86rem;

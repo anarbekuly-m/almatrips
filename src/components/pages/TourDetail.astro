@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Slider from '../Slider.astro';
 import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
 import { type Tour } from '../../data/tours';
 
@@ -11,6 +12,7 @@ interface Props {
 const { lang, tour } = Astro.props;
 const c = tour[lang];
 const path = `/tours/${tour.slug}/`;
+const images = tour.gallery?.length ? tour.gallery : [tour.image];
 const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
 
 const tripSchema = {
@@ -66,7 +68,9 @@ const breadcrumbSchema = {
   image={tour.image}
   schema={[tripSchema, faqSchema, breadcrumbSchema]}
 >
-  <section class="tour-hero" style={`--hero-image: url('${tour.image}')`}>
+  <section class="tour-hero">
+    <Slider images={images} alt={c.title} class="tour-hero-media" />
+    <div class="tour-hero-scrim" aria-hidden="true"></div>
     <div class="container tour-hero-inner">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href={localizePath(lang, '/')}>{BRAND}</a><span>/</span>
