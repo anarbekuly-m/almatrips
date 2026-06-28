@@ -266,7 +266,7 @@ export const groupTours: GroupTour[] = [
   },
   {
     slug: 'horseback-riding',
-    image: '/images/hero.jpg',
+    image: '/images/big-almaty-lake.jpg',
     emoji: '🐎',
     priceKzt: 16990,
     daily: true,
@@ -538,8 +538,8 @@ export const groupTours: GroupTour[] = [
   },
   {
     slug: 'extreme-tour',
-    image: '/images/charyn-kolsai-kaindy.jpg',
-    gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-canyon.jpg'],
+    image: '/images/charyn-canyon.jpg',
+    gallery: ['/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg'],
     emoji: '🚀',
     priceKzt: 17990,
     dates: [
@@ -649,8 +649,8 @@ export const groupTours: GroupTour[] = [
   },
   {
     slug: 'trio-of-charyn',
-    image: '/images/charyn-canyon.jpg',
-    gallery: ['/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg'],
+    image: '/images/charyn-kolsai-kaindy.jpg',
+    gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/charyn-canyon.jpg'],
     emoji: '🏜️',
     priceKzt: 8990,
     dates: [
@@ -749,7 +749,7 @@ export const groupTours: GroupTour[] = [
       tagline: '1 day · lake & waterfall',
       metaTitle: 'Marmaris Group Tour from Almaty — Issyk Lake & Bear Waterfall',
       metaDescription:
-        'Group day tour from Almaty to the turquoise Issyk Lake and the Bear Waterfall in the Turgen gorge. Per-person price, certified guide, easy walking.',
+        'Group day tour from Almaty to the turquoise Issyk Lake and the Bear Waterfall in the Turgen gorge. Per-person price, experienced guides, easy walking.',
       teaser: 'A turquoise mountain lake and a forest waterfall — an easy, scenic day from Almaty.',
       intro: [
         'A relaxed day in the mountains east of Almaty: the turquoise Issyk Lake and the Bear Waterfall in the green Turgen gorge — beautiful views, fresh air and an easy hike.',
@@ -1107,7 +1107,7 @@ export const groupTours: GroupTour[] = [
   },
   {
     slug: 'assy-plateau-1day',
-    image: '/images/assy-plateau.jpg',
+    image: '/images/hero.jpg',
     emoji: '⛰️',
     priceKzt: 15990,
     dates: [
@@ -1121,7 +1121,7 @@ export const groupTours: GroupTour[] = [
       tagline: '1 day · high plateau',
       metaTitle: 'Assy Plateau Group Day Tour from Almaty — High Mountain Plateau',
       metaDescription:
-        'Group day tour from Almaty to the Assy Plateau — a high mountain plateau with wide open views, green hills and fresh air. Per-person price, certified guide.',
+        'Group day tour from Almaty to the Assy Plateau — a high mountain plateau with wide open views, green hills and fresh air. Per-person price, experienced guides.',
       teaser: 'A high mountain plateau with wide open views, green hills and a true feeling of freedom.',
       intro: [
         'A day trip to the Assy Plateau — a high mountain plateau east of Almaty with sweeping views, green hills and fresh air, far from the city crowds.',

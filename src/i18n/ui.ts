@@ -37,14 +37,14 @@ const en = {
     'Private tours from Almaty: your own transport, a guide and a flexible schedule. Kolsai & Kaindy Lakes, the Charyn canyons, Altyn-Emel and more. Price per transport.',
   'meta.group.title': 'Group Tours from Almaty — Join a Group | Almatrips',
   'meta.group.description':
-    'Affordable group tours from Almaty, priced per person. Kolsai & Kaindy Lakes, the Charyn canyons, Altyn-Emel and more. Certified guide, easy WhatsApp booking.',
+    'Affordable group tours from Almaty, priced per person. Kolsai & Kaindy Lakes, the Charyn canyons, Altyn-Emel and more. Experienced local guides, easy WhatsApp booking.',
 
   'private.h1': 'Private tours from Almaty',
   'private.lead':
     'Your own transport and your own pace — just your party and a guide. The meeting point or pickup location depends on the selected tour. Price per transport.',
   'group.h1': 'Group tours from Almaty',
   'group.lead':
-    'Join a group of travelers and enjoy the best price. Travel with a certified guide to the region’s most beautiful places. Price per person.',
+    'Join a group of travelers and enjoy the best price. Travel with experienced local guides to the region’s most beautiful places. Price per person.',
 
   'choose.kicker': 'Two ways to travel',
   'choose.title': 'Choose your style',
@@ -64,7 +64,7 @@ const en = {
   'card.perPerson': 'per person',
 
   'book.group.label': 'Group tour',
-  'book.group.note': 'Shared minivan · departs once 2+ guests join · certified guide. Fixed departure days on request.',
+  'book.group.note': 'Shared minivan · departs once 2+ guests join · experienced guide. Fixed departure days on request.',
   'book.private.label': 'Private tour',
   'book.private.note': 'Your own vehicle, sized to your group · hotel pickup · flexible timing.',
   'book.privateOnly': 'This tour runs as a private trip only — too remote to fill a shared group.',
@@ -118,9 +118,9 @@ const en = {
   'hero.cta': 'Browse tours',
   'hero.cta2': 'Chat on WhatsApp',
 
-  'trust.1': 'Certified local guide',
+  'trust.1': 'Experienced local guides',
   'trust.2': '5+ years of experience',
-  'trust.3': 'Private & group tours',
+  'trust.3': 'Private and group tours',
 
   'tours.featured': 'Popular destinations',
   'tours.featuredSub': 'Pick a place you want to see, then choose your format — group or private.',
@@ -143,11 +143,11 @@ const en = {
   'how.3.text': 'You will meet your guide at the meeting point or pickup location, and set off on your tour.',
 
   'why.title': 'Why travel with Almatrips',
-  'why.1.title': 'Group & private tours',
-  'why.1.text': 'Choose the format that fits you — join a group for the best price, or book a private tour for your own pace.',
+  'why.1.title': 'Group or private',
+  'why.1.text': 'Choose the format that fits you. Join a group tour for a better price, or take a private tour at your own pace.',
   'why.2.title': 'Experienced local guides',
-  'why.2.text': 'We work with experienced local guides and drivers who know the region and make every trip safe and comfortable.',
-  'why.3.title': 'Trips for every taste',
+  'why.2.text': 'We work with experienced local guides and drivers who know the region well.',
+  'why.3.title': 'Tours for every travel style',
   'why.3.text': 'Day trips from Almaty, nature and city tours, cultural routes and multi-day journeys across Kazakhstan.',
   'why.4.title': 'Clear and honest',
   'why.4.text': 'We explain each tour’s details before booking, so you always know what to expect. Questions are answered fast on WhatsApp.',
@@ -157,9 +157,9 @@ const en = {
     'Almatrips organizes group and private tours from Almaty to canyons, alpine lakes, mountains, national parks and cultural sites. Our team helps travelers choose the best route for their time, budget and travel style.',
   'about.teaser.cta': 'More about us',
 
-  'cta.title': 'Ready to explore Kazakhstan?',
-  'cta.sub': 'Tell us your dates — we will reply within minutes with a plan.',
-  'cta.btn': 'Plan my trip on WhatsApp',
+  'cta.title': 'Ready to discover Kazakhstan with Almatrips?',
+  'cta.sub': 'Message us on WhatsApp — we will help you choose the tour, date and travel format.',
+  'cta.btn': 'Message us on WhatsApp',
 
   'tour.highlights': 'Highlights',
   'tour.itinerary': 'Itinerary',
@@ -181,7 +181,7 @@ const en = {
   'wa.private': "Hello Almatrips! I'd like a PRIVATE tour: {title}. Date: ___ , guests: ___",
 
   'contact.title': 'Contact us',
-  'contact.sub': 'WhatsApp is the fastest way — we usually reply within minutes.',
+  'contact.sub': 'WhatsApp is the fastest way to get a reply within a few minutes.',
   'contact.formTitle': 'Or send a request',
   'contact.formNote': 'The form opens WhatsApp with your message ready to send.',
   'form.name': 'Your name',
@@ -193,7 +193,7 @@ const en = {
   'form.submit': 'Send via WhatsApp',
 
   'about.title': 'About Almatrips',
-  'footer.tagline': 'Almatrips — group and private tours from Almaty, Kazakhstan. The way travel should feel.',
+  'footer.tagline': 'Almatrips — group and private tours from Almaty, Kazakhstan.',
   'footer.tours': 'Tours',
   'footer.contact': 'Contact',
   'footer.city': 'Almaty, Kazakhstan',
@@ -227,14 +227,14 @@ const ru: typeof en = {
     'Индивидуальные туры из Алматы: личный транспорт, гид и гибкий график. Кольсай и Каинды, каньоны Чарына, Алтын-Эмель и другие. Цена за транспорт.',
   'meta.group.title': 'Групповые туры из Алматы — присоединяйтесь к группе | Almatrips',
   'meta.group.description':
-    'Доступные групповые туры из Алматы по цене за человека. Кольсай и Каинды, каньоны Чарына, Алтын-Эмель и другие. Сертифицированный гид, бронирование в WhatsApp.',
+    'Доступные групповые туры из Алматы по цене за человека. Кольсай и Каинды, каньоны Чарына, Алтын-Эмель и другие. Опытные местные гиды, бронирование в WhatsApp.',
 
   'private.h1': 'Индивидуальные туры из Алматы',
   'private.lead':
     'Личный транспорт и свой темп — только ваша компания и гид. Точка сбора или место выезда зависят от выбранного тура. Цена за транспорт.',
   'group.h1': 'Групповые туры из Алматы',
   'group.lead':
-    'Присоединяйтесь к группе путешественников и получите лучшую цену. Поездка с сертифицированным гидом к самым красивым местам региона. Цена за человека.',
+    'Присоединяйтесь к группе путешественников и получите лучшую цену. Поездка с опытными местными гидами к самым красивым местам региона. Цена за человека.',
 
   'choose.kicker': 'Два способа путешествовать',
   'choose.title': 'Выберите формат',
@@ -254,7 +254,7 @@ const ru: typeof en = {
   'card.perPerson': 'за человека',
 
   'book.group.label': 'Групповой тур',
-  'book.group.note': 'Общий минивэн · выезд при наборе от 2 гостей · сертифицированный гид. Фиксированные дни — по запросу.',
+  'book.group.note': 'Общий минивэн · выезд при наборе от 2 гостей · опытный гид. Фиксированные дни — по запросу.',
   'book.private.label': 'Индивидуальный тур',
   'book.private.note': 'Личный автомобиль под размер группы · трансфер от отеля · гибкий график.',
   'book.privateOnly': 'Этот тур проводится только индивидуально — слишком удалён, чтобы собрать общую группу.',
@@ -308,9 +308,9 @@ const ru: typeof en = {
   'hero.cta': 'Смотреть туры',
   'hero.cta2': 'Написать в WhatsApp',
 
-  'trust.1': 'Сертифицированный гид',
+  'trust.1': 'Опытные местные гиды',
   'trust.2': 'Опыт 5+ лет',
-  'trust.3': 'Индивидуально и группой',
+  'trust.3': 'Индивидуальные и групповые туры',
 
   'tours.featured': 'Популярные направления',
   'tours.featuredSub': 'Выберите место, которое хотите увидеть, а затем — формат: групповой или индивидуальный.',
@@ -333,11 +333,11 @@ const ru: typeof en = {
   'how.3.text': 'Вы встречаете гида в точке сбора или месте выезда — и отправляетесь в тур.',
 
   'why.title': 'Почему едут с Almatrips',
-  'why.1.title': 'Группой и индивидуально',
-  'why.1.text': 'Выбирайте формат под себя — присоединяйтесь к группе ради лучшей цены или берите индивидуальный тур в своём темпе.',
+  'why.1.title': 'Группой или индивидуально',
+  'why.1.text': 'Выбирайте формат под себя. Присоединяйтесь к группе ради лучшей цены или берите индивидуальный тур в своём темпе.',
   'why.2.title': 'Опытные местные гиды',
-  'why.2.text': 'Мы работаем с опытными местными гидами и водителями, которые знают регион и делают каждую поездку безопасной и комфортной.',
-  'why.3.title': 'Туры на любой вкус',
+  'why.2.text': 'Мы работаем с опытными местными гидами и водителями, которые хорошо знают регион.',
+  'why.3.title': 'Туры под любой стиль путешествия',
   'why.3.text': 'Однодневные выезды из Алматы, природные и городские туры, культурные маршруты и многодневные путешествия по Казахстану.',
   'why.4.title': 'Понятно и честно',
   'why.4.text': 'Мы объясняем детали каждого тура до брони, чтобы вы знали, чего ожидать. На вопросы быстро отвечаем в WhatsApp.',
@@ -347,9 +347,9 @@ const ru: typeof en = {
     'Almatrips организует групповые и индивидуальные туры из Алматы к каньонам, горным озёрам, горам, нацпаркам и культурным местам. Наша команда помогает выбрать лучший маршрут под ваше время, бюджет и стиль путешествия.',
   'about.teaser.cta': 'Подробнее о нас',
 
-  'cta.title': 'Готовы открыть Казахстан?',
-  'cta.sub': 'Назовите даты — ответим за несколько минут с готовым планом.',
-  'cta.btn': 'Спланировать тур в WhatsApp',
+  'cta.title': 'Готовы открыть Казахстан с Almatrips?',
+  'cta.sub': 'Напишите нам в WhatsApp — поможем выбрать тур, дату и формат поездки.',
+  'cta.btn': 'Написать в WhatsApp',
 
   'tour.highlights': 'Главное в туре',
   'tour.itinerary': 'Программа',
@@ -371,7 +371,7 @@ const ru: typeof en = {
   'wa.private': 'Здравствуйте! Хочу ИНДИВИДУАЛЬНЫЙ тур: «{title}». Дата: ___ , гостей: ___',
 
   'contact.title': 'Связаться с нами',
-  'contact.sub': 'WhatsApp — самый быстрый способ: обычно отвечаем за несколько минут.',
+  'contact.sub': 'WhatsApp — самый быстрый способ получить ответ за несколько минут.',
   'contact.formTitle': 'Или отправьте заявку',
   'contact.formNote': 'Форма откроет WhatsApp с уже готовым сообщением.',
   'form.name': 'Ваше имя',
@@ -383,7 +383,7 @@ const ru: typeof en = {
   'form.submit': 'Отправить в WhatsApp',
 
   'about.title': 'О компании Almatrips',
-  'footer.tagline': 'Almatrips — групповые и индивидуальные туры из Алматы, Казахстан. Такими и должны быть путешествия.',
+  'footer.tagline': 'Almatrips — групповые и индивидуальные туры из Алматы, Казахстан.',
   'footer.tours': 'Туры',
   'footer.contact': 'Контакты',
   'footer.city': 'Алматы, Казахстан',

@@ -1169,7 +1169,15 @@ p { margin: 0 0 1em; }
 .dest-card h3 {
   color: #fff;
   font-size: 1.28rem;
-  margin: 0 0 14px;
+  margin: 0;
+}
+
+.dest-nav {
+  margin-top: 36px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .dest-actions {
@@ -1198,7 +1206,6 @@ p { margin: 0 0 1em; }
 
 /* ---------- private note block ---------- */
 .priv-note {
-  margin-top: 26px;
   background: #f2efe8;
   border-radius: var(--radius);
   padding: 24px 26px;
@@ -1208,6 +1215,55 @@ p { margin: 0 0 1em; }
 .priv-note ul { margin: 0 0 14px; padding-left: 20px; }
 .priv-note li { margin-bottom: 6px; color: var(--muted); }
 .priv-note .btn-wa { margin-top: 6px; }
+
+/* private tours — pricing table */
+.priv-price-wrap {
+  margin-top: 26px;
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--card);
+  -webkit-overflow-scrolling: touch;
+}
+
+.priv-price {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.priv-price thead th {
+  background: #1a5a32;
+  color: #fff;
+  font-weight: 600;
+  text-align: right;
+  padding: 14px 16px;
+  white-space: nowrap;
+}
+.priv-price thead th.pp-tour { text-align: left; }
+
+.priv-price tbody td {
+  padding: 13px 16px;
+  text-align: right;
+  border-top: 1px solid var(--line);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.priv-price tbody td.pp-tour {
+  text-align: left;
+  font-weight: 600;
+  white-space: normal;
+  min-width: 180px;
+}
+.priv-price tbody td.pp-tour a { color: var(--ink); }
+.priv-price tbody td.pp-tour a:hover { color: var(--accent-dark); }
+.priv-price tbody tr:nth-child(even) { background: #f6f4ee; }
+
+.catalog-subhead {
+  margin: 44px 0 22px;
+  font-size: 1.5rem;
+}
 
 /* ---------- tour detail: dual booking ---------- */
 .book-option {

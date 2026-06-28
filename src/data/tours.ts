@@ -85,7 +85,7 @@ export const tours: Tour[] = [
       title: 'Kolsai, Kaindy & Black Canyon',
       metaTitle: 'Kolsai, Kaindy & Black Canyon Private Tour from Almaty',
       metaDescription:
-        'Private day trip from Almaty to Kolsai Lake, the sunken forest of Kaindy and the Black Canyon viewpoint. Your own vehicle, certified guide, hotel pickup.',
+        'Private day trip from Almaty to Kolsai Lake, the sunken forest of Kaindy and the Black Canyon viewpoint. Your own vehicle, experienced guide, hotel pickup.',
       teaser: 'Two alpine lakes and a canyon viewpoint in one private day — Kolsai, Kaindy and the Black Canyon.',
       description: [
         'The classic eastern loop, in private: the emerald Kolsai Lake, the surreal sunken forest of Lake Kaindy and a stop at the Black Canyon viewpoint. A UAZ off-roader handles the rough final road up to Kaindy.',
@@ -437,7 +437,7 @@ export const tours: Tour[] = [
       title: 'Issyk Lake & Waterfall',
       metaTitle: 'Issyk Lake & Bear Waterfall Private Tour from Almaty',
       metaDescription:
-        'Private half-day tour from Almaty to the turquoise Lake Issyk and the Bear Waterfall in the Turgen gorge. Your own vehicle, certified guide, hotel pickup.',
+        'Private half-day tour from Almaty to the turquoise Lake Issyk and the Bear Waterfall in the Turgen gorge. Your own vehicle, experienced guide, hotel pickup.',
       teaser: 'A turquoise mountain lake and a forest waterfall — an easy private escape close to Almaty.',
       description: [
         'Lake Issyk sits in a spruce gorge an hour east of Almaty, a calm turquoise mirror ringed by mountains. We pair it with the Bear Waterfall in the green Turgen gorge — a short forest walk to a cool cascade.',
@@ -702,7 +702,7 @@ export const tours: Tour[] = [
       title: 'Singing Dunes',
       metaTitle: 'Singing Dune Private Tour from Almaty — Altyn-Emel National Park',
       metaDescription:
-        'Private day tour from Almaty to the Singing Dune of Altyn-Emel National Park — a 150 m dune that hums in the wind. Your own vehicle and certified guide.',
+        'Private day tour from Almaty to the Singing Dune of Altyn-Emel National Park — a 150 m dune that hums in the wind. Your own vehicle and experienced guide.',
       teaser: 'A 150-metre sand dune that hums and sings in the wind, alone in the desert of Altyn-Emel.',
       description: [
         'The Singing Dune (Aygaiqum) rises about 150 m from the desert floor of Altyn-Emel National Park, between the Ili River and the Aktau mountains. In dry, windy weather the shifting sand produces a deep, organ-like hum.',
@@ -799,7 +799,7 @@ export const tours: Tour[] = [
         'The striped Aktau "White Mountains"',
         'The Katutau volcanic rocks',
         'The Singing Dune and the Ili valley',
-        'Private 4x4 where needed and a certified guide',
+        'Private 4x4 where needed and a experienced guide',
       ],
       itinerary: [
         { time: 'Day 1', text: 'Drive to the park, Singing Dune and Ili valley, overnight' },
@@ -839,7 +839,7 @@ export const tours: Tour[] = [
         'Полосатые «Белые горы» Актау',
         'Вулканические скалы Катутау',
         'Поющий бархан и долина Или',
-        'Личный внедорожник где нужно и сертифицированный гид',
+        'Личный внедорожник где нужно и опытный гид',
       ],
       itinerary: [
         { time: 'День 1', text: 'Дорога в парк, Поющий бархан и долина Или, ночёвка' },
@@ -1065,7 +1065,7 @@ export const tours: Tour[] = [
       title: 'Big Almaty Lake',
       metaTitle: 'Big Almaty Lake Tour — Private Half-Day Trip from Almaty',
       metaDescription:
-        'Private half-day tour to Big Almaty Lake (BAO) at 2,511 m — the turquoise mountain lake an hour from Almaty. Your own vehicle, hotel pickup, certified guide.',
+        'Private half-day tour to Big Almaty Lake (BAO) at 2,511 m — the turquoise mountain lake an hour from Almaty. Your own vehicle, hotel pickup, experienced guide.',
       teaser: 'A turquoise alpine lake at 2,511 m, framed by 4,000-meter peaks — only an hour from the city.',
       description: [
         'Big Almaty Lake (BAO) is the closest "wow" to Almaty: a glacial lake at 2,511 m whose color shifts from turquoise to milky jade, surrounded by peaks over 4,000 m.',

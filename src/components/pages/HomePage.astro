@@ -84,17 +84,13 @@ const destinations: { image: string; en: string; ru: string }[] = [
         {destinations.map((d) => (
           <article class="dest-card" style={`--img: url('${d.image}')`}>
             <h3>{lang === 'en' ? d.en : d.ru}</h3>
-            <div class="dest-actions">
-              <a href={localizePath(lang, '/group-tours/')} class="btn btn-sm btn-outline">{t(lang, 'dest.seeGroup')}</a>
-              <a href={localizePath(lang, '/private-tours/')} class="btn btn-sm btn-outline">{t(lang, 'dest.seePrivate')}</a>
-            </div>
           </article>
         ))}
       </div>
-      <p style="margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap;">
-        <a href={localizePath(lang, '/group-tours/')} class="btn btn-outline">{t(lang, 'choose.group.cta')} →</a>
+      <div class="dest-nav">
+        <a href={localizePath(lang, '/group-tours/')} class="btn btn-primary">{t(lang, 'choose.group.cta')} →</a>
         <a href={localizePath(lang, '/private-tours/')} class="btn btn-outline">{t(lang, 'choose.private.cta')} →</a>
-      </p>
+      </div>
     </div>
   </section>
 

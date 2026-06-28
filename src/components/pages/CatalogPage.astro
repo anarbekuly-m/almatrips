@@ -23,6 +23,9 @@ const metaTitle = isGroup ? t(lang, 'meta.group.title') : t(lang, 'meta.private.
 const metaDesc = isGroup ? t(lang, 'meta.group.description') : t(lang, 'meta.private.description');
 const otherLabel = isGroup ? t(lang, 'choose.private.cta') : t(lang, 'choose.group.cta');
 const heroImage = isGroup ? '/images/kolsai-kaindy-lakes.jpg' : '/images/charyn-canyon.jpg';
+
+const pax = t(lang, 'priv.pax');
+const fmtPrice = (kzt: number) => (kzt > 0 ? `${kzt.toLocaleString('ru-RU')} ₸` : '—');
 ---
 <Base lang={lang} title={metaTitle} description={metaDesc} path={path} image={heroImage}>
   <div class="container page-head">
@@ -35,23 +38,51 @@ const heroImage = isGroup ? '/images/kolsai-kaindy-lakes.jpg' : '/images/charyn-
   </div>
   <section class="section" style="padding-top: 36px;">
     <div class="container">
+      {!isGroup && (
+        <>
+          <div class="priv-note">
+            <p><strong>{t(lang, 'priv.format')}:</strong> {t(lang, 'priv.formatText')}</p>
+            <ul>
+              <li>{t(lang, 'priv.note1')}</li>
+              <li>{t(lang, 'priv.note2')}</li>
+            </ul>
+            <p>{t(lang, 'priv.contact')}</p>
+            <a href={waLink(lang)} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'nav.whatsapp')}</a>
+          </div>
+
+          <div class="priv-price-wrap">
+            <table class="priv-price">
+              <thead>
+                <tr>
+                  <th class="pp-tour">{t(lang, 'priv.tour')}</th>
+                  <th>1–4 {pax}</th>
+                  <th>5–7 {pax}</th>
+                  <th>8–14 {pax}</th>
+                  <th>15–18 {pax}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {privateTours.map((tour) => (
+                  <tr>
+                    <td class="pp-tour">
+                      <a href={localizePath(lang, `/tours/${tour.slug}/`)}>{tour[lang].title}</a>
+                    </td>
+                    {tour.priceBrackets.map((b) => <td>{fmtPrice(b.kzt)}</td>)}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="catalog-subhead">{t(lang, 'tours.viewAll')}</h2>
+        </>
+      )}
+
       <div class="tour-grid">
         {isGroup
           ? groupTours.map((tour) => <GroupTourCard tour={tour} lang={lang} />)
           : privateTours.map((tour) => <TourCard tour={tour} lang={lang} />)}
       </div>
-
-      {!isGroup && (
-        <div class="priv-note">
-          <p><strong>{t(lang, 'priv.format')}:</strong> {t(lang, 'priv.formatText')}</p>
-          <ul>
-            <li>{t(lang, 'priv.note1')}</li>
-            <li>{t(lang, 'priv.note2')}</li>
-          </ul>
-          <p>{t(lang, 'priv.contact')}</p>
-          <a href={waLink(lang)} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'nav.whatsapp')}</a>
-        </div>
-      )}
 
       <p style="margin-top: 36px;">
         <a href={localizePath(lang, otherPath)} class="btn btn-outline">{otherLabel} →</a>
