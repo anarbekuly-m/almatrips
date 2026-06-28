@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { t, waLink, WHATSAPP_NUMBER, WHATSAPP_DISPLAY, INSTAGRAM, type Lang } from '../../i18n/ui';
+import { t, waLink, WHATSAPP_NUMBER, WHATSAPP_DISPLAY, INSTAGRAM, INSTAGRAM_DISPLAY, type Lang } from '../../i18n/ui';
 import { tours } from '../../data/tours';
 
 interface Props {
@@ -30,7 +30,7 @@ const { lang } = Astro.props;
         </div>
         <div class="contact-card">
           <h3>Instagram</h3>
-          <p style="color: var(--muted); font-size: 0.95rem;">@almatrips</p>
+          <p style="color: var(--muted); font-size: 0.95rem;">{INSTAGRAM_DISPLAY}</p>
           <a href={INSTAGRAM} class="btn btn-outline" target="_blank" rel="noopener">Instagram →</a>
         </div>
       </div>

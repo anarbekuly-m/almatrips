@@ -5,8 +5,8 @@ export default defineConfig({
   site: 'https://almatrips.kz',
   integrations: [sitemap()],
   redirects: {
-    '/tours': '/private-tours',
-    '/ru/tours': '/ru/private-tours',
+    '/tours': '/group-tours',
+    '/ru/tours': '/ru/group-tours',
   },
   i18n: {
     defaultLocale: 'en',
