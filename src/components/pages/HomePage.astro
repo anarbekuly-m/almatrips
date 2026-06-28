@@ -8,17 +8,18 @@ interface Props {
 
 const { lang } = Astro.props;
 
-// Popular destinations — format-agnostic. Each card links to both the group
-// and private catalogs so the visitor picks the format, not a fixed price.
-const destinations: { image: string; en: string; ru: string }[] = [
-  { image: '/images/kolsai-kaindy-lakes.jpg', en: 'Kolsai Lakes', ru: 'Озёра Кольсай' },
-  { image: '/images/charyn-canyon.jpg', en: 'Charyn Canyon', ru: 'Чарынский каньон' },
-  { image: '/images/altyn-emel.jpg', en: 'Altyn-Emel', ru: 'Алтын-Эмель' },
-  { image: '/images/issyk-lake.jpg', en: 'Issyk Lake', ru: 'Озеро Иссык' },
-  { image: '/images/assy-plateau.jpg', en: 'Assy Plateau', ru: 'Плато Ассы' },
-  { image: '/images/singing-dunes.jpg', en: 'Singing Dunes', ru: 'Поющий бархан' },
-  { image: '/images/green-soul.jpg', en: 'Almaty Gorges', ru: 'Ущелья Алматы' },
-  { image: '/images/almaty-city-tour.jpg', en: 'City Tour', ru: 'Обзорная по городу' },
+// Popular destinations. On hover (or tap on mobile) each card reveals two
+// links that jump straight to the matching tour in that format —
+// `group` is a /group-tours/<slug>/ page, `private` a /tours/<slug>/ page.
+const destinations: { image: string; en: string; ru: string; group: string; private: string }[] = [
+  { image: '/images/kolsai-kaindy-lakes.jpg', en: 'Kolsai Lakes', ru: 'Озёра Кольсай', group: 'lite-tour', private: 'kolsai-kaindy-black-canyon' },
+  { image: '/images/charyn-canyon.jpg', en: 'Charyn Canyon', ru: 'Чарынский каньон', group: 'trio-of-charyn', private: 'kolsai-charyn-canyons' },
+  { image: '/images/altyn-emel.jpg', en: 'Altyn-Emel', ru: 'Алтын-Эмель', group: 'treasures-altyn-emel', private: 'altyn-emel' },
+  { image: '/images/issyk-lake.jpg', en: 'Issyk Lake', ru: 'Озеро Иссык', group: 'marmaris-issyk', private: 'issyk-waterfall' },
+  { image: '/images/assy-plateau.jpg', en: 'Assy Plateau', ru: 'Плато Ассы', group: 'assy-plateau-1day', private: 'assy-plateau-1day' },
+  { image: '/images/singing-dunes.jpg', en: 'Singing Dunes', ru: 'Поющий бархан', group: 'singing-dunes', private: 'singing-dunes' },
+  { image: '/images/green-soul.jpg', en: 'Almaty Gorges', ru: 'Ущелья Алматы', group: 'ayusai-alma-arasan', private: 'green-soul' },
+  { image: '/images/almaty-city-tour.jpg', en: 'City Tour', ru: 'Обзорная по городу', group: 'city-tour', private: 'almaty-city-tour' },
 ];
 ---
 <Base
@@ -84,6 +85,10 @@ const destinations: { image: string; en: string; ru: string }[] = [
         {destinations.map((d) => (
           <article class="dest-card" style={`--img: url('${d.image}')`}>
             <h3>{lang === 'en' ? d.en : d.ru}</h3>
+            <div class="dest-hover">
+              <a href={localizePath(lang, `/group-tours/${d.group}/`)} class="btn">{t(lang, 'dest.seeGroup')}</a>
+              <a href={localizePath(lang, `/tours/${d.private}/`)} class="btn">{t(lang, 'dest.seePrivate')}</a>
+            </div>
           </article>
         ))}
       </div>

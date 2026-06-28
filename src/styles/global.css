@@ -1180,6 +1180,42 @@ p { margin: 0 0 1em; }
   justify-content: center;
 }
 
+/* hover reveal: pick the format right on the destination card */
+.dest-hover {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.dest-card:hover .dest-hover,
+.dest-card:focus-within .dest-hover {
+  opacity: 1;
+  transform: none;
+}
+.dest-hover .btn {
+  padding: 8px 15px;
+  font-size: 0.82rem;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+.dest-hover .btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #fff;
+  color: #fff;
+}
+/* deepen the photo overlay on hover so the buttons read clearly */
+.dest-card:hover::before { filter: brightness(0.82); }
+
+/* touch devices have no hover — always show the options */
+@media (hover: none) {
+  .dest-hover { opacity: 1; transform: none; }
+}
+
 .dest-actions {
   display: flex;
   flex-wrap: wrap;
