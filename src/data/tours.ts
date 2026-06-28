@@ -76,6 +76,7 @@ export const tours: Tour[] = [
   {
     slug: 'kolsai-kaindy-black-canyon',
     image: '/images/kaindy.jpg',
+    gallery: ['/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     priceKzt: 109990,
     priceBrackets: brackets(109990, 129990, 194990, 249990),
     hours: 16,
@@ -162,6 +163,7 @@ export const tours: Tour[] = [
   {
     slug: 'kolsai-charyn-canyons',
     image: '/images/charyn-canyon.jpg',
+    gallery: ['/images/charyn-canyon.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     priceKzt: 94990,
     priceBrackets: brackets(94990, 114990, 179990, 234990),
     hours: 16,
@@ -248,6 +250,7 @@ export const tours: Tour[] = [
   {
     slug: 'kaindy-charyn-canyons',
     image: '/images/charyn-kolsai-kaindy.jpg',
+    gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/charyn-canyon.jpg'],
     priceKzt: 94990,
     priceBrackets: brackets(94990, 114990, 179990, 234990),
     hours: 16,
@@ -334,6 +337,7 @@ export const tours: Tour[] = [
   {
     slug: 'kolsai-kaindy-three-canyons-2d',
     image: '/images/kolsai-kaindy-lakes.jpg',
+    gallery: ['/images/kolsai-kaindy-lakes.jpg', '/images/kaindy.jpg', '/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     priceKzt: 189990,
     priceBrackets: brackets(189990, 239990, 289990, 339990),
     hours: 0,
@@ -424,6 +428,7 @@ export const tours: Tour[] = [
   {
     slug: 'issyk-waterfall',
     image: '/images/issyk-lake.jpg',
+    gallery: ['/images/issyk-lake.jpg', '/images/green-soul.jpg'],
     priceKzt: 79990,
     priceBrackets: brackets(79990, 99990, 139990, 179990),
     hours: 7,
@@ -688,6 +693,7 @@ export const tours: Tour[] = [
   {
     slug: 'singing-dunes',
     image: '/images/singing-dunes.jpg',
+    gallery: ['/images/singing-dunes.jpg', '/images/altyn-emel.jpg'],
     priceKzt: 119990,
     priceBrackets: brackets(119990, 159990, 239990, 339990),
     hours: 15,
@@ -774,6 +780,7 @@ export const tours: Tour[] = [
   {
     slug: 'altyn-emel',
     image: '/images/altyn-emel.jpg',
+    gallery: ['/images/altyn-emel.jpg', '/images/singing-dunes.jpg'],
     priceKzt: 239990,
     priceBrackets: brackets(239990, 379990, 599990, 889990),
     hours: 0,
@@ -946,6 +953,7 @@ export const tours: Tour[] = [
   {
     slug: 'almaty-city-tour',
     image: '/images/almaty-city-tour.jpg',
+    gallery: ['/images/almaty-city-tour.jpg', '/images/medeu.jpg', '/images/shymbulak-medeu.jpg'],
     priceKzt: 99990,
     priceBrackets: brackets(99990, 139990, 279990, 359990),
     hours: 4,
@@ -1048,6 +1056,7 @@ export const tours: Tour[] = [
   {
     slug: 'big-almaty-lake',
     image: '/images/big-almaty-lake.jpg',
+    gallery: ['/images/big-almaty-lake.jpg', '/images/bao-b.jpg', '/images/hero.jpg'],
     priceKzt: 89990,
     priceBrackets: brackets(89990, 159990, 299990, 499990),
     hours: 5,

@@ -68,6 +68,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'city-tour',
     image: '/images/shymbulak-medeu.jpg',
+    gallery: ['/images/shymbulak-medeu.jpg', '/images/medeu.jpg', '/images/almaty-city-tour.jpg'],
     emoji: '🏙️',
     priceKzt: 19990,
     dates: [
@@ -340,6 +341,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'lite-tour',
     image: '/images/kaindy.jpg',
+    gallery: ['/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-canyon.jpg'],
     emoji: '🪐',
     priceKzt: 13990,
     dates: [
@@ -442,6 +444,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'drive-tour',
     image: '/images/kolsai-kaindy-lakes.jpg',
+    gallery: ['/images/kolsai-kaindy-lakes.jpg', '/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     emoji: '⚡️',
     priceKzt: 12990,
     dates: [
@@ -536,6 +539,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'extreme-tour',
     image: '/images/charyn-kolsai-kaindy.jpg',
+    gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-canyon.jpg'],
     emoji: '🚀',
     priceKzt: 17990,
     dates: [
@@ -646,6 +650,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'trio-of-charyn',
     image: '/images/charyn-canyon.jpg',
+    gallery: ['/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     emoji: '🏜️',
     priceKzt: 8990,
     dates: [
@@ -730,6 +735,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'marmaris-issyk',
     image: '/images/issyk-lake.jpg',
+    gallery: ['/images/issyk-lake.jpg', '/images/green-soul.jpg'],
     emoji: '🌊',
     priceKzt: 9990,
     dates: [
@@ -890,6 +896,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'singing-dunes',
     image: '/images/singing-dunes.jpg',
+    gallery: ['/images/singing-dunes.jpg', '/images/altyn-emel.jpg'],
     emoji: '🏜️',
     priceKzt: 17990,
     dates: [
@@ -986,6 +993,7 @@ export const groupTours: GroupTour[] = [
   {
     slug: 'treasures-altyn-emel',
     image: '/images/altyn-emel.jpg',
+    gallery: ['/images/altyn-emel.jpg', '/images/singing-dunes.jpg'],
     emoji: '🌄',
     priceKzt: 55990,
     dates: [
