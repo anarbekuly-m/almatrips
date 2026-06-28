@@ -542,7 +542,7 @@ p { margin: 0 0 1em; }
 }
 
 /* full-bleed slider behind the hero (no z-index -> controls can sit on top) */
-.tour-hero-media { position: absolute; inset: 0; }
+.tour-hero .tour-hero-media { position: absolute; inset: 0; }
 .tour-hero-scrim {
   position: absolute;
   inset: 0;
