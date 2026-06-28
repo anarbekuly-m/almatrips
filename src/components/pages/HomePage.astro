@@ -155,4 +155,18 @@ const destinations: { image: string; en: string; ru: string; group: string; priv
       </div>
     </div>
   </section>
+
+  <script>
+    // Touch devices have no hover: first tap on a destination card reveals the
+    // group/private options, then the buttons themselves work normally.
+    if (window.matchMedia('(hover: none)').matches) {
+      document.querySelectorAll('.dest-card').forEach((card) => {
+        card.addEventListener('click', (e) => {
+          if ((e.target as Element).closest('a')) return; // let a link navigate
+          e.preventDefault();
+          card.classList.toggle('revealed');
+        });
+      });
+    }
+  </script>
 </Base>

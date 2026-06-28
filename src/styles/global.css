@@ -1188,12 +1188,16 @@ p { margin: 0 0 1em; }
   margin-top: 14px;
   opacity: 0;
   transform: translateY(8px);
+  pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
+/* reveal on hover (desktop), keyboard focus, or tap (.revealed, mobile) */
 .dest-card:hover .dest-hover,
-.dest-card:focus-within .dest-hover {
+.dest-card:focus-within .dest-hover,
+.dest-card.revealed .dest-hover {
   opacity: 1;
   transform: none;
+  pointer-events: auto;
 }
 .dest-hover .btn {
   padding: 8px 15px;
@@ -1208,13 +1212,9 @@ p { margin: 0 0 1em; }
   border-color: #fff;
   color: #fff;
 }
-/* deepen the photo overlay on hover so the buttons read clearly */
-.dest-card:hover::before { filter: brightness(0.82); }
-
-/* touch devices have no hover — always show the options */
-@media (hover: none) {
-  .dest-hover { opacity: 1; transform: none; }
-}
+/* deepen the photo overlay while the options show, so they read clearly */
+.dest-card:hover::before,
+.dest-card.revealed::before { filter: brightness(0.82); }
 
 .dest-actions {
   display: flex;
