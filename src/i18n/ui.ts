@@ -35,9 +35,9 @@ const en = {
   'meta.private.title': 'Private Tours from Almaty — Your Own Vehicle & Guide | Almatrips',
   'meta.private.description':
     'Private tours from Almaty: your own transport, a guide and a flexible schedule. Kolsai & Kaindy Lakes, the Charyn canyons, Altyn-Emel and more. Price per transport.',
-  'meta.group.title': 'Group Tours from Almaty — Join a Group | Almatrips',
+  'meta.group.title': 'Almaty Group Tours — Day Trips & Overnight Camping | Almatrips',
   'meta.group.description':
-    'Affordable group tours from Almaty, priced per person. Kolsai & Kaindy Lakes, the Charyn canyons, Altyn-Emel and more. Experienced local guides, easy WhatsApp booking.',
+    'Affordable group tours from Almaty, priced per person: Kolsai & Kaindy Lakes, the Charyn canyons, Assy Plateau camping, Altyn-Emel and more. Experienced local guides, easy WhatsApp booking.',
 
   'private.h1': 'Private tours from Almaty',
   'private.lead':
@@ -225,9 +225,9 @@ const ru: typeof en = {
   'meta.private.title': 'Индивидуальные туры из Алматы — личный транспорт и гид | Almatrips',
   'meta.private.description':
     'Индивидуальные туры из Алматы: личный транспорт, гид и гибкий график. Кольсай и Каинды, каньоны Чарына, Алтын-Эмель и другие. Цена за транспорт.',
-  'meta.group.title': 'Групповые туры из Алматы — присоединяйтесь к группе | Almatrips',
+  'meta.group.title': 'Групповые туры из Алматы — однодневные и с ночёвкой | Almatrips',
   'meta.group.description':
-    'Доступные групповые туры из Алматы по цене за человека. Кольсай и Каинды, каньоны Чарына, Алтын-Эмель и другие. Опытные местные гиды, бронирование в WhatsApp.',
+    'Доступные групповые туры из Алматы по цене за человека: Кольсай и Каинды, каньоны Чарына, кемпинг на плато Ассы, Алтын-Эмель и другие. Опытные местные гиды, бронирование в WhatsApp.',
 
   'private.h1': 'Индивидуальные туры из Алматы',
   'private.lead':
