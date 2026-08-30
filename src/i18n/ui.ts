@@ -119,7 +119,7 @@ const en = {
   'month.august': 'August',
 
   'hero.kicker': 'Group & private tours from Almaty · Kazakhstan',
-  'hero.title': 'Discover the best of Kazakhstan from Almaty',
+  'hero.title': 'Discover the best of Kazakhstan — tours from Almaty',
   'hero.sub':
     'Almatrips runs group and private tours from Almaty to Kazakhstan’s most beautiful places — canyons, alpine lakes, mountains, nomad plateaus, national parks and cultural destinations.',
   'hero.cta': 'Browse tours',
@@ -316,7 +316,7 @@ const ru: typeof en = {
   'month.august': 'Август',
 
   'hero.kicker': 'Групповые и индивидуальные туры из Алматы · Казахстан',
-  'hero.title': 'Откройте лучшее в Казахстане из Алматы',
+  'hero.title': 'Откройте лучшее в Казахстане — туры из Алматы',
   'hero.sub':
     'Almatrips проводит групповые и индивидуальные туры из Алматы к самым красивым местам Казахстана — каньоны, горные озёра, горы, кочевые плато, нацпарки и культурные места.',
   'hero.cta': 'Смотреть туры',

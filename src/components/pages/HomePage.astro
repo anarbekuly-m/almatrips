@@ -83,7 +83,17 @@ const destinations: { image: string; en: string; ru: string; group: string; priv
       </div>
       <div class="dest-grid">
         {destinations.map((d) => (
-          <article class="dest-card" style={`--img: url('${d.image}')`}>
+          <article class="dest-card">
+            <img
+              class="dest-img"
+              src={d.image}
+              alt={lang === 'en'
+                ? `${d.en} near Almaty, Kazakhstan`
+                : `${d.ru} рядом с Алматы, Казахстан`}
+              loading="lazy"
+              width="640"
+              height="420"
+            />
             <h3>{lang === 'en' ? d.en : d.ru}</h3>
             <div class="dest-hover">
               <a href={localizePath(lang, `/group-tours/${d.group}/`)} class="btn">{t(lang, 'dest.seeGroup')}</a>
