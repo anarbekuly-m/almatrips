@@ -249,7 +249,7 @@ p { margin: 0 0 1em; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(15, 28, 33, 0.25) 0%, rgba(15, 28, 33, 0.05) 35%, rgba(15, 28, 33, 0.72) 100%),
+    linear-gradient(180deg, rgba(15, 28, 33, 0.34) 0%, rgba(15, 28, 33, 0.08) 34%, rgba(15, 28, 33, 0.38) 66%, rgba(15, 28, 33, 0.78) 100%),
     var(--hero-image) center / cover no-repeat;
   z-index: -1;
 }
@@ -260,7 +260,9 @@ p { margin: 0 0 1em; }
   max-width: 720px;
 }
 
-.hero .kicker { color: #ffd9c4; }
+.hero .kicker { color: #ffd9c4; text-shadow: 0 1px 8px rgba(15, 28, 33, 0.45); }
+
+.hero h1 { text-shadow: 0 2px 18px rgba(15, 28, 33, 0.35); }
 
 .hero p.lead {
   font-size: 1.12rem;
