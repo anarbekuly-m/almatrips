@@ -394,4 +394,496 @@ export const posts: Post[] = [
       ],
     },
   },
+  {
+    slug: 'kolsai-kaindy-lakes-guide',
+    image: '/images/kaindy.jpg',
+    date: '2026-08-25',
+    readMinutes: 7,
+    en: {
+      title: 'Kolsai and Kaindy Lakes: A Complete Guide',
+      metaTitle: 'Kolsai & Kaindy Lakes from Almaty — Complete Guide (2026)',
+      metaDescription:
+        'How to visit Kolsai and Kaindy Lakes from Almaty: driving time, the sunken forest, the UAZ transfer, hiking to Kolsai 2, best season, what to bring and tour prices.',
+      excerpt:
+        'Two very different lakes a few kilometres apart — one emerald and forested, one full of drowned trees. Here is how to do both properly.',
+      body: [
+        { t: 'p', text: 'These are the two lakes that put the Almaty region on travel wish lists. They sit close together near the village of Saty, about five hours east of the city, but they feel nothing alike — Kolsai is a deep green alpine lake in spruce forest, while Kaindy is a flooded valley with dead trees standing upright in turquoise water.' },
+
+        { t: 'h2', text: 'Kolsai: three lakes, not one' },
+        { t: 'p', text: 'Most visitors see Kolsai-1, the lower lake at around 1,800 m. It is the one reachable by car, with a shoreline path, boat and catamaran rental, and guesthouses nearby. It is also the only one that fits comfortably into a day trip.' },
+        { t: 'p', text: 'Kolsai-2 lies about 5 km further up a forest trail, roughly 3–4 hours of walking each way with real elevation gain. Kolsai-3 is higher still and close to the Kyrgyz border. If you want the upper lakes, plan an overnight in Saty — trying to squeeze them into a day trip does not work.' },
+
+        { t: 'h2', text: 'Kaindy: the sunken forest' },
+        { t: 'p', text: 'Kaindy was created by an earthquake in 1911, which triggered a landslide that dammed the valley. The spruce forest drowned, but the cold water preserved the trunks — so bare grey spires still rise straight out of a lake that shifts between turquoise and deep blue depending on the light.' },
+        { t: 'p', text: 'It sits at about 2,000 m, and it is smaller than people expect. Give yourself an hour to walk around, take photos and go down to the water.' },
+        { t: 'tip', text: 'The last few kilometres to Kaindy are rough off-road. Regular cars cannot do it: you switch to a UAZ 4x4, then walk 20–30 minutes uphill from the parking area. Horses can be rented on site if the walk is a problem. On our tours the UAZ transfer is included in the price.' },
+
+        { t: 'h2', text: 'How long the trip really takes' },
+        { t: 'p', text: 'Be realistic about the distances. Almaty to Saty is roughly 300 km and about five hours of driving. A one-day trip to both lakes means leaving around 05:00 and returning near 22:00 — it is done constantly and it works, but it is a long day in a vehicle.' },
+        { t: 'ul', items: [
+          'One day, both lakes — departure around 05:00, back around 21:30–22:00.',
+          'One day, lakes plus Charyn canyons — very early start, strict timing at each stop.',
+          'Two days with a night in Saty — far more relaxed, and the only way to also hike to Kolsai-2.',
+        ] },
+
+        { t: 'h2', text: 'Best time to go' },
+        { t: 'p', text: 'June to September. This is not flexible — outside that window the mountain roads become unreliable and Kaindy in particular can be unreachable. Early autumn is beautiful, with fewer people and golden larch colour, but nights get cold fast.' },
+        { t: 'p', text: 'The lakes sit high enough to be 8–12°C cooler than the city, so a warm layer is worth packing even in July. Swimming is possible in Kolsai but the water is genuinely cold year-round.' },
+
+        { t: 'h2', text: 'Documents and checkpoints' },
+        { t: 'p', text: 'The route passes close to the Kyrgyz border and there are checkpoints on the way. Every traveler needs an original ID document — a passport for foreign citizens, a birth certificate for children. Digital ID through Kaspi or eGov is accepted for Kazakhstani citizens. This is not optional; people are turned back for missing documents.' },
+
+        { t: 'h2', text: 'What to bring' },
+        { t: 'ul', items: [
+          'ID document — required, no exceptions.',
+          'A warm layer and a windproof jacket, even in summer.',
+          'Comfortable walking shoes for the Kaindy trail.',
+          'Snacks and water — options along the route are limited.',
+          'Cash for horse or boat rental on site.',
+        ] },
+
+        { t: 'h2', text: 'Tour options and prices' },
+        { t: 'p', text: 'Group departures covering Kolsai, Kaindy and the Black Canyon viewpoint start at 13,990 ₸ per person, including the UAZ transfer and park fees. A six-location express version adding the Charyn canyons runs 17,990 ₸. Private tours are priced per vehicle instead, which makes sense for families or anyone who wants to control the departure time and pace.' },
+        { t: 'p', text: 'Message us on WhatsApp with your dates — we will tell you which departures are running and whether the one-day or two-day version fits what you want to see.' },
+      ],
+    },
+    ru: {
+      title: 'Озёра Кольсай и Каинды: полный гид',
+      metaTitle: 'Кольсай и Каинды из Алматы — полный гид по поездке',
+      metaDescription:
+        'Как поехать на Кольсай и Каинды из Алматы: время в пути, затонувший лес, переезд на УАЗе, поход на Кольсай-2, сезон, что взять и цены туров.',
+      excerpt:
+        'Два совершенно разных озера в паре километров друг от друга — изумрудное в еловом лесу и с затонувшим лесом. Как посмотреть оба нормально.',
+      body: [
+        { t: 'p', text: 'Именно эти два озера делают Алматинскую область местом из списков желаний. Они лежат рядом, у села Саты, примерно в пяти часах к востоку от города, но ощущаются совершенно по-разному: Кольсай — глубокое зелёное озеро в еловом лесу, а Каинды — затопленная долина, где из бирюзовой воды торчат сухие стволы.' },
+
+        { t: 'h2', text: 'Кольсай: озёр три, а не одно' },
+        { t: 'p', text: 'Большинство видит Кольсай-1 — нижнее озеро на высоте около 1 800 м. Именно к нему можно доехать на машине: есть тропа вдоль берега, прокат лодок и катамаранов, гостевые дома рядом. И только оно спокойно помещается в однодневную поездку.' },
+        { t: 'p', text: 'Кольсай-2 находится примерно в 5 км выше по лесной тропе — это 3–4 часа ходьбы в одну сторону с реальным набором высоты. Кольсай-3 ещё выше, у границы с Кыргызстаном. Если хотите верхние озёра, планируйте ночёвку в Саты: втиснуть их в один день не получится.' },
+
+        { t: 'h2', text: 'Каинды: затонувший лес' },
+        { t: 'p', text: 'Каинды появилось после землетрясения 1911 года: оползень перегородил долину, еловый лес затопило, но холодная вода сохранила стволы. Поэтому серые «мачты» до сих пор стоят прямо из воды, которая меняет цвет от бирюзового до тёмно-синего в зависимости от света.' },
+        { t: 'p', text: 'Озеро на высоте около 2 000 м и меньше, чем многие ожидают. Закладывайте примерно час на прогулку вокруг, фото и спуск к воде.' },
+        { t: 'tip', text: 'Последние километры до Каинды — бездорожье. Обычная машина не проедет: пересадка на УАЗ, затем 20–30 минут пешком в гору от парковки. На месте можно арендовать лошадь, если идти тяжело. В наших турах переезд на УАЗе включён в стоимость.' },
+
+        { t: 'h2', text: 'Сколько реально занимает поездка' },
+        { t: 'p', text: 'Оценивайте расстояния трезво. От Алматы до Саты около 300 км и примерно пять часов дороги. Однодневная поездка на оба озера — это выезд около 05:00 и возвращение к 22:00. Так ездят постоянно и это работает, но день в дороге длинный.' },
+        { t: 'ul', items: [
+          'Один день, оба озера — выезд около 05:00, возвращение к 21:30–22:00.',
+          'Один день, озёра плюс каньоны Чарына — очень ранний старт и жёсткий тайминг на точках.',
+          'Два дня с ночёвкой в Саты — гораздо спокойнее и единственный вариант дойти до Кольсая-2.',
+        ] },
+
+        { t: 'h2', text: 'Когда ехать' },
+        { t: 'p', text: 'С июня по сентябрь. Здесь вариантов нет: вне этого окна горные дороги ненадёжны, а Каинды может быть просто недоступно. Ранняя осень очень красива — меньше людей и золотой цвет, но ночи быстро становятся холодными.' },
+        { t: 'p', text: 'Озёра расположены достаточно высоко, чтобы быть на 8–12 °C прохладнее города, поэтому тёплую вещь стоит взять даже в июле. В Кольсае можно купаться, но вода холодная круглый год.' },
+
+        { t: 'h2', text: 'Документы и посты' },
+        { t: 'p', text: 'Маршрут проходит недалеко от границы с Кыргызстаном, по дороге есть посты. Каждому нужен оригинал удостоверения личности: иностранцам — паспорт, детям — свидетельство о рождении. Гражданам Казахстана подойдёт цифровой документ в Kaspi или eGov. Это не формальность — без документов разворачивают.' },
+
+        { t: 'h2', text: 'Что взять с собой' },
+        { t: 'ul', items: [
+          'Документ, удостоверяющий личность — обязательно.',
+          'Тёплый слой и ветровку даже летом.',
+          'Удобную обувь для тропы на Каинды.',
+          'Перекус и воду — вариантов по дороге немного.',
+          'Наличные на прокат лошади или лодки на месте.',
+        ] },
+
+        { t: 'h2', text: 'Варианты туров и цены' },
+        { t: 'p', text: 'Групповые выезды с Кольсаем, Каинды и смотровой Чёрного каньона стартуют от 13 990 ₸ с человека, включая переезд на УАЗе и экологические сборы. Экспресс-версия на шесть локаций с каньонами Чарына — 17 990 ₸. Индивидуальные туры считаются за транспорт: это удобно семьям и тем, кто хочет сам выбрать время выезда и темп.' },
+        { t: 'p', text: 'Напишите нам даты в WhatsApp — подскажем, какие выезды есть и что лучше подойдёт: однодневный вариант или двухдневный.' },
+      ],
+    },
+  },
+  {
+    slug: 'assy-plateau-guide',
+    image: '/images/assy-plateau.jpg',
+    date: '2026-08-25',
+    readMinutes: 6,
+    en: {
+      title: 'Assy Plateau: Kazakhstan’s High Pasture and Dark Sky',
+      metaTitle: 'Assy Plateau from Almaty — Guide to the Plateau & Camping',
+      metaDescription:
+        'A guide to the Assy Plateau near Almaty: how to get there, the observatory, nomad summer pastures, camping under the stars, best season and what to pack.',
+      excerpt:
+        'A 2,500 m summer pasture where shepherds still graze horses, with one of the darkest night skies within reach of Almaty.',
+      body: [
+        { t: 'p', text: 'If Charyn is the region’s most photographed landscape, Assy is its most underrated. It is a broad high plateau about 100 km east of Almaty, reached by climbing through the Turgen gorge, and in summer it becomes exactly what the Kazakh steppe is supposed to look like — open grassland, herds of horses, and yurts belonging to families who move up here for the season.' },
+
+        { t: 'h2', text: 'Getting there' },
+        { t: 'p', text: 'The drive takes about four hours each way. The first part goes through the green Turgen gorge with its waterfalls; the upper section is a gravel road that climbs steeply onto the plateau. It is bumpy in places, which is why sturdier vehicles are used, but it is part of the experience rather than a hardship.' },
+
+        { t: 'h2', text: 'The observatory' },
+        { t: 'p', text: 'At about 2,750 m sits the Assy-Turgen observatory, built in the Soviet era and still operating. Its domes on an otherwise empty ridge make one of the most distinctive photographs in the region. You are looking from outside rather than touring the facility, but the setting is the point.' },
+
+        { t: 'h2', text: 'Why the night sky matters here' },
+        { t: 'p', text: 'This is the real reason to consider staying overnight. At 2,500 m with no towns nearby, there is almost no light pollution — on a clear moonless night the Milky Way is visible to the naked eye in a way most visitors have never seen. That is why the two-day camping version of this trip exists, and why people who take it rate it higher than the day trip.' },
+        { t: 'tip', text: 'Nights on the plateau are cold even in July — often near freezing. If you camp, a warm sleeping bag matters more than anything else you pack. On our two-day trips the basic camp setup is included, but tents and sleeping bags are rented separately at a shop on the way out of the city.' },
+
+        { t: 'h2', text: 'When to go' },
+        { t: 'p', text: 'June to September, and that window is firm. Outside it the road over the plateau is closed by snow, the pastures are empty and there is nothing to see. Peak season is July and August, when the grass is green and the shepherd camps are up. September is quieter and clearer but noticeably colder at night.' },
+
+        { t: 'h2', text: 'Day trip or overnight?' },
+        { t: 'ul', items: [
+          'Day trip (about 15,990 ₸ per person) — roughly 12 hours door to door, with 2–3 hours on the plateau. Enough to see it and take photographs.',
+          'Two days with camping (about 29,990 ₸ per person) — sunset, the night sky, sunrise, and a morning on the plateau without rushing.',
+        ] },
+        { t: 'p', text: 'If the stars are what drew you here, the day trip will not deliver them — you are driving back down before dark. Choose the overnight.' },
+
+        { t: 'h2', text: 'What to pack' },
+        { t: 'ul', items: [
+          'Warm clothing and a windproof layer. The plateau is exposed and the weather turns quickly.',
+          'Sunscreen and sunglasses — UV is strong at altitude even on cool days.',
+          'Insect repellent in mid-summer.',
+          'Food and water. There are no shops on the plateau; buy on the way.',
+          'A power bank, and a headlamp if you are staying the night.',
+        ] },
+        { t: 'p', text: 'Tell us your dates on WhatsApp and we will confirm which departures are running — the camping trips go on fixed dates rather than daily, and summer weekends fill first.' },
+      ],
+    },
+    ru: {
+      title: 'Плато Ассы: высокогорное пастбище и тёмное небо',
+      metaTitle: 'Плато Ассы из Алматы — гид по поездке и кемпингу',
+      metaDescription:
+        'Гид по плато Ассы рядом с Алматы: как добраться, обсерватория, кочевые пастбища, ночёвка под звёздами, сезон и что взять с собой.',
+      excerpt:
+        'Летнее пастбище на 2 500 м, где до сих пор пасут лошадей, и одно из самых тёмных ночных небес рядом с Алматы.',
+      body: [
+        { t: 'p', text: 'Если Чарын — самый фотографируемый пейзаж региона, то Ассы — самый недооценённый. Это широкое высокогорное плато примерно в 100 км к востоку от Алматы, куда поднимаются через Тургеньское ущелье. Летом оно выглядит ровно так, как должна выглядеть казахская степь: открытые луга, табуны лошадей и юрты семей, которые поднимаются сюда на сезон.' },
+
+        { t: 'h2', text: 'Как добраться' },
+        { t: 'p', text: 'Дорога занимает около четырёх часов в одну сторону. Первая часть идёт через зелёное Тургеньское ущелье с водопадами, верхний участок — гравийная дорога с крутым подъёмом на плато. Местами трясёт, поэтому едут на подготовленном транспорте, но это скорее часть приключения, чем неудобство.' },
+
+        { t: 'h2', text: 'Обсерватория' },
+        { t: 'p', text: 'На высоте около 2 750 м стоит обсерватория Ассы-Тургень, построенная в советское время и работающая до сих пор. Её купола на пустом хребте дают один из самых узнаваемых кадров региона. Внутрь не водят, но смысл именно в виде снаружи.' },
+
+        { t: 'h2', text: 'Почему здесь важно ночное небо' },
+        { t: 'p', text: 'Это главная причина задуматься о ночёвке. На 2 500 м и без городов поблизости засветки практически нет: в ясную безлунную ночь Млечный Путь виден невооружённым глазом так, как большинство людей никогда не видели. Именно ради этого существует двухдневный вариант с кемпингом, и те, кто его выбирает, оценивают поездку выше однодневной.' },
+        { t: 'tip', text: 'Ночи на плато холодные даже в июле — часто около нуля. Если ночуете, тёплый спальник важнее всего остального. В наших двухдневных турах базовый кемпинг включён, а палатки и спальники берут в прокате по дороге из города.' },
+
+        { t: 'h2', text: 'Когда ехать' },
+        { t: 'p', text: 'С июня по сентябрь, и это окно жёсткое. Вне его дорога через плато закрыта снегом, пастбища пустые и смотреть нечего. Пик — июль и август, когда трава зелёная и стоят чабанские стоянки. Сентябрь тише и прозрачнее, но заметно холоднее ночью.' },
+
+        { t: 'h2', text: 'Один день или с ночёвкой?' },
+        { t: 'ul', items: [
+          'Однодневная поездка (около 15 990 ₸ с человека) — примерно 12 часов от двери до двери, из них 2–3 часа на плато. Достаточно, чтобы увидеть и поснимать.',
+          'Два дня с кемпингом (около 29 990 ₸ с человека) — закат, звёздное небо, рассвет и утро на плато без спешки.',
+        ] },
+        { t: 'p', text: 'Если вы едете ради звёзд, однодневный вариант их не даст — вы будете спускаться до темноты. Берите с ночёвкой.' },
+
+        { t: 'h2', text: 'Что взять' },
+        { t: 'ul', items: [
+          'Тёплую одежду и ветрозащиту. Плато открытое, погода меняется быстро.',
+          'Крем от солнца и очки — на высоте УФ сильный даже в прохладный день.',
+          'Средство от насекомых в середине лета.',
+          'Еду и воду. На плато магазинов нет, покупайте по дороге.',
+          'Power bank, а при ночёвке — налобный фонарь.',
+        ] },
+        { t: 'p', text: 'Напишите даты в WhatsApp — подтвердим, какие выезды идут. Кемпинговые туры проводятся по фиксированным датам, и летние выходные разбирают первыми.' },
+      ],
+    },
+  },
+  {
+    slug: 'altyn-emel-singing-dunes-guide',
+    image: '/images/singing-dunes.jpg',
+    date: '2026-08-25',
+    readMinutes: 6,
+    en: {
+      title: 'Altyn-Emel and the Singing Dunes: What to Expect',
+      metaTitle: 'Altyn-Emel & the Singing Dunes from Almaty — Travel Guide',
+      metaDescription:
+        'Visiting Altyn-Emel National Park from Almaty: the Singing Dune, the striped Aktau mountains, Katutau, the 700-year-old willow, park permits, season and tours.',
+      excerpt:
+        'A humming sand dune, candy-striped desert mountains and volcanic rock — the strangest landscape within reach of Almaty.',
+      body: [
+        { t: 'p', text: 'Altyn-Emel is Kazakhstan’s flagship desert park, spread over 4,600 square kilometres between the Ili River and the Aktau ridge. Nothing about it looks like the green gorges near Almaty. It is dry, enormous and empty, and it holds the three sights that make the long drive worth it.' },
+
+        { t: 'h2', text: 'The Singing Dune' },
+        { t: 'p', text: 'Aygaiqum rises about 150 m out of otherwise flat desert — a single enormous dune that has stayed in the same place for centuries because of how the wind funnels between the mountains. Climbing the ridge takes 20–40 minutes in soft sand and gives you a view across the Ili valley.' },
+        { t: 'p', text: 'The "singing" is real but conditional: when the sand is dry and a breeze moves the upper layer, it produces a low humming vibration you feel as much as hear. After rain, or on a still day, it stays silent.' },
+        { t: 'tip', text: 'Be honest with yourself about expectations — the sound is not guaranteed and no guide can promise it. The dune and the landscape are worth the trip regardless. And you will get sand everywhere; that is simply part of the day.' },
+
+        { t: 'h2', text: 'Aktau: the striped mountains' },
+        { t: 'p', text: 'Deeper into the park, the Aktau "White Mountains" look genuinely artificial — layered bands of pink, white, red and pale green laid down when this was a seabed millions of years ago, then lifted and eroded into ridges. This is the most photographed part of Altyn-Emel and, for many visitors, better than the dune.' },
+
+        { t: 'h2', text: 'Katutau and the old willow' },
+        { t: 'p', text: 'Katutau is the opposite: black, jagged volcanic rock, twisted into shapes that feel lunar. Between the sights, tours usually stop at a solitary willow said to be around 700 years old, standing alone in the steppe — a small thing that photographs beautifully.' },
+
+        { t: 'h2', text: 'One day or two?' },
+        { t: 'p', text: 'This is the key planning decision, and the distances make it for you.' },
+        { t: 'ul', items: [
+          'One day (from 17,990 ₸ per person) — the Singing Dune only. About four hours of driving each way, roughly 13 hours door to door. Aktau and Katutau are simply too far to add.',
+          'Two days with an overnight (from 55,990 ₸ per person) — the dune on day one, then Aktau, Katutau and the willow on day two. Accommodation, breakfast and lunch included.',
+        ] },
+        { t: 'p', text: 'If the striped mountains are what you came for, the one-day trip will not include them. That catches people out, so it is worth being clear about before booking.' },
+
+        { t: 'h2', text: 'Permits and practicalities' },
+        { t: 'p', text: 'Altyn-Emel is a national park, so entry involves registration at Basshi village before you continue to the sights. On organised tours this and the park fees are handled for you. Inside the park the tracks are rough, so an off-road transfer is used for the dune and the mountain sections.' },
+
+        { t: 'h2', text: 'Season and what to bring' },
+        { t: 'p', text: 'April to October. Midsummer is very hot in open desert with no shade, so spring and autumn are more comfortable. Bring a hat, sunglasses, sunscreen, more water than feels necessary, closed shoes you do not mind filling with sand, and a windproof layer — the Ili valley can be surprisingly breezy.' },
+        { t: 'p', text: 'Message us on WhatsApp and we will tell you which departures are scheduled, and whether the one-day or two-day version matches what you actually want to see.' },
+      ],
+    },
+    ru: {
+      title: 'Алтын-Эмель и Поющий бархан: чего ожидать',
+      metaTitle: 'Алтын-Эмель и Поющий бархан из Алматы — гид по поездке',
+      metaDescription:
+        'Поездка в нацпарк Алтын-Эмель из Алматы: Поющий бархан, полосатые горы Актау, Катутау, 700-летняя ива, оформление в парке, сезон и туры.',
+      excerpt:
+        'Гудящий бархан, полосатые пустынные горы и вулканические скалы — самый странный пейзаж в досягаемости от Алматы.',
+      body: [
+        { t: 'p', text: 'Алтын-Эмель — главный пустынный парк Казахстана, около 4 600 км² между рекой Или и хребтом Актау. Здесь всё не похоже на зелёные ущелья рядом с Алматы: сухо, огромно и пусто. И здесь есть три вещи, ради которых стоит долгая дорога.' },
+
+        { t: 'h2', text: 'Поющий бархан' },
+        { t: 'p', text: 'Айгайкум поднимается примерно на 150 м посреди плоской пустыни — одна огромная дюна, которая веками остаётся на месте из-за того, как ветер проходит между горами. Подъём по гребню занимает 20–40 минут по мягкому песку и открывает вид на долину Или.' },
+        { t: 'p', text: '«Пение» реально, но с условием: когда песок сухой и ветер двигает верхний слой, возникает низкая вибрация, которую скорее чувствуешь, чем слышишь. После дождя или в безветренный день бархан молчит.' },
+        { t: 'tip', text: 'Будьте честны с ожиданиями: звук не гарантирован, и ни один гид не может его обещать. Бархан и пейзаж стоят поездки в любом случае. И песок будет везде — это просто часть дня.' },
+
+        { t: 'h2', text: 'Актау: полосатые горы' },
+        { t: 'p', text: 'Глубже в парке горы Актау выглядят почти искусственно: слоистые полосы розового, белого, красного и бледно-зелёного — отложения древнего морского дна, поднятые и размытые в хребты. Это самая фотографируемая часть Алтын-Эмеля, и многим она нравится больше бархана.' },
+
+        { t: 'h2', text: 'Катутау и старая ива' },
+        { t: 'p', text: 'Катутау — полная противоположность: чёрные острые вулканические скалы причудливых форм, почти лунный пейзаж. Между локациями туры обычно останавливаются у одинокой ивы, которой, по преданию, около 700 лет — небольшая деталь, но кадр получается отличный.' },
+
+        { t: 'h2', text: 'Один день или два?' },
+        { t: 'p', text: 'Это главное решение при планировании, и расстояния решают за вас.' },
+        { t: 'ul', items: [
+          'Один день (от 17 990 ₸ с человека) — только Поющий бархан. Около четырёх часов дороги в одну сторону, примерно 13 часов от двери до двери. Актау и Катутау добавить физически некуда.',
+          'Два дня с ночёвкой (от 55 990 ₸ с человека) — бархан в первый день, затем Актау, Катутау и ива во второй. Проживание, завтрак и обед включены.',
+        ] },
+        { t: 'p', text: 'Если вы едете ради полосатых гор — в однодневный тур они не входят. На этом часто спотыкаются, поэтому лучше понимать заранее.' },
+
+        { t: 'h2', text: 'Оформление и практика' },
+        { t: 'p', text: 'Алтын-Эмель — национальный парк, поэтому въезд предполагает регистрацию в селе Басши перед выездом к локациям. В организованных турах это и сборы парка берут на себя. Внутри парка дороги тяжёлые, поэтому к бархану и в горы едут на внедорожном транспорте.' },
+
+        { t: 'h2', text: 'Сезон и что взять' },
+        { t: 'p', text: 'С апреля по октябрь. В разгар лета в открытой пустыне очень жарко и нет тени, поэтому весна и осень комфортнее. Возьмите головной убор, очки, крем от солнца, воды больше, чем кажется нужным, закрытую обувь, которую не жалко засыпать песком, и ветровку — в долине Или бывает неожиданно ветрено.' },
+        { t: 'p', text: 'Напишите в WhatsApp — расскажем, какие выезды запланированы и что подойдёт: однодневный вариант или двухдневный.' },
+      ],
+    },
+  },
+  {
+    slug: 'kazakhstan-travel-tips',
+    image: '/images/almaty-city-tour.jpg',
+    date: '2026-08-25',
+    readMinutes: 8,
+    en: {
+      title: 'Kazakhstan Travel Tips: What First-Time Visitors Should Know',
+      metaTitle: 'Kazakhstan Travel Tips — Money, SIM, Safety & Language (2026)',
+      metaDescription:
+        'Practical tips for visiting Kazakhstan: currency and payments, SIM cards and internet, safety, language, tipping, taxis, what to wear and how to get around Almaty.',
+      excerpt:
+        'Money, phones, safety, language and the small practical things nobody tells you before landing in Almaty.',
+      body: [
+        { t: 'p', text: 'Kazakhstan is straightforward to travel in, but a few things work differently enough to catch first-time visitors out. Here is what actually matters in practice.' },
+
+        { t: 'h2', text: 'Visas and entry' },
+        { t: 'p', text: 'Kazakhstan is visa-free for citizens of many countries for stays of up to 30 days, and the list has expanded considerably in recent years. Rules do change, so check the current requirements for your nationality on an official government source before booking flights — do not rely on a blog post, including this one, as your final answer.' },
+        { t: 'p', text: 'Keep your passport with you when travelling outside the city. Some routes east of Almaty pass border-zone checkpoints where an original document is required.' },
+
+        { t: 'h2', text: 'Money and payments' },
+        { t: 'p', text: 'The currency is the tenge (₸, KZT). Kazakhstan is remarkably cashless — card payments and QR transfers work almost everywhere in Almaty, including small cafés and market stalls. The local app Kaspi dominates daily life, though it generally requires a local bank account.' },
+        { t: 'p', text: 'Bring some cash anyway. Once you leave the city — national park entrances, horse rental at the lakes, roadside cafés, village guesthouses — cash is often the only option. Exchange offices in Almaty give better rates than the airport.' },
+
+        { t: 'h2', text: 'SIM cards and internet' },
+        { t: 'p', text: 'A local SIM is cheap and easy to buy with your passport at any operator shop or the airport. Coverage in Almaty is excellent and data is inexpensive. In the mountains it becomes patchy: expect no signal at Kaindy, on the Assy Plateau or in parts of Charyn. Download offline maps before you go.' },
+
+        { t: 'h2', text: 'Language' },
+        { t: 'p', text: 'Kazakh is the state language and Russian is widely spoken in Almaty — most daily interaction happens in one of the two. English is common among younger people, in hotels and in tourism, but far less so with taxi drivers, market vendors or in villages. A translation app covers the gap comfortably.' },
+        { t: 'ul', items: [
+          'Salem / Сәлем — hello (informal)',
+          'Rakhmet / Рахмет — thank you',
+          'Kansha? / Қанша? — how much?',
+          '"Spasibo" and "skolko" work equally well in Russian.',
+        ] },
+
+        { t: 'h2', text: 'Safety' },
+        { t: 'p', text: 'Almaty is a comfortable city to walk around, including in the evening, and violent crime against visitors is rare. Normal city sense applies — watch your belongings in crowded markets and on public transport. The genuine risks here are outdoors rather than urban: altitude, sudden weather changes in the mountains, and cold water in the lakes.' },
+
+        { t: 'h2', text: 'Getting around Almaty' },
+        { t: 'p', text: 'The city has a small but clean metro, extensive buses, and cheap ride-hailing through Yandex Go and inDrive — most visitors use apps rather than hailing cars on the street. The centre is walkable and laid out on a grid, with the mountains always to the south, which makes it hard to get properly lost.' },
+
+        { t: 'h2', text: 'What to wear' },
+        { t: 'p', text: 'Layers, always. Almaty can be 30°C while a lake at 2,000 m is 15°C and windy, on the same day. Kazakhstan is secular and dress is casual and modern; there are no particular restrictions for visitors, though modest clothing is appropriate when visiting mosques.' },
+
+        { t: 'h2', text: 'Tipping and etiquette' },
+        { t: 'ul', items: [
+          'Tipping is not obligatory. In restaurants 10% is generous and appreciated; some add a service charge already.',
+          'Hospitality is taken seriously — if you are offered tea in a home or a yurt, accepting is the polite response.',
+          'Remove your shoes when entering someone’s home.',
+          'Bargaining is normal at bazaars, not in shops.',
+        ] },
+
+        { t: 'h2', text: 'Altitude' },
+        { t: 'p', text: 'Several popular trips go above 2,500 m, and Shymbulak’s cable car reaches 3,200 m. Most people feel nothing more than mild breathlessness, but take the first day gently, drink water and avoid a heavy hike immediately after arriving from sea level.' },
+
+        { t: 'h2', text: 'Booking tours' },
+        { t: 'p', text: 'Most local operators, ourselves included, work through WhatsApp rather than online booking systems. That sounds informal to visitors used to instant confirmation, but it is simply how business is done here — you get a real person, faster answers and a route that can be adjusted to your dates.' },
+        { t: 'p', text: 'If you are planning a trip around Almaty, message us and we will tell you honestly what is open in your travel window and what is worth your time.' },
+      ],
+    },
+    ru: {
+      title: 'Казахстан: практические советы для путешественников',
+      metaTitle: 'Советы туристам в Казахстане — деньги, связь, безопасность',
+      metaDescription:
+        'Практические советы для поездки в Казахстан: валюта и оплата, SIM-карта и интернет, безопасность, язык, чаевые, такси, что надеть и как передвигаться по Алматы.',
+      excerpt:
+        'Деньги, связь, безопасность, язык и мелочи, о которых не рассказывают перед прилётом в Алматы.',
+      body: [
+        { t: 'p', text: 'Путешествовать по Казахстану просто, но несколько вещей устроены достаточно иначе, чтобы застать врасплох в первый раз. Вот что действительно важно на практике.' },
+
+        { t: 'h2', text: 'Виза и въезд' },
+        { t: 'p', text: 'Казахстан безвизовый для граждан многих стран на срок до 30 дней, и список за последние годы заметно расширился. Правила меняются, поэтому проверяйте актуальные требования для вашего гражданства на официальном источнике до покупки билетов — не полагайтесь на статью в блоге, включая эту.' },
+        { t: 'p', text: 'За городом держите документ при себе. Некоторые маршруты к востоку от Алматы проходят посты в приграничной зоне, где нужен оригинал.' },
+
+        { t: 'h2', text: 'Деньги и оплата' },
+        { t: 'p', text: 'Валюта — тенге (₸, KZT). Казахстан на удивление безналичный: карты и QR-переводы работают почти везде в Алматы, включая небольшие кафе и точки на базаре. Повседневную жизнь во многом определяет Kaspi, но для него обычно нужен местный счёт.' },
+        { t: 'p', text: 'Наличные всё равно возьмите. За городом — входы в нацпарки, прокат лошадей у озёр, придорожные кафе, гостевые дома в сёлах — часто принимают только их. В обменниках города курс лучше, чем в аэропорту.' },
+
+        { t: 'h2', text: 'SIM-карта и интернет' },
+        { t: 'p', text: 'Местная SIM стоит недорого и покупается по паспорту в любом салоне или в аэропорту. В Алматы покрытие отличное, интернет дешёвый. В горах связь пропадает: на Каинды, на плато Ассы и местами на Чарыне сигнала не будет. Скачайте офлайн-карты заранее.' },
+
+        { t: 'h2', text: 'Язык' },
+        { t: 'p', text: 'Государственный язык — казахский, в Алматы широко используется русский, и повседневное общение идёт на одном из двух. Английский распространён среди молодёжи, в отелях и туризме, но гораздо реже у таксистов, на базаре и в сёлах. Приложение-переводчик закрывает разрыв.' },
+        { t: 'ul', items: [
+          'Сәлем — привет',
+          'Рахмет — спасибо',
+          'Қанша? — сколько?',
+          'На русском «спасибо» и «сколько» работают так же.',
+        ] },
+
+        { t: 'h2', text: 'Безопасность' },
+        { t: 'p', text: 'По Алматы комфортно гулять, в том числе вечером, и преступления против туристов редки. Работают обычные городские правила: следите за вещами на людных базарах и в транспорте. Настоящие риски здесь не городские, а природные — высота, резкая смена погоды в горах и холодная вода в озёрах.' },
+
+        { t: 'h2', text: 'Как передвигаться по Алматы' },
+        { t: 'p', text: 'В городе есть небольшое, но чистое метро, много автобусов и дешёвые такси через Яндекс Go и inDrive — большинство пользуется приложениями, а не ловит машину на улице. Центр удобен для прогулок и построен сеткой, а горы всегда на юге, поэтому заблудиться сложно.' },
+
+        { t: 'h2', text: 'Что надеть' },
+        { t: 'p', text: 'Всегда слоями. В Алматы может быть +30 °C, а на озере на 2 000 м в тот же день +15 °C и ветер. Казахстан светский, одежда обычная и современная, особых ограничений для туристов нет, но при посещении мечетей уместна скромная одежда.' },
+
+        { t: 'h2', text: 'Чаевые и этикет' },
+        { t: 'ul', items: [
+          'Чаевые не обязательны. В ресторане 10 % — щедро и приятно; иногда сервис уже включён в счёт.',
+          'К гостеприимству относятся серьёзно: если предлагают чай в доме или юрте, вежливо согласиться.',
+          'В гостях обувь снимают.',
+          'Торговаться нормально на базаре, но не в магазинах.',
+        ] },
+
+        { t: 'h2', text: 'Высота' },
+        { t: 'p', text: 'Несколько популярных поездок идут выше 2 500 м, а канатная дорога Шымбулака поднимает на 3 200 м. Большинство ощущает разве что лёгкую одышку, но первый день лучше провести спокойно, пить воду и не идти в тяжёлый поход сразу после прилёта с равнины.' },
+
+        { t: 'h2', text: 'Как бронируют туры' },
+        { t: 'p', text: 'Большинство местных операторов, включая нас, работает через WhatsApp, а не через онлайн-системы бронирования. Для приезжих, привыкших к мгновенному подтверждению, это звучит неформально, но так здесь принято: вы получаете живого человека, быстрые ответы и маршрут, который можно подстроить под ваши даты.' },
+        { t: 'p', text: 'Если планируете поездку вокруг Алматы — напишите нам, и мы честно скажем, что открыто в ваши даты и что действительно стоит времени.' },
+      ],
+    },
+  },
+  {
+    slug: 'almaty-3-day-itinerary',
+    image: '/images/big-almaty-lake.jpg',
+    date: '2026-08-25',
+    readMinutes: 7,
+    en: {
+      title: '3 Days in Almaty: A Realistic Itinerary',
+      metaTitle: '3 Days in Almaty — Itinerary for a Perfect Short Trip',
+      metaDescription:
+        'A realistic 3-day Almaty itinerary: the city and mountains on day one, Charyn Canyon on day two, alpine lakes on day three. Plus 4 and 5-day variations.',
+      excerpt:
+        'Three days is enough for the city, a canyon and a mountain lake — if you order them correctly. Here is the plan that works.',
+      body: [
+        { t: 'p', text: 'Three days is the most common length of stay in Almaty, and it is genuinely enough to see the best of the region — provided you accept one rule: the big landscapes are 3–5 hours away, so each of them costs a full day. Trying to fit two distant destinations into one day is where short trips go wrong.' },
+        { t: 'p', text: 'This itinerary assumes you arrive the night before day one and leave on the evening of day three or later.' },
+
+        { t: 'h2', text: 'Day 1 — the city and the mountains above it' },
+        { t: 'p', text: 'Start close to home while you adjust. Morning: go up to Medeu, the high-altitude skating rink, then continue to Shymbulak and take the cable car to Talgar Pass at 3,200 m. Go in the morning — clouds build over the peaks after midday.' },
+        { t: 'p', text: 'Afternoon: come back down for Panfilov Park and Zenkov Cathedral, then the Green Bazaar. Finish at sunset on Kok-Tobe for the city panorama.' },
+        { t: 'p', text: 'This day doubles as gentle altitude acclimatisation before the higher trips.' },
+
+        { t: 'h2', text: 'Day 2 — Charyn Canyon' },
+        { t: 'p', text: 'The single most dramatic landscape per hour of driving. Roughly 3–3.5 hours each way, with the Valley of Castles trail — 2 km down between red sandstone towers to the Charyn River — as the centrepiece, plus the Moon and Black canyon viewpoints.' },
+        { t: 'p', text: 'Expect an early departure and a return in the evening. Bring far more water than feels necessary; there is no shade in the canyon.' },
+
+        { t: 'h2', text: 'Day 3 — pick your lake' },
+        { t: 'p', text: 'Here you have a genuine choice, and it depends on how much driving you can still face.' },
+        { t: 'ul', items: [
+          'Kolsai and Kaindy (full day, ~05:00 to 22:00) — the famous alpine lakes and the sunken forest. The most rewarding, but a long day in a vehicle.',
+          'Big Almaty Lake (half day) — a glacial lake at 2,511 m barely an hour from the centre. Best if you have an evening flight.',
+          'Issyk Lake and Bear Waterfall (about 10 hours) — a gentler middle option with short walks.',
+        ] },
+        { t: 'p', text: 'If your flight leaves on day three, take Big Almaty Lake. If you have the full day, take Kolsai and Kaindy.' },
+
+        { t: 'h2', text: 'If you have four days' },
+        { t: 'p', text: 'Add the Assy Plateau — a 2,500 m summer pasture with almost no tourists and an observatory on the ridge. Or, if the timing works, do the two-day Assy trip with a night of camping; the dark sky there is the thing people remember most.' },
+
+        { t: 'h2', text: 'If you have five days' },
+        { t: 'p', text: 'Add Altyn-Emel: the Singing Dune, the striped Aktau mountains and the volcanic Katutau. Note that Aktau and Katutau require the two-day version — a single day only reaches the dune.' },
+        { t: 'p', text: 'An alternative fifth day is the Ethno Village for the cultural side, or horseback riding in the Alatau foothills.' },
+
+        { t: 'h2', text: 'Practical notes for a short trip' },
+        { t: 'ul', items: [
+          'Order matters: city first, then the far trips. It gives you altitude acclimatisation and a buffer if weather turns.',
+          'Do not schedule a distant trip on your departure day. Roads back can be slower than planned.',
+          'Season decides your options — the alpine lakes and Assy only work June to September.',
+          'Carry your passport on every trip outside the city.',
+          'Group departures are the cheapest way to do all of this, from 8,990 ₸ per person; private tours give you control over departure time and pace.',
+        ] },
+
+        { t: 'h2', text: 'What this costs' },
+        { t: 'p', text: 'Done with group tours, the three days above come to roughly 45,000–50,000 ₸ per person in tour costs — a city tour, Charyn, and the lakes — before food and cable car tickets. Private versions cost more but are priced per vehicle, so they get better value the larger your group.' },
+        { t: 'p', text: 'Send us your dates on WhatsApp and we will map out the three days around what is actually running that week.' },
+      ],
+    },
+    ru: {
+      title: '3 дня в Алматы: реалистичный маршрут',
+      metaTitle: '3 дня в Алматы — маршрут на короткую поездку',
+      metaDescription:
+        'Реалистичный маршрут на 3 дня в Алматы: город и горы в первый день, Чарынский каньон во второй, горные озёра в третий. Плюс варианты на 4 и 5 дней.',
+      excerpt:
+        'Трёх дней хватает на город, каньон и горное озеро — если выстроить их в правильном порядке. Вот рабочий план.',
+      body: [
+        { t: 'p', text: 'Три дня — самая частая длительность поездки в Алматы, и этого действительно хватает, чтобы увидеть лучшее в регионе. При одном условии: большие пейзажи находятся в 3–5 часах езды, поэтому каждый из них стоит целого дня. Попытка втиснуть два дальних направления в один день — главная ошибка коротких поездок.' },
+        { t: 'p', text: 'Маршрут рассчитан на то, что вы прилетаете накануне первого дня и улетаете вечером третьего или позже.' },
+
+        { t: 'h2', text: 'День 1 — город и горы над ним' },
+        { t: 'p', text: 'Начните рядом, пока привыкаете. Утром — подъём на Медеу, затем Шымбулак и канатная дорога до Талгарского перевала на 3 200 м. Именно утром: после полудня над вершинами собираются облака.' },
+        { t: 'p', text: 'После обеда — парк Панфилова и Вознесенский собор, затем Зелёный базар. Завершение — закат на Кок-Тобе с панорамой города.' },
+        { t: 'p', text: 'Этот день заодно работает как мягкая акклиматизация перед более высокими поездками.' },
+
+        { t: 'h2', text: 'День 2 — Чарынский каньон' },
+        { t: 'p', text: 'Максимум впечатлений на час дороги. Примерно 3–3,5 часа в одну сторону, главное — тропа по Долине замков: 2 км вниз между красными башнями к реке Чарын, плюс смотровые Лунного и Чёрного каньонов.' },
+        { t: 'p', text: 'Выезд ранний, возвращение вечером. Воды берите заметно больше, чем кажется нужным: тени в каньоне нет.' },
+
+        { t: 'h2', text: 'День 3 — выбираете озеро' },
+        { t: 'p', text: 'Здесь есть реальный выбор, и зависит он от того, сколько дороги вы ещё готовы вытерпеть.' },
+        { t: 'ul', items: [
+          'Кольсай и Каинды (полный день, ~05:00–22:00) — знаменитые горные озёра и затонувший лес. Самое сильное впечатление, но длинный день в дороге.',
+          'БАО (полдня) — ледниковое озеро на 2 511 м в часе от центра. Лучший вариант, если вечером самолёт.',
+          'Иссык и Медвежий водопад (около 10 часов) — спокойная середина с лёгкими прогулками.',
+        ] },
+        { t: 'p', text: 'Если на третий день вылет — берите БАО. Если день свободен целиком — Кольсай и Каинды.' },
+
+        { t: 'h2', text: 'Если есть четыре дня' },
+        { t: 'p', text: 'Добавьте плато Ассы — летнее пастбище на 2 500 м почти без туристов и с обсерваторией на хребте. Или, если совпадают даты, возьмите двухдневный вариант с ночёвкой: тёмное небо там запоминается больше всего.' },
+
+        { t: 'h2', text: 'Если есть пять дней' },
+        { t: 'p', text: 'Добавьте Алтын-Эмель: Поющий бархан, полосатые горы Актау и вулканический Катутау. Учтите, что Актау и Катутау доступны только в двухдневном варианте — за один день успевают лишь к бархану.' },
+        { t: 'p', text: 'Альтернатива на пятый день — этно-аул ради культурной части или катание на лошадях в предгорьях Алатау.' },
+
+        { t: 'h2', text: 'Практика для короткой поездки' },
+        { t: 'ul', items: [
+          'Порядок важен: сначала город, потом дальние поездки. Это даёт акклиматизацию и запас на случай погоды.',
+          'Не ставьте дальнюю поездку на день вылета. Дорога обратно бывает медленнее плана.',
+          'Сезон решает: горные озёра и Ассы работают только с июня по сентябрь.',
+          'Документ берите на каждую поездку за город.',
+          'Групповые выезды — самый доступный способ всё это увидеть, от 8 990 ₸ с человека; индивидуальные дают контроль над временем и темпом.',
+        ] },
+
+        { t: 'h2', text: 'Сколько это стоит' },
+        { t: 'p', text: 'На групповых турах три описанных дня выходят примерно в 45 000–50 000 ₸ с человека за сами туры — обзорная, Чарын и озёра — без еды и билетов на канатные дороги. Индивидуальные дороже, но считаются за транспорт, поэтому чем больше компания, тем выгоднее.' },
+        { t: 'p', text: 'Пришлите даты в WhatsApp — соберём три дня под то, что реально идёт на этой неделе.' },
+      ],
+    },
+  },
 ];
