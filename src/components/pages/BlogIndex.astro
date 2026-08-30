@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../PostCard.astro';
+import { t, type Lang } from '../../i18n/ui';
+import { posts } from '../../data/posts';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+---
+<Base
+  lang={lang}
+  title={t(lang, 'meta.blog.title')}
+  description={t(lang, 'meta.blog.description')}
+  path="/blog/"
+  image="/images/charyn-canyon.jpg"
+>
+  <div class="container page-head">
+    <h1>{t(lang, 'blog.h1')}</h1>
+    <p class="lead">{t(lang, 'blog.lead')}</p>
+  </div>
+  <section class="section" style="padding-top: 36px;">
+    <div class="container">
+      <div class="tour-grid">
+        {sorted.map((post) => <PostCard post={post} lang={lang} />)}
+      </div>
+    </div>
+  </section>
+</Base>

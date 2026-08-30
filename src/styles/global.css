@@ -1540,3 +1540,39 @@ p { margin: 0 0 1em; }
   transition: width 0.08s linear;
   pointer-events: none;
 }
+
+/* ---------- blog ---------- */
+.post-layout {
+  max-width: 760px;
+  padding-top: 46px;
+  padding-bottom: 20px;
+}
+
+.post-body h2 {
+  font-size: 1.5rem;
+  margin: 38px 0 14px;
+}
+
+.post-body p {
+  margin: 0 0 18px;
+  line-height: 1.75;
+  font-size: 1.04rem;
+}
+
+.post-body .highlights-list { margin-bottom: 22px; }
+
+.post-tip {
+  background: #f1faf4;
+  border-left: 4px solid var(--pine);
+  border-radius: 0 10px 10px 0;
+  padding: 16px 20px;
+  color: var(--ink);
+}
+
+.post-cta {
+  margin-top: 46px;
+  background: #f2efe8;
+  border-radius: var(--radius);
+  padding: 28px 30px;
+}
+.post-cta p { margin-bottom: 0; color: var(--muted); }

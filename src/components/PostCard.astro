@@ -1,0 +1,23 @@
+---
+import { localizePath, type Lang } from '../i18n/ui';
+import type { Post } from '../data/posts';
+
+interface Props { post: Post; lang: Lang }
+const { post, lang } = Astro.props;
+const c = post[lang];
+const url = localizePath(lang, `/blog/${post.slug}/`);
+const min = lang === 'en' ? `${post.readMinutes} min read` : `${post.readMinutes} мин чтения`;
+---
+<article class="tour-card">
+  <a href={url} class="tour-card-media">
+    <img src={post.image} alt={c.title} loading="lazy" width="640" height="420" />
+    <span class="tour-card-chip">{min}</span>
+  </a>
+  <div class="tour-card-body">
+    <h3><a href={url}>{c.title}</a></h3>
+    <p class="tour-card-teaser">{c.excerpt}</p>
+    <div class="tour-card-foot">
+      <a href={url} class="btn btn-outline">{lang === 'en' ? 'Read' : 'Читать'}</a>
+    </div>
+  </div>
+</article>

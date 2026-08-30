@@ -30,7 +30,14 @@ const en = {
   'nav.group': 'Group Tours',
   'nav.about': 'About Us',
   'nav.contact': 'Contacts',
+  'nav.blog': 'Travel Guide',
   'nav.whatsapp': 'WhatsApp',
+  'meta.blog.title': 'Almaty Travel Guide — Day Trips, Canyons & Lakes | Almatrips',
+  'meta.blog.description':
+    'Practical guides to travelling around Almaty: the best day trips, Charyn Canyon, the mountain lakes, what to see in the city and when to visit.',
+  'blog.h1': 'Almaty travel guide',
+  'blog.lead':
+    'Practical, honest guides to the places we take travelers — how to get there, when to go and what the day really looks like.',
 
   'meta.private.title': 'Private Tours from Almaty — Your Own Vehicle & Guide | Almatrips',
   'meta.private.description':
@@ -220,7 +227,14 @@ const ru: typeof en = {
   'nav.group': 'Групповые',
   'nav.about': 'О нас',
   'nav.contact': 'Контакты',
+  'nav.blog': 'Гид по региону',
   'nav.whatsapp': 'WhatsApp',
+  'meta.blog.title': 'Гид по Алматы — поездки, каньоны и озёра | Almatrips',
+  'meta.blog.description':
+    'Практичные гиды по путешествиям вокруг Алматы: лучшие однодневные поездки, Чарынский каньон, горные озёра, что посмотреть в городе и когда ехать.',
+  'blog.h1': 'Гид по Алматы и региону',
+  'blog.lead':
+    'Практичные и честные гиды по местам, куда мы возим путешественников: как добраться, когда ехать и как реально проходит день.',
 
   'meta.private.title': 'Индивидуальные туры из Алматы — личный транспорт и гид | Almatrips',
   'meta.private.description':
