@@ -101,12 +101,14 @@ const breadcrumbSchema = {
       <h2>{t(lang, 'gt.dates')}</h2>
       {tour.daily ? (
         <p class="gt-daily">{t(lang, 'gt.daily')}</p>
-      ) : tour.dates && (
+      ) : tour.dates?.length ? (
         <div class="gt-datelist">
           {tour.dates.map((m) => (
             <p><strong>{t(lang, `month.${m.month}` as any)}:</strong> {m.days.join(', ')}</p>
           ))}
         </div>
+      ) : (
+        <p class="gt-daily">{t(lang, 'gt.datesRequest')}</p>
       )}
 
       {c.program && (

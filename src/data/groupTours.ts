@@ -71,11 +71,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/shymbulak-medeu.jpg', '/images/medeu.jpg', '/images/almaty-city-tour.jpg'],
     emoji: '🏙️',
     priceKzt: 19990,
-    dates: [
-      { month: 'june', days: ['23', '24', '26', '27', '30'] },
-      { month: 'july', days: ['1', '3', '4', '7', '8', '10', '11', '14', '15', '17', '18', '21', '22', '24', '25', '28', '29', '31'] },
-      { month: 'august', days: ['1', '4', '5', '7', '8', '11', '12', '14', '15', '18', '19', '21', '22', '25', '26', '28', '29'] },
-    ],
     meetingPoint,
     en: {
       name: 'City Tour',
@@ -344,11 +339,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-canyon.jpg'],
     emoji: '🪐',
     priceKzt: 13990,
-    dates: [
-      { month: 'june', days: ['23', '24', '26', '27', '28', '30'] },
-      { month: 'july', days: ['1', '3', '4', '5', '7', '8', '10', '11', '12', '14', '15', '17', '18', '19', '21', '22', '24', '25', '26', '28', '29', '31'] },
-      { month: 'august', days: ['1', '2', '4', '5', '7', '8', '9', '11', '12', '14', '15', '16', '18', '19', '21', '22', '23', '25', '26', '28', '29', '30'] },
-    ],
     meetingPoint,
     en: {
       name: 'Lite Tour',
@@ -447,11 +437,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/kolsai-kaindy-lakes.jpg', '/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     emoji: '⚡️',
     priceKzt: 12990,
-    dates: [
-      { month: 'june', days: ['24', '27', '28', '29'] },
-      { month: 'july', days: ['1', '4', '5', '6', '8', '11', '12', '13', '15', '18', '19', '20', '22', '25', '26', '27', '29'] },
-      { month: 'august', days: ['1', '2', '3', '5', '8', '9', '10', '12', '15', '16', '17', '19', '22', '23', '24', '26', '29', '30', '31'] },
-    ],
     meetingPoint,
     en: {
       name: 'Drive Tour',
@@ -542,11 +527,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/charyn-canyon.jpg', '/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg'],
     emoji: '🚀',
     priceKzt: 17990,
-    dates: [
-      { month: 'june', days: ['24', '26', '28'] },
-      { month: 'july', days: ['1', '3', '5', '8', '10', '12', '15', '17', '19', '22', '24', '26', '29', '31'] },
-      { month: 'august', days: ['2', '5', '7', '9', '12', '14', '16', '19', '21', '23', '26', '28', '30'] },
-    ],
     meetingPoint,
     en: {
       name: 'Extreme Tour',
@@ -653,11 +633,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/charyn-canyon.jpg'],
     emoji: '🏜️',
     priceKzt: 8990,
-    dates: [
-      { month: 'june', days: ['24', '28'] },
-      { month: 'july', days: ['5', '12', '19', '26'] },
-      { month: 'august', days: ['2', '9', '16', '23'] },
-    ],
     meetingPoint,
     en: {
       name: 'Trio of Charyn',
@@ -738,11 +713,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/issyk-lake.jpg', '/images/green-soul.jpg'],
     emoji: '🌊',
     priceKzt: 9990,
-    dates: [
-      { month: 'june', days: ['22', '24', '26', '28', '29', '30'] },
-      { month: 'july', days: ['4', '9', '14', '19', '24', '29'] },
-      { month: 'august', days: ['3', '8', '13', '18', '23', '28'] },
-    ],
     meetingPoint,
     en: {
       name: 'Marmaris — Issyk Lake & Bear Waterfall',
@@ -899,11 +869,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/singing-dunes.jpg', '/images/altyn-emel.jpg'],
     emoji: '🏜️',
     priceKzt: 17990,
-    dates: [
-      { month: 'june', days: ['28'] },
-      { month: 'july', days: ['5', '12', '19', '26', '31'] },
-      { month: 'august', days: ['2', '9', '16', '23', '30'] },
-    ],
     meetingPoint,
     en: {
       name: 'Singing Dunes',
@@ -996,11 +961,6 @@ export const groupTours: GroupTour[] = [
     gallery: ['/images/altyn-emel.jpg', '/images/singing-dunes.jpg'],
     emoji: '🌄',
     priceKzt: 55990,
-    dates: [
-      { month: 'june', days: ['24–25', '28–29'] },
-      { month: 'july', days: ['1–2', '5–6', '8–9', '12–13', '15–16', '19–20', '22–23', '26–27', '29–30'] },
-      { month: 'august', days: ['2–3', '5–6', '9–10', '12–13', '16–17', '19–20', '23–24', '26–27', '30–31'] },
-    ],
     meetingPoint,
     en: {
       name: 'Treasures of Altyn-Emel',
@@ -1110,11 +1070,6 @@ export const groupTours: GroupTour[] = [
     image: '/images/hero.jpg',
     emoji: '⛰️',
     priceKzt: 15990,
-    dates: [
-      { month: 'june', days: ['24', '26'] },
-      { month: 'july', days: ['1', '3', '8', '10', '15', '17', '22', '24', '29', '31'] },
-      { month: 'august', days: ['5', '7', '12', '14', '19', '21', '26', '28'] },
-    ],
     meetingPoint,
     en: {
       name: 'Assy Plateau — 1 day',
@@ -1192,11 +1147,6 @@ export const groupTours: GroupTour[] = [
     image: '/images/assy-plateau.jpg',
     emoji: '🏕️',
     priceKzt: 29990,
-    dates: [
-      { month: 'june', days: ['27–28'] },
-      { month: 'july', days: ['4–5', '11–12', '18–19', '25–26'] },
-      { month: 'august', days: ['1–2', '8–9', '15–16', '22–23', '29–30'] },
-    ],
     meetingPoint,
     en: {
       name: 'Assy Plateau — 2 days',

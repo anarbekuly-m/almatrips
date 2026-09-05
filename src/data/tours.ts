@@ -49,10 +49,10 @@ export function usdFrom(kzt: number): number {
 }
 
 const brackets = (a: number, b: number, c: number, d: number): PriceBracket[] => [
-  { label: '1–4', kzt: a },
-  { label: '5–7', kzt: b },
-  { label: '8–14', kzt: c },
-  { label: '15–18', kzt: d },
+  { label: '1–3', kzt: a },
+  { label: '4–6', kzt: b },
+  { label: '7–13', kzt: c },
+  { label: '14–18', kzt: d },
 ];
 
 const inclEn = (vehicle: string) => [
@@ -77,8 +77,8 @@ export const tours: Tour[] = [
     slug: 'kolsai-kaindy-black-canyon',
     image: '/images/kaindy.jpg',
     gallery: ['/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-kolsai-kaindy.jpg'],
-    priceKzt: 109990,
-    priceBrackets: brackets(109990, 129990, 194990, 249990),
+    priceKzt: 159990,
+    priceBrackets: brackets(159990, 179990, 194990, 249990),
     hours: 16,
     featured: true,
     en: {
@@ -164,8 +164,8 @@ export const tours: Tour[] = [
     slug: 'kolsai-charyn-canyons',
     image: '/images/charyn-canyon.jpg',
     gallery: ['/images/charyn-canyon.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-kolsai-kaindy.jpg'],
-    priceKzt: 94990,
-    priceBrackets: brackets(94990, 114990, 179990, 234990),
+    priceKzt: 149990,
+    priceBrackets: brackets(149990, 169990, 189990, 234990),
     hours: 16,
     featured: true,
     en: {
@@ -251,8 +251,8 @@ export const tours: Tour[] = [
     slug: 'kaindy-charyn-canyons',
     image: '/images/charyn-kolsai-kaindy.jpg',
     gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/charyn-canyon.jpg'],
-    priceKzt: 94990,
-    priceBrackets: brackets(94990, 114990, 179990, 234990),
+    priceKzt: 149990,
+    priceBrackets: brackets(149990, 169990, 189990, 234990),
     hours: 16,
     featured: false,
     en: {
@@ -429,8 +429,8 @@ export const tours: Tour[] = [
     slug: 'issyk-waterfall',
     image: '/images/issyk-lake.jpg',
     gallery: ['/images/issyk-lake.jpg', '/images/green-soul.jpg'],
-    priceKzt: 79990,
-    priceBrackets: brackets(79990, 99990, 139990, 179990),
+    priceKzt: 89990,
+    priceBrackets: brackets(89990, 109990, 139990, 179990),
     hours: 7,
     featured: false,
     en: {
@@ -515,8 +515,8 @@ export const tours: Tour[] = [
   {
     slug: 'assy-plateau-1day',
     image: '/images/assy-plateau.jpg',
-    priceKzt: 89990,
-    priceBrackets: brackets(89990, 119990, 229990, 289990),
+    priceKzt: 99990,
+    priceBrackets: brackets(99990, 129990, 229990, 289990),
     hours: 11,
     featured: false,
     en: {
@@ -603,8 +603,8 @@ export const tours: Tour[] = [
   {
     slug: 'assy-plateau-2day',
     image: '/images/assy-plateau.jpg',
-    priceKzt: 129990,
-    priceBrackets: brackets(129990, 209990, 359990, 439990),
+    priceKzt: 149990,
+    priceBrackets: brackets(149990, 209990, 359990, 439990),
     hours: 0,
     featured: false,
     en: {
@@ -694,8 +694,8 @@ export const tours: Tour[] = [
     slug: 'singing-dunes',
     image: '/images/singing-dunes.jpg',
     gallery: ['/images/singing-dunes.jpg', '/images/altyn-emel.jpg'],
-    priceKzt: 119990,
-    priceBrackets: brackets(119990, 159990, 239990, 339990),
+    priceKzt: 149990,
+    priceBrackets: brackets(149990, 169990, 239990, 339990),
     hours: 15,
     featured: false,
     en: {
@@ -870,7 +870,7 @@ export const tours: Tour[] = [
     slug: 'green-soul',
     image: '/images/green-soul.jpg',
     priceKzt: 79990,
-    priceBrackets: brackets(79990, 99990, 139990, 179990),
+    priceBrackets: brackets(79990, 99990, 149990, 179990),
     hours: 5,
     featured: false,
     en: {
