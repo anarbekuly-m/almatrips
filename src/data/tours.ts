@@ -78,7 +78,7 @@ export const tours: Tour[] = [
     image: '/images/kaindy.jpg',
     gallery: ['/images/kaindy.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     priceKzt: 159990,
-    priceBrackets: brackets(159990, 179990, 194990, 249990),
+    priceBrackets: brackets(159990, 189990, 219990, 279990),
     hours: 16,
     featured: true,
     en: {
@@ -165,7 +165,7 @@ export const tours: Tour[] = [
     image: '/images/charyn-canyon.jpg',
     gallery: ['/images/charyn-canyon.jpg', '/images/kolsai-kaindy-lakes.jpg', '/images/charyn-kolsai-kaindy.jpg'],
     priceKzt: 149990,
-    priceBrackets: brackets(149990, 169990, 189990, 234990),
+    priceBrackets: brackets(149990, 179990, 209990, 269990),
     hours: 16,
     featured: true,
     en: {
@@ -252,7 +252,7 @@ export const tours: Tour[] = [
     image: '/images/charyn-kolsai-kaindy.jpg',
     gallery: ['/images/charyn-kolsai-kaindy.jpg', '/images/kaindy.jpg', '/images/charyn-canyon.jpg'],
     priceKzt: 149990,
-    priceBrackets: brackets(149990, 169990, 189990, 234990),
+    priceBrackets: brackets(149990, 179990, 209990, 269990),
     hours: 16,
     featured: false,
     en: {
@@ -429,8 +429,8 @@ export const tours: Tour[] = [
     slug: 'issyk-waterfall',
     image: '/images/issyk-lake.jpg',
     gallery: ['/images/issyk-lake.jpg', '/images/green-soul.jpg'],
-    priceKzt: 89990,
-    priceBrackets: brackets(89990, 109990, 139990, 179990),
+    priceKzt: 129990,
+    priceBrackets: brackets(129990, 149990, 169990, 229990),
     hours: 7,
     featured: false,
     en: {
@@ -515,8 +515,8 @@ export const tours: Tour[] = [
   {
     slug: 'assy-plateau-1day',
     image: '/images/assy-plateau.jpg',
-    priceKzt: 99990,
-    priceBrackets: brackets(99990, 129990, 229990, 289990),
+    priceKzt: 139990,
+    priceBrackets: brackets(139990, 179990, 249990, 0),
     hours: 11,
     featured: false,
     en: {
@@ -603,8 +603,8 @@ export const tours: Tour[] = [
   {
     slug: 'assy-plateau-2day',
     image: '/images/assy-plateau.jpg',
-    priceKzt: 149990,
-    priceBrackets: brackets(149990, 209990, 359990, 439990),
+    priceKzt: 169990,
+    priceBrackets: brackets(169990, 209990, 279990, 0),
     hours: 0,
     featured: false,
     en: {
@@ -694,8 +694,8 @@ export const tours: Tour[] = [
     slug: 'singing-dunes',
     image: '/images/singing-dunes.jpg',
     gallery: ['/images/singing-dunes.jpg', '/images/altyn-emel.jpg'],
-    priceKzt: 149990,
-    priceBrackets: brackets(149990, 169990, 239990, 339990),
+    priceKzt: 179990,
+    priceBrackets: brackets(179990, 229990, 279990, 0),
     hours: 15,
     featured: false,
     en: {
@@ -781,8 +781,8 @@ export const tours: Tour[] = [
     slug: 'altyn-emel',
     image: '/images/altyn-emel.jpg',
     gallery: ['/images/altyn-emel.jpg', '/images/singing-dunes.jpg'],
-    priceKzt: 239990,
-    priceBrackets: brackets(239990, 379990, 599990, 889990),
+    priceKzt: 289990,
+    priceBrackets: brackets(289990, 399990, 599990, 0),
     hours: 0,
     featured: false,
     en: {
@@ -869,8 +869,8 @@ export const tours: Tour[] = [
   {
     slug: 'green-soul',
     image: '/images/green-soul.jpg',
-    priceKzt: 79990,
-    priceBrackets: brackets(79990, 99990, 149990, 179990),
+    priceKzt: 89990,
+    priceBrackets: brackets(89990, 109990, 149990, 179990),
     hours: 5,
     featured: false,
     en: {
@@ -954,8 +954,8 @@ export const tours: Tour[] = [
     slug: 'almaty-city-tour',
     image: '/images/almaty-city-tour.jpg',
     gallery: ['/images/almaty-city-tour.jpg', '/images/medeu.jpg', '/images/shymbulak-medeu.jpg'],
-    priceKzt: 99990,
-    priceBrackets: brackets(99990, 139990, 279990, 359990),
+    priceKzt: 109990,
+    priceBrackets: brackets(109990, 149990, 229990, 289990),
     hours: 4,
     featured: false,
     en: {
@@ -1057,8 +1057,8 @@ export const tours: Tour[] = [
     slug: 'big-almaty-lake',
     image: '/images/big-almaty-lake.jpg',
     gallery: ['/images/big-almaty-lake.jpg', '/images/bao-b.jpg', '/images/hero.jpg'],
-    priceKzt: 89990,
-    priceBrackets: brackets(89990, 159990, 299990, 499990),
+    priceKzt: 119990,
+    priceBrackets: brackets(119990, 179990, 259990, 339990),
     hours: 5,
     featured: false,
     en: {
