@@ -868,7 +868,7 @@ export const groupTours: GroupTour[] = [
     image: '/images/singing-dunes.jpg',
     gallery: ['/images/singing-dunes.jpg', '/images/altyn-emel.jpg'],
     emoji: '🏜️',
-    priceKzt: 17990,
+    priceKzt: 29990,
     meetingPoint,
     en: {
       name: 'Singing Dunes',
@@ -960,7 +960,7 @@ export const groupTours: GroupTour[] = [
     image: '/images/altyn-emel.jpg',
     gallery: ['/images/altyn-emel.jpg', '/images/singing-dunes.jpg'],
     emoji: '🌄',
-    priceKzt: 55990,
+    priceKzt: 65990,
     meetingPoint,
     en: {
       name: 'Treasures of Altyn-Emel',

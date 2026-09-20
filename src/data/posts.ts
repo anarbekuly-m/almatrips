@@ -613,8 +613,8 @@ export const posts: Post[] = [
         { t: 'h2', text: 'One day or two?' },
         { t: 'p', text: 'This is the key planning decision, and the distances make it for you.' },
         { t: 'ul', items: [
-          'One day (from 17,990 ₸ per person) — the Singing Dune only. About four hours of driving each way, roughly 13 hours door to door. Aktau and Katutau are simply too far to add.',
-          'Two days with an overnight (from 55,990 ₸ per person) — the dune on day one, then Aktau, Katutau and the willow on day two. Accommodation, breakfast and lunch included.',
+          'One day (from 29,990 ₸ per person) — the Singing Dune only. About four hours of driving each way, roughly 13 hours door to door. Aktau and Katutau are simply too far to add.',
+          'Two days with an overnight (from 65,990 ₸ per person) — the dune on day one, then Aktau, Katutau and the willow on day two. Accommodation, breakfast and lunch included.',
         ] },
         { t: 'p', text: 'If the striped mountains are what you came for, the one-day trip will not include them. That catches people out, so it is worth being clear about before booking.' },
 
@@ -650,8 +650,8 @@ export const posts: Post[] = [
         { t: 'h2', text: 'Один день или два?' },
         { t: 'p', text: 'Это главное решение при планировании, и расстояния решают за вас.' },
         { t: 'ul', items: [
-          'Один день (от 17 990 ₸ с человека) — только Поющий бархан. Около четырёх часов дороги в одну сторону, примерно 13 часов от двери до двери. Актау и Катутау добавить физически некуда.',
-          'Два дня с ночёвкой (от 55 990 ₸ с человека) — бархан в первый день, затем Актау, Катутау и ива во второй. Проживание, завтрак и обед включены.',
+          'Один день (от 29 990 ₸ с человека) — только Поющий бархан. Около четырёх часов дороги в одну сторону, примерно 13 часов от двери до двери. Актау и Катутау добавить физически некуда.',
+          'Два дня с ночёвкой (от 65 990 ₸ с человека) — бархан в первый день, затем Актау, Катутау и ива во второй. Проживание, завтрак и обед включены.',
         ] },
         { t: 'p', text: 'Если вы едете ради полосатых гор — в однодневный тур они не входят. На этом часто спотыкаются, поэтому лучше понимать заранее.' },
 
