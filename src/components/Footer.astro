@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import { t, localizePath, waLink, WHATSAPP_DISPLAY, INSTAGRAM, INSTAGRAM_DISPLAY, type Lang } from '../i18n/ui';
+import { destinations } from '../data/destinations';
 
 interface Props {
   lang: Lang;
@@ -25,6 +26,14 @@ const year = new Date().getFullYear();
           <li><a href={localizePath(lang, '/blog/')}>{t(lang, 'nav.blog')}</a></li>
           <li><a href={localizePath(lang, '/about/')}>{t(lang, 'nav.about')}</a></li>
           <li><a href={localizePath(lang, '/contact/')}>{t(lang, 'nav.contact')}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>{t(lang, 'nav.destinations')}</h4>
+        <ul>
+          {destinations.map((d) => (
+            <li><a href={localizePath(lang, `/destinations/${d.slug}/`)}>{d[lang].name}</a></li>
+          ))}
         </ul>
       </div>
       <div>

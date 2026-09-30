@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Slider from '../Slider.astro';
+import { hubsForPrivateTour } from '../../data/destinations';
 import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
 import { type Tour } from '../../data/tours';
 
@@ -11,6 +12,7 @@ interface Props {
 
 const { lang, tour } = Astro.props;
 const c = tour[lang];
+const hubs = hubsForPrivateTour(tour.slug);
 const path = `/tours/${tour.slug}/`;
 const images = tour.gallery?.length ? tour.gallery : [tour.image];
 const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
@@ -120,6 +122,13 @@ const breadcrumbSchema = {
           </details>
         ))}
       </div>
+
+      {hubs.map((h) => (
+        <a class="dest-guide" href={localizePath(lang, `/destinations/${h.slug}/`)}>
+          <span class="dest-guide-kicker">{t(lang, 'nav.destinations')}</span>
+          <span class="dest-guide-title">{h[lang].moreLink} →</span>
+        </a>
+      ))}
     </div>
 
     <aside class="book-card">

@@ -1,0 +1,110 @@
+---
+import Base from '../../layouts/Base.astro';
+import Slider from '../Slider.astro';
+import GroupTourCard from '../GroupTourCard.astro';
+import TourCard from '../TourCard.astro';
+import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
+import { groupTours } from '../../data/groupTours';
+import { tours } from '../../data/tours';
+import { posts } from '../../data/posts';
+import type { Destination } from '../../data/destinations';
+
+interface Props { lang: Lang; dest: Destination }
+const { lang, dest } = Astro.props;
+const c = dest[lang];
+const path = `/destinations/${dest.slug}/`;
+const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
+
+const group = dest.group.map((s) => groupTours.find((g) => g.slug === s)).filter((g) => !!g);
+const priv = dest.private.map((s) => tours.find((p) => p.slug === s)).filter((p) => !!p);
+const guide = dest.guide ? posts.find((p) => p.slug === dest.guide) : undefined;
+
+const itemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: c.h1,
+  itemListElement: [
+    ...group.map((g) => ({ name: g![lang].name, url: site + localizePath(lang, `/group-tours/${g!.slug}/`) })),
+    ...priv.map((p) => ({ name: p![lang].title, url: site + localizePath(lang, `/tours/${p!.slug}/`) })),
+  ].map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, url: it.url })),
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: BRAND, item: site + localizePath(lang, '/') },
+    { '@type': 'ListItem', position: 2, name: c.name },
+  ],
+};
+---
+<Base
+  lang={lang}
+  title={c.metaTitle}
+  description={c.metaDescription}
+  path={path}
+  image={dest.image}
+  schema={[itemList, breadcrumbSchema]}
+>
+  <section class="tour-hero">
+    <Slider images={[dest.image]} alt={c.name} class="tour-hero-media" />
+    <div class="tour-hero-scrim" aria-hidden="true"></div>
+    <div class="container tour-hero-inner">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href={localizePath(lang, '/')}>{BRAND}</a><span>/</span><span>{c.name}</span>
+      </nav>
+      <h1>{c.h1}</h1>
+      <p class="dest-lead">{c.lead}</p>
+    </div>
+  </section>
+
+  <div class="container post-layout">
+    <ul class="dest-facts">
+      {c.facts.map((f) => <li>{f}</li>)}
+    </ul>
+    <div class="post-body">
+      {c.body.map((b) =>
+        b.t === 'h2' ? <h2>{b.text}</h2>
+        : b.t === 'p' ? <p>{b.text}</p>
+        : b.t === 'tip' ? <p class="post-tip">{b.text}</p>
+        : <ul class="highlights-list">{b.items.map((i) => <li>{i}</li>)}</ul>
+      )}
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: 24px;">
+    <div class="container">
+      {group.length > 0 && (
+        <>
+          <h2 class="dest-section-title">{c.groupTitle}</h2>
+          <div class="tour-grid">
+            {group.map((g) => <GroupTourCard tour={g!} lang={lang} />)}
+          </div>
+        </>
+      )}
+
+      {priv.length > 0 && (
+        <>
+          <h2 class="dest-section-title" style="margin-top: 56px;">{c.privateTitle}</h2>
+          <div class="tour-grid">
+            {priv.map((p) => <TourCard tour={p!} lang={lang} />)}
+          </div>
+        </>
+      )}
+
+      {guide && (
+        <a class="dest-guide" href={localizePath(lang, `/blog/${guide.slug}/`)}>
+          <span class="dest-guide-kicker">{t(lang, 'dest.guide')}</span>
+          <span class="dest-guide-title">{guide[lang].title} →</span>
+        </a>
+      )}
+
+      <div class="post-cta" style="max-width: 760px;">
+        <h2 style="margin-top:0">{t(lang, 'cta.title')}</h2>
+        <p>{t(lang, 'cta.sub')}</p>
+        <div class="dest-nav" style="margin-top:18px; justify-content:flex-start">
+          <a href={waLink(lang, c.name)} class="btn btn-wa" target="_blank" rel="noopener">{t(lang, 'cta.btn')}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

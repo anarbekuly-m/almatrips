@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Slider from '../Slider.astro';
+import { hubsForGroupTour } from '../../data/destinations';
 import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
 import type { GroupTour } from '../../data/groupTours';
 
@@ -11,6 +12,7 @@ interface Props {
 
 const { lang, tour } = Astro.props;
 const c = tour[lang];
+const hubs = hubsForGroupTour(tour.slug);
 const path = `/group-tours/${tour.slug}/`;
 
 const images = tour.gallery?.length ? tour.gallery : [tour.image];
@@ -157,6 +159,13 @@ const breadcrumbSchema = {
           {c.notes.map((note) => <p style="color: var(--muted);">{note}</p>)}
         </>
       )}
+
+      {hubs.map((h) => (
+        <a class="dest-guide" href={localizePath(lang, `/destinations/${h.slug}/`)}>
+          <span class="dest-guide-kicker">{t(lang, 'nav.destinations')}</span>
+          <span class="dest-guide-title">{h[lang].moreLink} →</span>
+        </a>
+      ))}
     </div>
 
     <aside class="book-card">

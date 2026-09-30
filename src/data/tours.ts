@@ -787,7 +787,7 @@ export const tours: Tour[] = [
     featured: false,
     en: {
       title: 'Treasures of Altyn-Emel',
-      metaTitle: 'Treasures of Altyn-Emel Private Tour from Almaty — Aktau, Katutau & Singing Dune',
+      metaTitle: 'Altyn-Emel 2-Day Private Tour from Almaty — Aktau, Katutau & Singing Dune',
       metaDescription:
         'Private multi-day tour from Almaty through Altyn-Emel National Park: the striped Aktau mountains, the Katutau volcanic rocks, the Singing Dune and ancient petroglyphs.',
       teaser: 'A private journey through Altyn-Emel — striped desert mountains, a singing dune and volcanic rocks.',
@@ -875,7 +875,7 @@ export const tours: Tour[] = [
     featured: false,
     en: {
       title: 'Green Soul — Ayusai & Alma-Arasan',
-      metaTitle: 'Green Soul Private Tour from Almaty — Ayusai & Alma-Arasan Gorges',
+      metaTitle: 'Ayusai & Alma-Arasan Gorges Private Tour from Almaty',
       metaDescription:
         'Easy private half-day tour from Almaty to the green Ayusai and Alma-Arasan gorges — spruce forests, mountain rivers and fresh air minutes from the city.',
       teaser: 'Spruce forests and mountain rivers minutes from the city — an easy private nature reset.',
@@ -913,7 +913,7 @@ export const tours: Tour[] = [
     },
     ru: {
       title: 'Green Soul — Аюсай и Алма-Арасан',
-      metaTitle: 'Green Soul — частный тур из Алматы, ущелья Аюсай и Алма-Арасан',
+      metaTitle: 'Ущелья Аюсай и Алма-Арасан — частный тур из Алматы',
       metaDescription:
         'Лёгкий частный тур на полдня из Алматы в зелёные ущелья Аюсай и Алма-Арасан — еловые леса, горные реки и свежий воздух в минутах от города.',
       teaser: 'Еловые леса и горные реки в минутах от города — лёгкая частная перезагрузка на природе.',
@@ -1103,7 +1103,7 @@ export const tours: Tour[] = [
     },
     ru: {
       title: 'Большое Алматинское озеро',
-      metaTitle: 'Тур на БАО — частная поездка на полдня из Алматы',
+      metaTitle: 'Большое Алматинское озеро (БАО) — частный тур из Алматы на полдня',
       metaDescription:
         'Частный тур на полдня к Большому Алматинскому озеру (2 511 м) — бирюзовое горное озеро в часе от города. Личный автомобиль, трансфер от отеля.',
       teaser: 'Бирюзовое высокогорное озеро на 2 511 м в окружении четырёхтысячников — всего в часе от города.',

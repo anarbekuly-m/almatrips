@@ -2,10 +2,12 @@
 import Base from '../../layouts/Base.astro';
 import { t, localizePath, waLink, BRAND, type Lang } from '../../i18n/ui';
 import type { Post } from '../../data/posts';
+import { hubForGuide } from '../../data/destinations';
 
 interface Props { lang: Lang; post: Post }
 const { lang, post } = Astro.props;
 const c = post[lang];
+const hub = hubForGuide(post.slug);
 const path = `/blog/${post.slug}/`;
 const site = (Astro.site?.href ?? 'https://almatrips.kz/').replace(/\/$/, '');
 
@@ -72,6 +74,13 @@ const dateLabel = new Date(post.date).toLocaleDateString(lang === 'en' ? 'en-GB'
         : b.t === 'p' ? <p>{b.text}</p>
         : b.t === 'tip' ? <p class="post-tip">{b.text}</p>
         : <ul class="highlights-list">{b.items.map((i) => <li>{i}</li>)}</ul>
+      )}
+
+      {hub && (
+        <a class="dest-guide" href={localizePath(lang, `/destinations/${hub.slug}/`)} style="margin: 40px 0 0;">
+          <span class="dest-guide-kicker">{t(lang, 'nav.destinations')}</span>
+          <span class="dest-guide-title">{hub[lang].moreLink} →</span>
+        </a>
       )}
 
       <div class="post-cta">

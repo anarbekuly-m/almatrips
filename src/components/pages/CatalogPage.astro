@@ -5,6 +5,7 @@ import GroupTourCard from '../GroupTourCard.astro';
 import { t, localizePath, waLink, type Lang } from '../../i18n/ui';
 import { privateTours, type TourFormat } from '../../data/tours';
 import { groupTours } from '../../data/groupTours';
+import { groupCopy, privateCopy } from '../../data/catalogCopy';
 
 interface Props {
   lang: Lang;
@@ -25,6 +26,8 @@ const otherLabel = isGroup ? t(lang, 'choose.private.cta') : t(lang, 'choose.gro
 const heroImage = isGroup ? '/images/kolsai-kaindy-lakes.jpg' : '/images/charyn-canyon.jpg';
 
 const pax = t(lang, 'priv.pax');
+const copy = (isGroup ? groupCopy : privateCopy)[lang];
+const tourBase = isGroup ? '/group-tours/' : '/tours/';
 const fmtPrice = (kzt: number) => (kzt > 0 ? `${kzt.toLocaleString('ru-RU')} ₸` : '—');
 ---
 <Base lang={lang} title={metaTitle} description={metaDesc} path={path} image={heroImage}>
@@ -82,6 +85,23 @@ const fmtPrice = (kzt: number) => (kzt > 0 ? `${kzt.toLocaleString('ru-RU')} ₸
         {isGroup
           ? groupTours.map((tour) => <GroupTourCard tour={tour} lang={lang} />)
           : privateTours.map((tour) => <TourCard tour={tour} lang={lang} />)}
+      </div>
+
+      <div class="catalog-copy">
+        <h2>{copy.title}</h2>
+        {copy.intro.map((p) => <p>{p}</p>)}
+        <h3>{copy.popularTitle}</h3>
+        <ul class="highlights-list">
+          {copy.popular.map((item) => (
+            <li><a href={localizePath(lang, `${tourBase}${item.slug}/`)}>{item.label}</a></li>
+          ))}
+        </ul>
+        {copy.sections.map((sec) => (
+          <>
+            <h3>{sec.h2}</h3>
+            <p>{sec.p}</p>
+          </>
+        ))}
       </div>
 
       <p style="margin-top: 36px;">

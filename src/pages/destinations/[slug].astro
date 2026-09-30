@@ -1,0 +1,10 @@
+---
+import DestinationPage from '../../components/pages/DestinationPage.astro';
+import { destinations } from '../../data/destinations';
+
+export function getStaticPaths() {
+  return destinations.map((dest) => ({ params: { slug: dest.slug }, props: { dest } }));
+}
+const { dest } = Astro.props;
+---
+<DestinationPage lang="en" dest={dest} />

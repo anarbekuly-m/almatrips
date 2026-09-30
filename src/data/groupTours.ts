@@ -343,7 +343,7 @@ export const groupTours: GroupTour[] = [
     en: {
       name: 'Lite Tour',
       tagline: '1 day · 3 locations',
-      metaTitle: 'Lite Tour from Almaty — Kolsai, Kaindy & Black Canyon (Group)',
+      metaTitle: 'Kolsai & Kaindy Lakes Group Tour from Almaty — with Black Canyon',
       metaDescription:
         'Group day tour from Almaty: Kolsai Lake, the sunken forest of Kaindy and the Black Canyon viewpoint. Per-person price, UAZ transfer to Kaindy included.',
       teaser: 'Two alpine lakes and a canyon viewpoint in one day — Kolsai, Kaindy and the Black Canyon.',
@@ -388,7 +388,7 @@ export const groupTours: GroupTour[] = [
     ru: {
       name: 'Lite Tour',
       tagline: '1 день · 3 локации',
-      metaTitle: 'Lite Tour из Алматы — Кольсай, Каинды и Чёрный каньон (группа)',
+      metaTitle: 'Кольсай и Каинды — групповой тур из Алматы с Чёрным каньоном',
       metaDescription:
         'Групповой тур из Алматы: озеро Кольсай, затонувший лес Каинды и смотровая Чёрного каньона. Цена за человека, трансфер на УАЗе до Каинды включён.',
       teaser: 'Два горных озера и смотровая каньона за один день — Кольсай, Каинды и Чёрный каньон.',
@@ -441,7 +441,7 @@ export const groupTours: GroupTour[] = [
     en: {
       name: 'Drive Tour',
       tagline: '1 day · 5 locations',
-      metaTitle: 'Drive Tour from Almaty — Kolsai Lake & the Charyn Canyons (Group)',
+      metaTitle: 'Kolsai Lake & Charyn Canyon Group Tour from Almaty — One Day',
       metaDescription:
         'Group day tour from Almaty: Kolsai Lake plus the Charyn canyon system — Charyn Canyon, the Moon and Black canyons and the Charyn River. Per-person price.',
       teaser: 'An alpine lake and the Charyn canyon system in one active day — five locations, no off-road.',
@@ -482,7 +482,7 @@ export const groupTours: GroupTour[] = [
     ru: {
       name: 'Drive Tour',
       tagline: '1 день · 5 локаций',
-      metaTitle: 'Drive Tour из Алматы — Кольсай и каньоны Чарына (группа)',
+      metaTitle: 'Кольсай и Чарынский каньон за один день — групповой тур из Алматы',
       metaDescription:
         'Групповой тур из Алматы: озеро Кольсай и система Чарынских каньонов — Чарын, Лунный и Чёрный каньоны и река Чарын. Цена за человека.',
       teaser: 'Горное озеро и система Чарынских каньонов за один активный день — пять локаций, без бездорожья.',
@@ -531,7 +531,7 @@ export const groupTours: GroupTour[] = [
     en: {
       name: 'Extreme Tour',
       tagline: '1 day · 6 locations',
-      metaTitle: 'Extreme Tour from Almaty — Kolsai, Kaindy & Charyn Canyons (Group)',
+      metaTitle: 'Kolsai, Kaindy & Charyn Canyon in One Day — Group Tour from Almaty',
       metaDescription:
         'Express group day tour from Almaty covering 6 locations: Kolsai Lake, Kaindy Lake and the Charyn canyons. Strict schedule, UAZ transfer to Kaindy included.',
       teaser: 'Six locations in one day — both lakes and all three Charyn canyons on a fast, strict route.',
@@ -580,7 +580,7 @@ export const groupTours: GroupTour[] = [
     ru: {
       name: 'Extreme Tour',
       tagline: '1 день · 6 локаций',
-      metaTitle: 'Extreme Tour из Алматы — Кольсай, Каинды и каньоны Чарына (группа)',
+      metaTitle: 'Кольсай, Каинды и Чарын за один день — групповой тур из Алматы',
       metaDescription:
         'Экспресс групповой тур из Алматы на 6 локаций: озеро Кольсай, озеро Каинды и каньоны Чарына. Строгий график, трансфер на УАЗе до Каинды включён.',
       teaser: 'Шесть локаций за один день — оба озера и все три каньона Чарына по быстрому, строгому маршруту.',
@@ -637,7 +637,7 @@ export const groupTours: GroupTour[] = [
     en: {
       name: 'Trio of Charyn',
       tagline: '1 day · 4 locations',
-      metaTitle: 'Trio of Charyn — Group Day Tour from Almaty (Charyn Canyons)',
+      metaTitle: 'Charyn Canyon Group Day Tour from Almaty — Moon & Black Canyons',
       metaDescription:
         'Group day tour from Almaty to the Charyn canyons: Charyn Canyon, the Charyn River, the Moon Canyon and the Black Canyon viewpoints. Per-person price.',
       teaser: 'The most impressive Charyn landscapes in one day — the canyon, the river and two more viewpoints.',
@@ -673,7 +673,7 @@ export const groupTours: GroupTour[] = [
     ru: {
       name: 'Trio of Charyn',
       tagline: '1 день · 4 локации',
-      metaTitle: 'Trio of Charyn — групповой тур из Алматы (каньоны Чарына)',
+      metaTitle: 'Чарынский каньон — групповой тур из Алматы (Лунный и Чёрный каньоны)',
       metaDescription:
         'Групповой тур из Алматы к каньонам Чарына: Чарынский каньон, река Чарын, смотровые Лунного и Чёрного каньонов. Цена за человека.',
       teaser: 'Самые впечатляющие пейзажи Чарына за один день — каньон, река и ещё две смотровые.',
@@ -717,7 +717,7 @@ export const groupTours: GroupTour[] = [
     en: {
       name: 'Marmaris — Issyk Lake & Bear Waterfall',
       tagline: '1 day · lake & waterfall',
-      metaTitle: 'Marmaris Group Tour from Almaty — Issyk Lake & Bear Waterfall',
+      metaTitle: 'Issyk Lake & Bear Waterfall Group Tour from Almaty',
       metaDescription:
         'Group day tour from Almaty to the turquoise Issyk Lake and the Bear Waterfall in the Turgen gorge. Per-person price, experienced guides, easy walking.',
       teaser: 'A turquoise mountain lake and a forest waterfall — an easy, scenic day from Almaty.',
@@ -751,7 +751,7 @@ export const groupTours: GroupTour[] = [
     ru: {
       name: 'Marmaris — озеро Иссык и Медвежий водопад',
       tagline: '1 день · озеро и водопад',
-      metaTitle: 'Marmaris — групповой тур из Алматы (озеро Иссык и Медвежий водопад)',
+      metaTitle: 'Озеро Иссык и Медвежий водопад — групповой тур из Алматы',
       metaDescription:
         'Групповой тур из Алматы к бирюзовому озеру Иссык и Медвежьему водопаду в Тургеньском ущелье. Цена за человека, гид, лёгкая прогулка.',
       teaser: 'Бирюзовое горное озеро и лесной водопад — лёгкий живописный день из Алматы.',
@@ -965,7 +965,7 @@ export const groupTours: GroupTour[] = [
     en: {
       name: 'Treasures of Altyn-Emel',
       tagline: '2 days / 1 night',
-      metaTitle: 'Treasures of Altyn-Emel — 2-Day Group Tour from Almaty',
+      metaTitle: 'Altyn-Emel 2-Day Group Tour from Almaty — Singing Dunes, Aktau & Katutau',
       metaDescription:
         'Two-day group tour from Almaty through Altyn-Emel National Park: the Singing Dunes, the Aktau and Katutau mountains and the 700-year-old willow. Accommodation & meals included.',
       teaser: 'Two days through Altyn-Emel — the Singing Dunes, the striped Aktau mountains and the volcanic Katutau.',
@@ -1016,7 +1016,7 @@ export const groupTours: GroupTour[] = [
     ru: {
       name: 'Сокровища Алтын-Эмеля',
       tagline: '2 дня / 1 ночь',
-      metaTitle: 'Сокровища Алтын-Эмеля — 2-дневный групповой тур из Алматы',
+      metaTitle: 'Алтын-Эмель за 2 дня — групповой тур из Алматы (Поющий бархан, Актау, Катутау)',
       metaDescription:
         'Двухдневный групповой тур из Алматы по нацпарку Алтын-Эмель: Поющий бархан, горы Актау и Катутау и 700-летняя ива. Проживание и питание включены.',
       teaser: 'Два дня по Алтын-Эмелю — Поющий бархан, полосатые горы Актау и вулканические Катутау.',

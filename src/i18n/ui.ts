@@ -31,6 +31,8 @@ const en = {
   'nav.about': 'About Us',
   'nav.contact': 'Contacts',
   'nav.blog': 'Travel Guide',
+  'nav.destinations': 'Destinations',
+  'dest.guide': 'Practical guide',
   'nav.whatsapp': 'WhatsApp',
   'meta.blog.title': 'Almaty Travel Guide — Day Trips, Canyons & Lakes | Almatrips',
   'meta.blog.description':
@@ -229,6 +231,8 @@ const ru: typeof en = {
   'nav.about': 'О нас',
   'nav.contact': 'Контакты',
   'nav.blog': 'Гид по региону',
+  'nav.destinations': 'Направления',
+  'dest.guide': 'Практический гид',
   'nav.whatsapp': 'WhatsApp',
   'meta.blog.title': 'Гид по Алматы — поездки, каньоны и озёра | Almatrips',
   'meta.blog.description':
