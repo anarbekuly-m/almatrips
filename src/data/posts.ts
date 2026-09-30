@@ -886,4 +886,274 @@ export const posts: Post[] = [
       ],
     },
   },
+  {
+    slug: 'things-to-do-in-almaty',
+    image: '/images/shymbulak-medeu.jpg',
+    date: '2026-10-02',
+    readMinutes: 7,
+    en: {
+      title: 'Things to Do in Almaty: City, Mountains, Winter and Day Trips',
+      metaTitle: 'Things to Do in Almaty — City, Mountains, Winter & Day Trips (2026)',
+      metaDescription:
+        'The best things to do in Almaty, Kazakhstan: city sights, the mountains above town, day trips to canyons and lakes, plus ideas for winter, for families and for the evening.',
+      excerpt:
+        'What to do in Almaty in a day, a week or in the middle of winter — from Kok-Tobe and the Green Bazaar to canyons, alpine lakes and hot springs.',
+      body: [
+        { t: 'p', text: 'Almaty is unusual among big cities: the mountains start where the southern streets end. That means a single trip can mix cafés and museums with alpine lakes, canyons and snow — often on the same day. Here is how the options break down.' },
+
+        { t: 'h2', text: 'In the city' },
+        { t: 'ul', items: [
+          'Panfilov Park and Zenkov Cathedral — a candy-coloured wooden church from 1907 in a shaded park.',
+          'The Green Bazaar — dried fruit, nuts, honey and local food, with tastings along the way.',
+          'Kok-Tobe hill — a cable car from the centre to a panorama of the whole city, best at sunset.',
+          'The pedestrian street locals call Arbat, for an easy evening walk.',
+          'The Central State Museum and the Kasteev Museum of Arts, if the weather turns.',
+        ] },
+
+        { t: 'h2', text: 'In the mountains above the city' },
+        { t: 'ul', items: [
+          'Medeu — the famous high-altitude skating rink at 1,691 m.',
+          'Shymbulak — a three-stage cable car up to around 3,200 m, with views straight into the high peaks.',
+          'Big Almaty Lake — a turquoise glacial lake at 2,511 m, about an hour away and reachable by car.',
+          'Ayusai and Alma-Arasan — green gorges on the edge of town, with a waterfall and a hot spring.',
+        ] },
+
+        { t: 'h2', text: 'Day trips from Almaty' },
+        { t: 'p', text: 'The landscapes that make the region famous sit 2–5 hours away and each needs a full day: Charyn Canyon and the Valley of Castles, the Kolsai and Kaindy lakes, the high Assy Plateau, the Singing Dune in Altyn-Emel and the gentler Issyk Lake with the Bear Waterfall. For cultural variety there is the ethno village with a nomadic show, and horseback riding in the Alatau foothills.' },
+
+        { t: 'h2', text: 'Things to do in Almaty in winter' },
+        { t: 'p', text: 'Winter changes the list rather than shortening it. Shymbulak turns into a proper ski resort and Medeu opens for skating. The city under snow is quiet and photogenic, Kok-Tobe gets clear winter views, and Charyn Canyon can still be visited on clear days — red rock against snow is a genuinely underrated sight. The ethno village, horseback riding and the Alma-Arasan hot spring run through the cold months too.' },
+        { t: 'tip', text: 'What does not work in winter: the Kolsai and Kaindy lakes and the Assy Plateau. The mountain roads become unreliable in the cold season, and our tours there run from June to September.' },
+
+        { t: 'h2', text: 'With kids' },
+        { t: 'p', text: 'The easiest family days are the ones with short walks and something to do at the end: the ethno village show with horses and master classes, horseback riding, Issyk Lake and the Bear Waterfall, Kok-Tobe and Medeu. Long drives like Kolsai and Kaindy are doable with older children, but a two-day version with a night in Saty is far kinder than one very long day.' },
+
+        { t: 'h2', text: 'In the evening' },
+        { t: 'p', text: 'Time Kok-Tobe for sunset and stay for the lights of the city below, then head back down for a walk through the centre. Almaty stays lively late, especially in summer, and the centre is comfortable to walk around after dark.' },
+
+        { t: 'h2', text: 'How to fit it together' },
+        { t: 'p', text: 'Start with the city and the mountains right above it while you adjust to the altitude, then use the following days for the long trips. Group tours are the most affordable way to reach the canyons and lakes; private tours let you set the timing. If you tell us your dates on WhatsApp, we will suggest what is open and worth your time that week.' },
+      ],
+    },
+    ru: {
+      title: 'Что делать в Алматы: город, горы, зима и поездки на день',
+      metaTitle: 'Что посмотреть и чем заняться в Алматы — город, горы, зима, поездки',
+      metaDescription:
+        'Чем заняться в Алматы: достопримечательности города, горы над Алматы, поездки к каньонам и озёрам, а также идеи на зиму, для семей с детьми и на вечер.',
+      excerpt:
+        'Что делать в Алматы за день, неделю или посреди зимы — от Кок-Тобе и Зелёного базара до каньонов, горных озёр и горячих источников.',
+      body: [
+        { t: 'p', text: 'Алматы необычен для большого города: горы начинаются там, где заканчиваются южные улицы. Поэтому одна поездка легко совмещает кафе и музеи с горными озёрами, каньонами и снегом — нередко в один и тот же день. Вот из чего можно выбирать.' },
+
+        { t: 'h2', text: 'В городе' },
+        { t: 'ul', items: [
+          'Парк Панфилова и Вознесенский собор — разноцветная деревянная церковь 1907 года в тенистом парке.',
+          'Зелёный базар — сухофрукты, орехи, мёд и местная еда, с дегустациями по пути.',
+          'Холм Кок-Тобе — канатная дорога из центра к панораме всего города, лучше всего на закате.',
+          'Пешеходная улица, которую местные называют Арбатом, — для спокойной вечерней прогулки.',
+          'Центральный государственный музей и музей искусств Кастеева — если испортится погода.',
+        ] },
+
+        { t: 'h2', text: 'В горах над городом' },
+        { t: 'ul', items: [
+          'Медеу — знаменитый высокогорный каток на 1 691 м.',
+          'Шымбулак — трёхступенчатая канатная дорога примерно до 3 200 м с видом прямо на вершины.',
+          'Большое Алматинское озеро — бирюзовое ледниковое озеро на 2 511 м, около часа на машине.',
+          'Аюсай и Алма-Арасан — зелёные ущелья на краю города, с водопадом и горячим источником.',
+        ] },
+
+        { t: 'h2', text: 'Поездки из Алматы на день' },
+        { t: 'p', text: 'Пейзажи, которыми знаменит регион, находятся в 2–5 часах езды, и на каждый нужен целый день: Чарынский каньон и Долина замков, озёра Кольсай и Каинды, высокогорное плато Ассы, Поющий бархан в Алтын-Эмеле и более спокойное озеро Иссык с Медвежьим водопадом. Для разнообразия — этно-аул с шоу кочевой культуры и катание на лошадях в предгорьях Алатау.' },
+
+        { t: 'h2', text: 'Чем заняться в Алматы зимой' },
+        { t: 'p', text: 'Зимой список не сокращается, а меняется. Шымбулак становится полноценным горнолыжным курортом, Медеу открывается для катания. Заснеженный город тих и фотогеничен, с Кок-Тобе открываются чистые зимние виды, а Чарынский каньон можно посетить в ясные дни — красные скалы на фоне снега незаслуженно недооценены. Этно-аул, конные прогулки и горячий источник Алма-Арасан работают и в холодные месяцы.' },
+        { t: 'tip', text: 'Что зимой не работает: озёра Кольсай и Каинды и плато Ассы. В холодный сезон горные дороги туда ненадёжны, и наши туры туда идут с июня по сентябрь.' },
+
+        { t: 'h2', text: 'С детьми' },
+        { t: 'p', text: 'Самые лёгкие семейные дни — с короткими прогулками и понятной целью: шоу в этно-ауле с лошадьми и мастер-классами, катание на лошадях, озеро Иссык и Медвежий водопад, Кок-Тобе и Медеу. Дальние поездки вроде Кольсая и Каинды с детьми постарше возможны, но двухдневный вариант с ночёвкой в Саты гораздо щадящее одного очень длинного дня.' },
+
+        { t: 'h2', text: 'Вечером' },
+        { t: 'p', text: 'Подгадайте Кок-Тобе к закату и останьтесь посмотреть, как зажигаются огни города, а потом спуститесь прогуляться по центру. Алматы живёт допоздна, особенно летом, и по центру комфортно гулять после темноты.' },
+
+        { t: 'h2', text: 'Как всё совместить' },
+        { t: 'p', text: 'Начните с города и гор прямо над ним, пока привыкаете к высоте, а следующие дни отдайте дальним поездкам. Групповые туры — самый доступный способ добраться до каньонов и озёр; индивидуальные позволяют самим выбрать время. Напишите нам в WhatsApp свои даты — подскажем, что открыто и стоит времени именно на этой неделе.' },
+      ],
+    },
+  },
+  {
+    slug: 'almaty-trip-cost',
+    image: '/images/kolsai-kaindy-lakes.jpg',
+    date: '2026-10-02',
+    readMinutes: 6,
+    en: {
+      title: 'How Much Does a Trip to Almaty Cost? Tours, Packages and Budget',
+      metaTitle: 'Almaty Trip Cost & Tour Packages — What to Budget (2026)',
+      metaDescription:
+        'How much a trip to Almaty costs: day tour prices, group vs private, what drives the budget, and how to put together your own Almaty tour package — including tips for travelers from India and the Gulf.',
+      excerpt:
+        'What tours actually cost, why group and private prices differ so much, and how to build an Almaty tour package around your own flights and hotel.',
+      body: [
+        { t: 'p', text: 'Almaty is one of the better-value destinations in the region, but the budget varies a lot depending on how you travel. Flights and hotels depend on your dates and where you fly from; what we can speak to precisely is the part that usually decides whether a trip feels rushed or memorable — getting out to the canyons, lakes and mountains.' },
+
+        { t: 'h2', text: 'What day tours cost' },
+        { t: 'p', text: 'Group tours are priced per person and are the cheapest way to see the region. Our group day trips start from 8,990 ₸ per person, with most full-day routes to Charyn, Kolsai and Kaindy or the Assy Plateau falling in the low-to-mid teens of thousands of tenge. Overnight trips, such as camping on the Assy Plateau or two days in Altyn-Emel, cost more because they cover two days and, in some cases, accommodation and meals.' },
+        { t: 'p', text: 'Private tours are priced per vehicle rather than per person. That makes them expensive for a solo traveler but surprisingly good value for families and groups: the price for 4–6 people is only somewhat higher than for 1–3, so the cost per head drops quickly. Current prices by group size are listed on our private tours page.' },
+
+        { t: 'h2', text: 'What drives the total budget' },
+        { t: 'ul', items: [
+          'Group vs private — the single biggest factor in tour spending.',
+          'How many long trips you take — each canyon or lake trip is a full day.',
+          'Season — summer is the busiest period for flights and hotels.',
+          'Extras on the day — cable cars at Shymbulak and Kok-Tobe, horse or boat rental at the lakes, food.',
+        ] },
+
+        { t: 'h2', text: 'Is Almaty expensive?' },
+        { t: 'p', text: 'Compared with Western Europe or the Gulf, day-to-day costs are moderate: public transport and ride-hailing are cheap, and eating out is good value outside the most fashionable restaurants. Cards and QR payments work almost everywhere in the city, but keep some cash for national park fees and rentals outside town.' },
+
+        { t: 'h2', text: 'Building your own Almaty tour package' },
+        { t: 'p', text: 'Many travelers look for a ready-made “Almaty tour package”. We do not sell flights or hotels — but we build the part of the trip that happens on the ground, around your dates and wherever you are staying. A typical combination looks like this:' },
+        { t: 'ul', items: [
+          '3–4 days: city and Shymbulak, Charyn Canyon, and the Kolsai and Kaindy lakes.',
+          '5 days: add Big Almaty Lake or Issyk Lake, plus the Assy Plateau in summer.',
+          '7 days: add two days in Altyn-Emel or a night of camping on the Assy Plateau.',
+        ] },
+        { t: 'p', text: 'This works well for travelers from India and the Gulf, who often arrive on direct flights for a short stay and want the itinerary planned in advance. Send us your arrival and departure dates and group size on WhatsApp, and we will put together a day-by-day plan with prices for each tour.' },
+
+        { t: 'h2', text: 'Ways to save' },
+        { t: 'ul', items: [
+          'Choose group departures for the long trips and keep private tours for the days where timing matters most.',
+          'Travel in a group of four or more if you go private — the per-person price falls sharply.',
+          'Avoid stacking long drives back to back; you will enjoy each trip more and waste less.',
+        ] },
+      ],
+    },
+    ru: {
+      title: 'Сколько стоит поездка в Алматы: туры, пакеты и бюджет',
+      metaTitle: 'Сколько стоит поездка в Алматы — цены туров и бюджет (2026)',
+      metaDescription:
+        'Сколько стоит поездка в Алматы: цены однодневных туров, группа или индивидуально, из чего складывается бюджет и как собрать свой турпакет по Алматы.',
+      excerpt:
+        'Сколько на самом деле стоят туры, почему групповые и индивидуальные так отличаются по цене и как собрать свой пакет под ваши даты и отель.',
+      body: [
+        { t: 'p', text: 'Алматы — одно из самых выгодных направлений в регионе, но бюджет сильно зависит от формата поездки. Перелёт и отель зависят от дат и города вылета; мы же можем точно рассказать о той части, которая обычно и решает, будет ли поездка скомканной или запоминающейся, — о выездах к каньонам, озёрам и в горы.' },
+
+        { t: 'h2', text: 'Сколько стоят туры' },
+        { t: 'p', text: 'Групповые туры считаются за человека, и это самый дешёвый способ посмотреть регион. Наши групповые поездки начинаются от 8 990 ₸ с человека, а большинство полных дней — на Чарын, Кольсай и Каинды или плато Ассы — стоят в пределах десяти с небольшим тысяч тенге. Поездки с ночёвкой, например кемпинг на плато Ассы или два дня в Алтын-Эмеле, дороже: это два дня, а в некоторых случаях ещё и проживание с питанием.' },
+        { t: 'p', text: 'Индивидуальные туры считаются за транспорт, а не за человека. Для одного путешественника это дорого, но для семьи или компании — неожиданно выгодно: цена на 4–6 человек лишь немного выше, чем на 1–3, поэтому стоимость на каждого быстро падает. Актуальные цены по размеру группы — на странице индивидуальных туров.' },
+
+        { t: 'h2', text: 'Из чего складывается бюджет' },
+        { t: 'ul', items: [
+          'Группа или индивидуально — главный фактор в расходах на туры.',
+          'Сколько дальних поездок — каждый выезд к каньону или озеру занимает целый день.',
+          'Сезон — летом больше всего спрос на перелёты и отели.',
+          'Расходы на месте — канатные дороги Шымбулака и Кок-Тобе, прокат лошади или лодки у озёр, еда.',
+        ] },
+
+        { t: 'h2', text: 'Дорого ли в Алматы?' },
+        { t: 'p', text: 'По сравнению с Западной Европой или Персидским заливом повседневные траты умеренные: транспорт и такси через приложения недорогие, поесть вне самых модных ресторанов выгодно. Карты и QR-оплата работают почти везде в городе, но наличные за городом пригодятся — для сборов нацпарков и проката.' },
+
+        { t: 'h2', text: 'Как собрать свой турпакет по Алматы' },
+        { t: 'p', text: 'Многие ищут готовый «турпакет в Алматы». Мы не продаём авиабилеты и отели — но собираем ту часть поездки, которая проходит на месте, под ваши даты и где бы вы ни жили. Типичные сочетания:' },
+        { t: 'ul', items: [
+          '3–4 дня: город и Шымбулак, Чарынский каньон, озёра Кольсай и Каинды.',
+          '5 дней: плюс БАО или озеро Иссык, а летом — плато Ассы.',
+          '7 дней: плюс два дня в Алтын-Эмеле или ночёвка в палатках на плато Ассы.',
+        ] },
+        { t: 'p', text: 'Пришлите в WhatsApp даты прилёта и вылета и количество человек — составим план по дням с ценой каждого тура.' },
+
+        { t: 'h2', text: 'Как сэкономить' },
+        { t: 'ul', items: [
+          'Берите групповые выезды для дальних поездок, а индивидуальные — для дней, где особенно важен тайминг.',
+          'Если едете индивидуально, компания от четырёх человек резко снижает цену на каждого.',
+          'Не ставьте длинные поездки подряд — каждую запомните лучше и меньше устанете.',
+        ] },
+      ],
+    },
+  },
+  {
+    slug: 'almaty-itinerary-5-7-days',
+    image: '/images/charyn-kolsai-kaindy.jpg',
+    date: '2026-10-02',
+    readMinutes: 7,
+    en: {
+      title: '5 or 7 Days in Almaty: Two Itineraries That Work',
+      metaTitle: 'Almaty Itinerary 5 Days & 7 Days — Day-by-Day Plans (2026)',
+      metaDescription:
+        'Day-by-day Almaty itineraries for 5 and 7 days: the city and Shymbulak, Charyn Canyon, Kolsai and Kaindy lakes, Big Almaty Lake, the Assy Plateau and Altyn-Emel, plus a winter version.',
+      excerpt:
+        'Five days covers the city, a canyon, the alpine lakes and a high plateau. Seven adds the desert of Altyn-Emel. Here is how to order the days so it works.',
+      body: [
+        { t: 'p', text: 'With five to seven days you can see almost everything the Almaty region is known for — as long as you respect one rule: the big landscapes are two to five hours away, and each costs a full day. The plans below alternate long trips with easier days so you are not in a vehicle for a week straight.' },
+
+        { t: 'h2', text: '5-day Almaty itinerary' },
+        { t: 'ul', items: [
+          'Day 1 — City and mountains: Medeu, the Shymbulak cable car, Panfilov Park, the Green Bazaar and sunset on Kok-Tobe. A gentle start that also helps with the altitude.',
+          'Day 2 — Charyn Canyon: the Valley of Castles trail down to the river, plus the Moon and Black canyon viewpoints.',
+          'Day 3 — An easier day: Big Almaty Lake in the morning, or the Ayusai and Alma-Arasan gorges with the hot spring.',
+          'Day 4 — Kolsai and Kaindy lakes: an early start for the emerald lake and the sunken forest.',
+          'Day 5 — Assy Plateau or Issyk Lake: the high pasture and observatory in summer, or the lake and Bear Waterfall for something shorter.',
+        ] },
+
+        { t: 'h2', text: '7-day Almaty itinerary' },
+        { t: 'p', text: 'Follow the five-day plan, then add a two-day trip at the end:' },
+        { t: 'ul', items: [
+          'Days 6–7 — Altyn-Emel: the Singing Dune on the first day, then the striped Aktau and volcanic Katutau mountains on the second, with an overnight in the park area.',
+          'Or days 6–7 — Assy Plateau camping: sunset, a night under one of the darkest skies near Almaty, and sunrise over the pasture.',
+        ] },
+        { t: 'p', text: 'If you would rather avoid another long drive, spend one of the extra days at the ethno village with its nomadic show, or horseback riding in the Alatau foothills.' },
+
+        { t: 'h2', text: 'A winter version' },
+        { t: 'p', text: 'Outside June to September the Kolsai and Kaindy lakes and the Assy Plateau are hard to reach, and our tours there do not run. A winter week works around the city instead: skiing at Shymbulak, skating at Medeu, Charyn Canyon on a clear day, the Alma-Arasan hot spring, the ethno village and horseback riding.' },
+
+        { t: 'h2', text: 'Tips for multi-day trips' },
+        { t: 'ul', items: [
+          'Put the city first — it gives you time to adjust to the altitude and a buffer if the weather turns.',
+          'Never schedule a long trip on your departure day.',
+          'Carry your passport on every trip outside the city; some routes pass checkpoints.',
+          'Mix formats: group tours keep the long days affordable, private tours give you control where it matters.',
+        ] },
+        { t: 'p', text: 'Send us your dates on WhatsApp and we will turn one of these plans into a day-by-day schedule based on what is actually running that week.' },
+      ],
+    },
+    ru: {
+      title: '5 или 7 дней в Алматы: два маршрута, которые работают',
+      metaTitle: 'Маршрут по Алматы на 5 и 7 дней — план по дням (2026)',
+      metaDescription:
+        'Маршруты по Алматы на 5 и 7 дней: город и Шымбулак, Чарынский каньон, озёра Кольсай и Каинды, БАО, плато Ассы и Алтын-Эмель, плюс зимний вариант.',
+      excerpt:
+        'За пять дней — город, каньон, горные озёра и высокогорное плато. За семь — ещё и пустыня Алтын-Эмеля. Как выстроить дни, чтобы всё получилось.',
+      body: [
+        { t: 'p', text: 'За пять–семь дней можно увидеть почти всё, чем знаменит Алматинский регион, — если соблюдать одно правило: большие пейзажи находятся в 2–5 часах езды, и каждый стоит целого дня. Маршруты ниже чередуют длинные поездки с более лёгкими днями, чтобы вы не провели неделю в машине.' },
+
+        { t: 'h2', text: 'Маршрут по Алматы на 5 дней' },
+        { t: 'ul', items: [
+          'День 1 — город и горы: Медеу, канатная дорога Шымбулака, парк Панфилова, Зелёный базар и закат на Кок-Тобе. Мягкий старт, который заодно помогает привыкнуть к высоте.',
+          'День 2 — Чарынский каньон: тропа по Долине замков к реке и смотровые Лунного и Чёрного каньонов.',
+          'День 3 — день полегче: утром БАО или ущелья Аюсай и Алма-Арасан с горячим источником.',
+          'День 4 — озёра Кольсай и Каинды: ранний выезд к изумрудному озеру и затонувшему лесу.',
+          'День 5 — плато Ассы или озеро Иссык: летом — высокогорное пастбище и обсерватория, либо озеро и Медвежий водопад для более короткого дня.',
+        ] },
+
+        { t: 'h2', text: 'Маршрут по Алматы на 7 дней' },
+        { t: 'p', text: 'Возьмите план на пять дней и добавьте в конце двухдневную поездку:' },
+        { t: 'ul', items: [
+          'Дни 6–7 — Алтын-Эмель: в первый день Поющий бархан, во второй — полосатые горы Актау и вулканический Катутау, с ночёвкой в районе парка.',
+          'Или дни 6–7 — кемпинг на плато Ассы: закат, ночь под одним из самых тёмных небес рядом с Алматы и рассвет над пастбищем.',
+        ] },
+        { t: 'p', text: 'Если не хочется ещё одной долгой дороги, проведите один из дней в этно-ауле с шоу кочевой культуры или на конной прогулке в предгорьях Алатау.' },
+
+        { t: 'h2', text: 'Зимний вариант' },
+        { t: 'p', text: 'Вне сезона (июнь–сентябрь) озёра Кольсай и Каинды и плато Ассы труднодоступны, и туры туда не проводятся. Зимняя неделя строится вокруг города: лыжи на Шымбулаке, коньки на Медеу, Чарынский каньон в ясный день, горячий источник Алма-Арасан, этно-аул и конные прогулки.' },
+
+        { t: 'h2', text: 'Советы для поездки на несколько дней' },
+        { t: 'ul', items: [
+          'Начинайте с города — это время привыкнуть к высоте и запас на случай плохой погоды.',
+          'Не ставьте дальнюю поездку на день вылета.',
+          'Берите документ на каждую поездку за город — на некоторых маршрутах есть посты.',
+          'Сочетайте форматы: групповые туры делают длинные дни доступными, индивидуальные дают контроль там, где он важен.',
+        ] },
+        { t: 'p', text: 'Пришлите даты в WhatsApp — превратим один из этих маршрутов в расписание по дням с учётом того, что реально идёт на этой неделе.' },
+      ],
+    },
+  },
 ];
